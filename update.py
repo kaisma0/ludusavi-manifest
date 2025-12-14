@@ -4,7 +4,7 @@ import os
 import sys
 
 # ================= CONFIGURATION =================
-STATS_DIR = "C:/Program Files (x86)/Steam/appcache/stats"
+STATS_DIR = "<base>/../../../appcache/stats"
 OFFICIAL_MANIFEST_URL = "https://raw.githubusercontent.com/mtkennerly/ludusavi-manifest/master/data/manifest.yaml"
 OUTPUT_FILENAME = "custom_manifest.yaml"
 # =================================================
