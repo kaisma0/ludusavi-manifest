@@ -59580,6 +59580,30 @@ Amphora:
         store: steam
   steam:
     id: 331510
+Amplexus Protocol:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3759690.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3759690.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winAppData>/Renpy/AmplexusProtocol-1622743716/*.save:
+      when:
+      - os: windows
+        store: steam
+  installDir:
+    Amplexus Protocol: {}
+  launch:
+    <base>/AmplexusProtocol.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 3759690
 'Amplitude: A Visual Novel':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_704680.bin:
@@ -82917,6 +82941,35 @@ Asemblance:
         store: steam
   steam:
     id: 809950
+'Asgard''s Fall: Viking Survivors':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2780710.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2780710.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/AsgardsFall/Save Files:
+      tags:
+      - config
+      - save
+      when:
+      - os: windows
+  installDir:
+    Asgard's Fall: {}
+  launch:
+    <base>/AsgardsFall.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 2780710
 Asgard's Wrath:
   files:
     <winLocalAppData>/WrathGame/Saved/SaveGames:
@@ -91020,6 +91073,8 @@ Atlantis VR:
       - os: windows
   gog:
     id: 1207658944
+  id:
+    lutris: atlantis-the-lost-tales
 Atlas:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_834910.bin:
@@ -114616,6 +114671,7 @@ Battle Chess 4000:
   id:
     gogExtra:
     - 1207658676
+    lutris: battle-chess-4000
   installDir:
     Battle Chess 4000: {}
   launch:
@@ -114657,6 +114713,7 @@ Battle Chess 4000:
   id:
     gogExtra:
     - 1207658676
+    lutris: battle-chess-ii-chinese-chess
   installDir:
     Battle Chess II Chinese Chess: {}
   launch:
@@ -114708,6 +114765,8 @@ Battle Chess 4000:
         store: steam
   gog:
     id: 1123635349
+  id:
+    lutris: battle-chess-game-of-kingstm
   installDir:
     Battlechess Game of Kings: {}
   launch:
@@ -140094,6 +140153,8 @@ Blackthorne:
       - save
       when:
       - os: windows
+  id:
+    lutris: blackthorne
 Blackwake:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_420290.bin:
@@ -181744,6 +181805,8 @@ Caesar's Revenge:
       when:
       - os: windows
         store: steam
+  id:
+    lutris: caesars-revenge
   installDir:
     Caesar's Revenge: {}
   launch:
@@ -219536,6 +219599,8 @@ Citywars Savage:
       - os: windows
   gog:
     id: 1367477034
+  id:
+    lutris: civcity-rome
   installDir:
     CivCity Rome: {}
   launch:
@@ -238698,6 +238763,8 @@ Conflict Zone:
       - save
       when:
       - os: windows
+  id:
+    lutris: conflict-denied-ops
   installDir:
     Conflict Denied Ops: {}
   launch:
@@ -239755,6 +239822,8 @@ Consortium:
       - os: windows
   gog:
     id: 1207664203
+  id:
+    lutris: consortium
   installDir:
     Consortium: {}
   launch:
@@ -242875,10 +242944,7 @@ Copa City:
       - save
       when:
       - store: steam
-    <home>/AppData/LocalLow/Triple Espresso/Copa City First Football Tycoon/**/*.json:
-      when:
-      - store: steam
-    <home>/AppData/LocalLow/Triple Espresso/Copa City First Football Tycoon/Saves/**/*.json:
+    <home>/AppData/LocalLow/Triple Espresso/Copa City:
       when:
       - store: steam
   gog:
@@ -289601,6 +289667,8 @@ Dead Island 2:
       when:
       - os: windows
         store: microsoft
+  id:
+    lutris: dead-island-2
   installDir:
     Dead Island 2: {}
   launch:
@@ -289708,6 +289776,8 @@ Dead Island 2:
       - save
       when:
       - store: steam
+  id:
+    lutris: dead-island-retro-revenge
   installDir:
     Dead Island Retro Revenge: {}
   launch:
@@ -289784,6 +289854,8 @@ Dead Island 2:
       - config
       when:
       - os: windows
+  id:
+    lutris: dead-island-riptide-definitive-edition
   installDir:
     DIRDE: {}
   launch:
@@ -318358,6 +318430,8 @@ Dig and Shoot:
   steam:
     id: 785070
 Dig or Die:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_315460.bin:
       tags:
@@ -363039,6 +363113,8 @@ EA Sports WRC:
       - save
       when:
       - os: windows
+  id:
+    lutris: ea-sportstm-wrc
   installDir:
     EA SPORTS WRC: {}
   launch:
@@ -383356,6 +383432,8 @@ Enemy:
       - store: steam
   gog:
     id: 1207658733
+  id:
+    lutris: enemy-engaged-apache-vs-havoc
   installDir:
     Enemy Engaged Apache vs Havoc: {}
   launch:
@@ -461381,6 +461459,8 @@ Fur Fighters:
       - save
       when:
       - os: windows
+  id:
+    lutris: fur-fighters
 Fur Fun:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_589370.bin:
@@ -474008,6 +474088,7 @@ Gathering Sky:
       when:
       - store: steam
   id:
+    lutris: gathering-sky
     steamExtra:
     - 393640
   installDir:
@@ -528828,6 +528909,11 @@ Heart of Eternity:
       - save
       when:
       - store: steam
+    "C:/Users/(USERNAME)/Documents/\xD1\xE5\xF0\xE4\xF6\xE5 \xC2\xE5\xF7\xED\xEE\xF1\xF2\xE8":
+      tags:
+      - save
+      when:
+      - os: windows
   installDir:
     Heart of Eternity: {}
   launch:
@@ -811197,6 +811283,8 @@ Of Light and Darkness:
       - store: steam
   gog:
     id: 1407917236
+  id:
+    lutris: of-light-and-darkness-the-prophecy
   installDir:
     Of Light and Darkness: {}
   launch:
@@ -932341,6 +932429,8 @@ Redneck Deer Huntin':
       - store: steam
   gog:
     id: 1647235151
+  id:
+    lutris: redneck-deer-huntin
   installDir:
     Redneck Deer Huntin': {}
   launch:
@@ -932485,6 +932575,8 @@ Redneck Rampage Rides Again:
       - os: dos
   gog:
     id: 1207658674
+  id:
+    lutris: redneck-rampage-rides-again
   installDir:
     Redneck Rampage Rides Again: {}
   launch:
@@ -980087,6 +980179,32 @@ Sacrament:
         store: steam
   steam:
     id: 734380
+Sacrata:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3201450.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3201450.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/Windows/SACRATA/Saved/Config/Windows:
+      tags:
+      - config
+      when:
+      - os: windows
+    <base>/Windows/SACRATA/Saved/SaveGames:
+      tags:
+      - save
+      when:
+      - os: windows
+  steam:
+    id: 3201450
 Sacred:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_12320.bin:
@@ -1000113,6 +1000231,7 @@ Sega Rally Revo:
       when:
       - os: windows
   id:
+    lutris: sega-rally-revo
     steamExtra:
     - 4790
   installDir:
@@ -1012194,6 +1012313,8 @@ Shattered Union:
       - save
       when:
       - store: steam
+  id:
+    lutris: shattered-union
   installDir:
     Shattered Union: {}
   launch:
@@ -1038801,6 +1038922,8 @@ Slipstream 5000:
       - os: dos
   gog:
     id: 1207658953
+  id:
+    lutris: slipstream-5000
   installDir:
     Slipstream 5000: {}
   launch:
@@ -1104468,6 +1104591,7 @@ Stronghold Legends:
       when:
       - os: windows
   id:
+    lutris: stronghold-legends
     steamExtra:
     - 1802300
   installDir:
@@ -1314508,6 +1314632,8 @@ Virtual Pool 4:
       - save
       when:
       - store: steam
+  id:
+    lutris: virtual-pool-4
   installDir:
     Virtual Pool 4: {}
   launch:
@@ -1321667,6 +1321793,8 @@ WOUNDED:
       - config
       when:
       - os: windows
+  id:
+    lutris: wrc-10-fia-world-rally-championship
   installDir:
     WRC 10 FIA World Rally Championship: {}
   launch:
@@ -1321730,6 +1321858,8 @@ WOUNDED:
       - save
       when:
       - os: windows
+  id:
+    lutris: wrc-4-fia-world-rally-championship
   installDir:
     WRC 4: {}
   launch:
@@ -1321764,6 +1321894,7 @@ WOUNDED:
       when:
       - os: windows
   id:
+    lutris: wrc-5
     steamExtra:
     - 398470
     - 398471
@@ -1321793,6 +1321924,8 @@ WOUNDED:
       when:
       - os: windows
         store: steam
+  id:
+    lutris: wrc-6
   installDir:
     WRC 6: {}
   steam:
@@ -1321817,6 +1321950,8 @@ WOUNDED:
       when:
       - os: windows
         store: steam
+  id:
+    lutris: wrc-7
   installDir:
     WRC 7: {}
   launch:
@@ -1321851,6 +1321986,8 @@ WOUNDED:
       - config
       when:
       - os: windows
+  id:
+    lutris: wrc-8-fia-world-rally-championship
   installDir:
     WRC 8 FIA World Rally Championship: {}
   launch:
@@ -1321886,6 +1322023,8 @@ WOUNDED:
       - config
       when:
       - os: windows
+  id:
+    lutris: wrc-9-fia-world-rally-championship
   installDir:
     WRC 9 FIA World Rally Championship: {}
   launch:
@@ -1321920,6 +1322059,8 @@ WRC Generations:
       - config
       when:
       - os: windows
+  id:
+    lutris: wrc-generations-the-fia-wrc-official-game
   installDir:
     WRC Generations - The FIA WRC Official Game: {}
   launch:
@@ -1321950,6 +1322091,8 @@ WRC Powerslide:
       - save
       when:
       - os: windows
+  id:
+    lutris: wrc-powerslide
   installDir:
     WRC Powerslide: {}
   launch:
@@ -1327491,8 +1327634,20 @@ WarBreeds:
       - save
       when:
       - os: windows
+    <base>/DATA/prefs.dbg:
+      tags:
+      - config
+      when:
+      - os: windows
+    <base>/WARBREED.CFG:
+      tags:
+      - config
+      when:
+      - os: windows
   gog:
     id: 1979367321
+  id:
+    lutris: warbreeds
   installDir:
     WarBreeds: {}
   launch:
@@ -1363944,6 +1364099,26 @@ Worms Revolution:
     id: 1421309312
   id:
     lutris: worms-revolution
+    steamExtra:
+    - 200172
+    - 200173
+    - 200174
+    - 200175
+    - 200176
+    - 200177
+    - 200178
+    - 200179
+    - 200180
+    - 200181
+    - 200182
+    - 200183
+    - 200185
+    - 200186
+    - 200187
+    - 200188
+    - 200189
+    - 235230
+    - 2028056
   installDir:
     WormsRevolution: {}
   launch:
@@ -1378340,6 +1378515,28 @@ Z-Aftershock:
       - store: steam
   steam:
     id: 652730
+Z-Company:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1583820.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1583820.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Z-Company: {}
+  launch:
+    <base>/ZCompany.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+  steam:
+    id: 1583820
 Z-End:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_582610.bin:
