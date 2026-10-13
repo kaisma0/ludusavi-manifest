@@ -23527,6 +23527,8 @@ ARC Raiders:
       - config
       when:
       - os: windows
+  id:
+    lutris: arc-raiders
   installDir:
     Arc Raiders: {}
   launch:
@@ -54122,6 +54124,12 @@ Alpha Nomos:
     lutris: alpha-nomos
     steamExtra:
     - 4154870
+  installDir:
+    Alpha Nomos: {}
+  launch:
+    <base>/AlphaNomos.exe:
+    - when:
+      - store: steam
   steam:
     id: 2529960
 Alpha Polaris:
@@ -58385,8 +58393,47 @@ American VR Coasters:
   steam:
     id: 610260
 Amerzone - The Explorer's Legacy (2024):
-  alias: Amerzone - The Explorer's Legacy (2025)
+  alias: 'Amerzone: The Explorer''s Legacy (2025)'
 Amerzone - The Explorer's Legacy (2025):
+  alias: 'Amerzone: The Explorer''s Legacy (2025)'
+'Amerzone: The Explorer''s Legacy':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_302190.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_302190.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/Launch/Settings.ini:
+      tags:
+      - config
+      when:
+      - os: windows
+    <base>/Saved_*.bin:
+      tags:
+      - save
+      when:
+      - os: windows
+  gog:
+    id: 1207658847
+  id:
+    lutris: amerzone-the-explorers-legacy
+  installDir:
+    Amerzone The Explorers Legacy: {}
+  launch:
+    <base>/Amerzone.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 302190
+'Amerzone: The Explorer''s Legacy (2024)':
+  alias: 'Amerzone: The Explorer''s Legacy (2025)'
+'Amerzone: The Explorer''s Legacy (2025)':
   cloud:
     epic: true
     gog: true
@@ -58424,43 +58471,6 @@ Amerzone - The Explorer's Legacy (2025):
         store: steam
   steam:
     id: 2429190
-'Amerzone: The Explorer''s Legacy':
-  files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_302190.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_302190.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/Launch/Settings.ini:
-      tags:
-      - config
-      when:
-      - os: windows
-    <base>/Saved_*.bin:
-      tags:
-      - save
-      when:
-      - os: windows
-  gog:
-    id: 1207658847
-  id:
-    lutris: amerzone-the-explorers-legacy
-  installDir:
-    Amerzone The Explorers Legacy: {}
-  launch:
-    <base>/Amerzone.exe:
-    - when:
-      - os: windows
-        store: steam
-  steam:
-    id: 302190
-'Amerzone: The Explorer''s Legacy (2024)':
-  alias: Amerzone - The Explorer's Legacy (2025)
 Amethlion:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_915820.bin:
@@ -139535,6 +139545,7 @@ Blackjack of Strip:
       when:
       - os: windows
   id:
+    lutris: blacklight-retribution
     steamExtra:
     - 209872
     - 209873
@@ -307996,17 +308007,6 @@ Depersonalization:
       - os: windows
   id:
     lutris: depersonalization
-  installDir:
-    Depersonalization: {}
-  launch:
-    <base>/Depersonalization-Release.app:
-    - when:
-      - os: mac
-        store: steam
-    <base>/Depersonalization-Release.exe:
-    - when:
-      - os: windows
-        store: steam
   steam:
     id: 1477070
 Depixtion:
@@ -329470,10 +329470,12 @@ Dokimon Quest:
       - save
       when:
       - store: steam
-    <winLocalAppData>/dokimon/*.sav:
+    <winLocalAppData>/dokimon:
+      tags:
+      - config
+      - save
       when:
       - os: windows
-        store: steam
   id:
     lutris: dokimon
     steamExtra:
@@ -404485,7 +404487,7 @@ F-22 Lightning 3:
   installDir:
     F22ADF: {}
   launch:
-    <base>/adfusa.exe:
+    <base>/adf.exe:
     - when:
       - os: windows
         store: steam
@@ -450070,6 +450072,28 @@ Forza Horizon 4:
         store: microsoft
   id:
     lutris: forza-horizon-4
+    steamExtra:
+    - 1443010
+    - 1443011
+    - 1443012
+    - 1443013
+    - 1443014
+    - 1443015
+    - 1443016
+    - 1443017
+    - 1443018
+    - 1443019
+    - 1443020
+    - 1443021
+    - 1443022
+    - 1443023
+    - 1443024
+    - 1443025
+    - 1443026
+    - 1443027
+    - 1443028
+    - 1443029
+    - 1443040
   installDir:
     ForzaHorizon4: {}
   steam:
@@ -450111,6 +450135,19 @@ Forza Horizon 5:
       when:
       - os: windows
         store: microsoft
+  id:
+    steamExtra:
+    - 1613280
+    - 1613281
+    - 1613282
+    - 1613283
+    - 1613284
+    - 1613285
+    - 1648020
+    - 1764060
+    - 1764061
+    - 1764062
+    - 1764063
   installDir:
     ForzaHorizon5: {}
   launch:
@@ -528914,6 +528951,11 @@ Heart of Eternity:
       - save
       when:
       - os: windows
+    "C:/Users/(USERNAME)/Documents/\xD1\xE5\xF0\xE4\xF6\xE5 \xC2\xE5\xF7\xED\xEE\xF1\xF2\xE8/conf.cfg":
+      tags:
+      - config
+      when:
+      - os: windows
   installDir:
     Heart of Eternity: {}
   launch:
@@ -529063,6 +529105,11 @@ Heart of the Machine:
       - os: windows
   gog:
     id: 1576750056
+  id:
+    gogExtra:
+    - 1680347485
+    steamExtra:
+    - 4565610
   installDir:
     HeartOfTheMachine: {}
   launch:
@@ -577447,6 +577494,26 @@ Idle Evolution:
         store: steam
   steam:
     id: 577730
+Idle Gem Quest:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2144290.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2144290.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Idle Gem Quest: {}
+  launch:
+    <base>/Idle Gem Quest.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 2144290
 Idle Guardians:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1073860.bin:
@@ -589599,6 +589666,24 @@ Ingression:
         store: steam
   steam:
     id: 257260
+Inherited Shadows:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2939450.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2939450.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    lutris: inherited-shadows
+    steamExtra:
+    - 4339430
+  steam:
+    id: 2939450
 Inhuman:
   cloud:
     steam: true
@@ -619831,6 +619916,7 @@ Kao the Kangaroo (2022):
     - 1669230617
     - 2000108514
     - 2074692331
+    lutris: kao-the-kangaroo--1
     steamExtra:
     - 2052960
     - 2052961
@@ -619927,6 +620013,8 @@ Kao the Kangaroo (2022):
       - os: windows
   gog:
     id: 1748253806
+  id:
+    lutris: kao-the-kangaroo-mystery-of-the-volcano
   installDir:
     Kao the Kangaroo Mystery of the Volcano: {}
   launch:
@@ -658307,47 +658395,7 @@ Leilani's Island:
   steam:
     id: 664640
 Leisure Suit Larry - Wet Dreams Dry Twice:
-  cloud:
-    gog: true
-    steam: true
-  files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_1373430.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1373430.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-  gog:
-    id: 2147483119
-  id:
-    gogExtra:
-    - 2118773017
-    steamExtra:
-    - 1432870
-  installDir:
-    Leisure Suit Larry - Wet Dreams Dry Twice: {}
-  launch:
-    <base>/Leisure Suit Larry - Wet Dreams Dry Twice.app/Contents/MacOS/Leisure Suit Larry - Wet Dreams Dry Twice:
-    - when:
-      - os: mac
-        store: steam
-    <base>/Leisure Suit Larry - Wet Dreams Dry Twice.exe:
-    - when:
-      - os: windows
-        store: steam
-  registry:
-    HKEY_CURRENT_USER/Software/Assemble Entertainment/Leisure Suit Larry - Wet Dreams Dry Twice:
-      tags:
-      - config
-    HKEY_CURRENT_USER/Software/Assemble Entertainment/Leisure Suit Larry - Wet Dreams Dry Twice/savegames:
-      tags:
-      - save
-  steam:
-    id: 1373430
+  alias: 'Leisure Suit Larry: Wet Dreams Dry Twice'
 'Leisure Suit Larry 5: Passionate Patti Does a Little Undercover Work':
   cloud:
     gog: true
@@ -658715,6 +658763,7 @@ Leisure Suit Larry's Casino (1998):
     steamExtra:
     - 938590
     - 975530
+    - 1460880
   installDir:
     Leisure Suit Larry - Wet Dreams Don't Dry: {}
   launch:
@@ -658732,6 +658781,51 @@ Leisure Suit Larry's Casino (1998):
       - config
   steam:
     id: 765870
+'Leisure Suit Larry: Wet Dreams Dry Twice':
+  cloud:
+    gog: true
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1373430.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1373430.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  gog:
+    id: 2147483119
+  id:
+    gogExtra:
+    - 2118773017
+    lutris: leisure-suit-larry-wet-dreams-dry-twice
+    steamExtra:
+    - 1432870
+    - 1452390
+    - 1452430
+  installDir:
+    Leisure Suit Larry - Wet Dreams Dry Twice: {}
+  launch:
+    <base>/Leisure Suit Larry - Wet Dreams Dry Twice.app/Contents/MacOS/Leisure Suit Larry - Wet Dreams Dry Twice:
+    - when:
+      - os: mac
+        store: steam
+    <base>/Leisure Suit Larry - Wet Dreams Dry Twice.exe:
+    - when:
+      - os: windows
+        store: steam
+  registry:
+    HKEY_CURRENT_USER/Software/Assemble Entertainment/Leisure Suit Larry - Wet Dreams Dry Twice:
+      tags:
+      - config
+    HKEY_CURRENT_USER/Software/Assemble Entertainment/Leisure Suit Larry - Wet Dreams Dry Twice/savegames:
+      tags:
+      - save
+  steam:
+    id: 1373430
 Leisure Town:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_920510.bin:
@@ -717406,6 +717500,8 @@ Medal of Honor (2010):
       - save
       when:
       - os: windows
+  id:
+    lutris: medal-of-honor-above-and-beyond
   installDir:
     respawn-entertainment-medal-of-honor-above-and-beyond: {}
   steam:
@@ -756943,6 +757039,7 @@ Mouse in Lab:
     id: 587050
 'Mouse: P.I. For Hire':
   cloud:
+    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_2416450.bin:
@@ -756961,7 +757058,11 @@ Mouse in Lab:
       - save
       when:
       - os: windows
+  gog:
+    id: 1567378928
   id:
+    gogExtra:
+    - 2077295668
     lutris: mouse-pi-for-hire--1
     steamExtra:
     - 3879460
@@ -768645,6 +768746,8 @@ Mysterious Insects:
       - config
       when:
       - os: windows
+  gog:
+    id: 1334820000
   id:
     lutris: mysterious-journey-ii-chameleon
 Mysterious Realms RPG:
@@ -829601,14 +829704,11 @@ Out of Sight:
       - save
       when:
       - store: steam
-    <winLocalAppData>/OutOfSight/Saved/**/*.sav:
+    <winLocalAppData>/OutOfSight/Saved:
+      tags:
+      - save
       when:
       - os: windows
-        store: steam
-    <winLocalAppData>/OutOfSight/Saved/Config/Windows/GameUserSettings.ini:
-      when:
-      - os: windows
-        store: steam
   id:
     lutris: out-of-sight--3
     steamExtra:
@@ -842837,6 +842937,37 @@ Papercraft:
         store: steam
   steam:
     id: 905660
+Paperhead:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2680280.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2680280.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    lutris: paperhead
+    steamExtra:
+    - 2682750
+    - 5113440
+    - 5113460
+  installDir:
+    PAPERHEAD: {}
+  launch:
+    <base>/PAPERHEAD.exe:
+    - when:
+      - store: steam
+    - arguments: -force-d3d11
+      when:
+      - store: steam
+  steam:
+    id: 2680280
 Papers, Please:
   cloud:
     steam: true
@@ -878062,6 +878193,8 @@ Pool of Radiance:
       - os: windows
   gog:
     id: 1405279681
+  id:
+    lutris: pool-of-radiance-ruins-of-myth-drannor
   steam:
     id: 4834760
 Pools:
@@ -990245,6 +990378,8 @@ Saw:
       - config
       when:
       - os: windows
+  id:
+    lutris: saw
   installDir:
     Saw: {}
   launch:
@@ -1006789,6 +1006924,8 @@ Shadow Mist:
       - os: windows
   gog:
     id: 1479095781
+  id:
+    lutris: shadow-ops-red-mercury
   installDir:
     Shadow Ops Red Mercury: {}
   launch:
@@ -1007863,6 +1008000,8 @@ Shadow of the Road:
       - store: steam
   gog:
     id: 1293804420
+  id:
+    lutris: shadow-of-the-road
   steam:
     id: 1173980
 Shadow of the Tomb Raider:
@@ -1032023,7 +1032162,11 @@ Sky Force Anniversary:
       when:
       - os: windows
         store: steam
+  gog:
+    id: 2008603289
   id:
+    gogExtra:
+    - 1783450385
     lutris: sky-force-anniversary
     steamExtra:
     - 367810
@@ -1032056,6 +1032199,7 @@ Sky Force Anniversary:
     id: 355050
 Sky Force Reloaded:
   cloud:
+    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_667600.bin:
@@ -1032080,6 +1032224,11 @@ Sky Force Reloaded:
       when:
       - os: linux
         store: steam
+  gog:
+    id: 1513590615
+  id:
+    gogExtra:
+    - 2093321210
   installDir:
     Sky Force Reloaded: {}
   launch:
@@ -1048426,6 +1048575,10 @@ Solasta II:
       - save
       when:
       - store: steam
+    <winLocalAppData>/Solasta 2/Saved/SaveGames/User_<storeUserId>/**/*.sav:
+      when:
+      - os: windows
+        store: steam
   id:
     lutris: solasta-ii
     steamExtra:
@@ -1076094,6 +1076247,39 @@ Spy DNA:
       - store: steam
   steam:
     id: 614730
+Spy Drops Gaiden:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4152490.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4152490.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Spy Drops Prologue: {}
+  launch:
+    <base>/SpyDropsGaiden.app/Contents/MacOS/SpyDropsGaiden:
+    - when:
+      - os: mac
+        store: steam
+    <base>/SpyDropsGaiden.exe:
+    - when:
+      - os: windows
+        store: steam
+    <base>/SpyDropsGaiden.x86_64:
+    - when:
+      - os: linux
+        store: steam
+  registry:
+    HKEY_CURRENT_USER/Software/Rainy Frog Ltd/SpyDropsGaiden:
+      tags:
+      - config
+  steam:
+    id: 4152490
 'Spy Fox 2: Some Assembly Required':
   cloud:
     steam: true
@@ -1152240,6 +1152426,8 @@ Terminal Velocity:
       - os: dos
   gog:
     id: 1207659136
+  id:
+    lutris: terminal-velocity
   installDir:
     Terminal Velocity: {}
   launch:
@@ -1154949,6 +1155137,8 @@ Test Drive Unlimited Solar Crown:
       - config
       when:
       - os: windows
+  id:
+    lutris: test-drive-off-road-3
 Test Subject 901:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_914450.bin:
@@ -1160566,6 +1160756,8 @@ The Artisan of Glimmith:
       when:
       - os: windows
         store: steam
+  gog:
+    id: 1923339241
   id:
     lutris: the-artisan-of-glimmith
     steamExtra:
@@ -1169844,6 +1170036,14 @@ The Crust:
       - save
       when:
       - store: steam
+    <home>/.config/Epic/TheCrust/Saved/SaveGames/*.sav:
+      when:
+      - os: linux
+        store: steam
+    <home>/Library/Application Support/Epic/TheCrust/Saved/SaveGames/*.sav:
+      when:
+      - os: mac
+        store: steam
     <winLocalAppData>/TheCrust/Saved/SaveGames/**/*.sav:
       when:
       - store: steam
@@ -1169853,9 +1170053,17 @@ The Crust:
   installDir:
     The Crust: {}
   launch:
+    <base>/TheCrust-Mac-Shipping.app:
+    - when:
+      - os: mac
+        store: steam
     <base>/TheCrust.exe:
     - when:
       - os: windows
+        store: steam
+    <base>/TheCrust.sh:
+    - when:
+      - os: linux
         store: steam
   steam:
     id: 1465470
@@ -1224255,6 +1224463,20 @@ The Undying Plague:
         store: steam
   steam:
     id: 349440
+The Unfinished Horror Game:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5396900.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5396900.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5396900
 The Unfinished Swan:
   cloud:
     epic: true
@@ -1250467,6 +1250689,7 @@ Tonka Construction:
     <winDir>/Tonka.ini:
       tags:
       - config
+      - save
       when:
       - os: windows
 Tony Hawk's American Wasteland:
