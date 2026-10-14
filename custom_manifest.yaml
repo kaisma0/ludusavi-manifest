@@ -90934,6 +90934,8 @@ Atlantis Evolution:
     gog: true
   gog:
     id: 1294416884
+  id:
+    lutris: atlantis-evolution-1
 'Atlantis II: Beyond Atlantis':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_362920.bin:
@@ -90958,6 +90960,8 @@ Atlantis Evolution:
       - os: windows
   gog:
     id: 1207658951
+  id:
+    lutris: atlantis-2-beyond-atlantis
   installDir:
     Atlantis 2 Beyond Atlantis: {}
   launch:
@@ -113763,6 +113767,8 @@ Batla:
       - save
       when:
       - os: windows
+  id:
+    lutris: batman-arkham-vr
   installDir:
     Batman Arkham VR: {}
   steam:
@@ -179921,6 +179927,11 @@ CHROMATOSE:
     id: 1003900
 'CIA Operative: Solo Missions':
   files:
+    <base>/main/*.sav:
+      tags:
+      - save
+      when:
+      - os: windows
     <base>/main/config.cfg:
       tags:
       - config
@@ -195698,6 +195709,8 @@ Castlevania Dominus Collection:
   steam:
     id: 2369900
 'Castlevania: Belmont''s Curse':
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_4231820.bin:
       tags:
@@ -195709,10 +195722,27 @@ Castlevania Dominus Collection:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/KONAMI/Castlevania Belmont's Curse/*.sav:
+      when:
+      - store: steam
+    <home>/KONAMI/Castlevania Belmont's Curse/*.sav:
+      when:
+      - os: linux
+        store: steam
+    <home>/Library/Application Support/KONAMI/Castlevania Belmont's Curse/*.sav:
+      when:
+      - os: mac
+        store: steam
   id:
     lutris: castlevania-belmonts-curse
     steamExtra:
     - 5000760
+  installDir:
+    Castlevania Belmont's Curse: {}
+  launch:
+    <base>/Castlevania Belmont's Curse.exe:
+    - when:
+      - store: steam
   steam:
     id: 4231820
 'Castlevania: Lords of Shadow':
@@ -299670,10 +299700,33 @@ Deep Dish Dungeon:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/Behold Studios/Deep Dish Dungeon/**/*.*:
+      when:
+      - os: windows
+        store: steam
+    <home>/Library/Application Support/Behold Studios/Deep Dish Dungeon/**/*.*:
+      when:
+      - os: mac
+        store: steam
+    <xdgConfig>/unity3d/Behold Studios/Deep Dish Dungeon/**/*.*:
+      when:
+      - os: linux
+        store: steam
   id:
     lutris: deep-dish-dungeon
     steamExtra:
     - 3618740
+  installDir:
+    Deep Dish Dungeon: {}
+  launch:
+    <base>/Deep Dish Dungeon.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/Deep Dish Dungeon.exe:
+    - when:
+      - os: windows
+        store: steam
   steam:
     id: 2871520
 Deep Diving Simulator:
@@ -338462,6 +338515,7 @@ Draconic Route:
   id:
     gogExtra:
     - 1207659251
+    lutris: dracula-3-the-path-of-the-dragon
   installDir:
     Dracula The Path of the Dragon: {}
   launch:
@@ -592153,6 +592207,8 @@ Insomnis:
   steam:
     id: 1153710
 'Inspector Gadget: Mad Time Party':
+  cloud:
+    gog: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_2409500.bin:
       tags:
@@ -593683,6 +593739,34 @@ Internet Simulator:
         store: steam
   steam:
     id: 758050
+Interphase:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1157850.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1157850.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  gog:
+    id: 1757215264
+  installDir:
+    Interphase: {}
+  launch:
+    <base>/dosbox_windows/dosbox.exe:
+    - arguments: '"INTERPHS.EXE" -conf "dosbox_interphase.conf" -noconsole'
+      when:
+      - os: windows
+        store: steam
+    <base>/runInterphase.sh:
+    - when:
+      - os: linux
+        store: steam
+  steam:
+    id: 1157850
 Interplanetary:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_278910.bin:
@@ -634128,6 +634212,8 @@ Klepto:
   steam:
     id: 403590
 Klocki:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_499440.bin:
       tags:
@@ -634139,6 +634225,8 @@ Klocki:
       - save
       when:
       - store: steam
+  id:
+    lutris: klocki
   installDir:
     klocki: {}
   launch:
@@ -720598,6 +720686,8 @@ Melody's Escape 2:
         store: steam
   id:
     lutris: melodys-escape-2
+    steamExtra:
+    - 5007770
   installDir:
     Melody's Escape 2: {}
   launch:
@@ -766404,6 +766494,8 @@ My Riding Stables:
       when:
       - os: windows
         store: steam
+  id:
+    lutris: my-riding-stables
   installDir:
     My Riding Stables: {}
   launch:
@@ -833833,6 +833925,8 @@ Overlord II:
       - save
       when:
       - store: steam
+  id:
+    lutris: overlord-fellowship-of-evil
   installDir:
     OverlordFOE: {}
   launch:
@@ -1114668,6 +1114762,28 @@ Super Cyborg:
         store: steam
   steam:
     id: 341550
+Super Cycle:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2235230.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2235230.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Super Cycle: {}
+  launch:
+    <base>/game.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 2235230
 Super DX-Ball:
   files:
     <winDocuments>/My Games/Super DX-Ball *:
@@ -1131331,44 +1131447,7 @@ Syberia:
   steam:
     id: 46500
 Syberia - Remastered:
-  cloud:
-    gog: true
-    steam: true
-  files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_3660220.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3660220.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <winLocalAppData>/Virtuallyz Gaming/Syberia - Remastered/SteamSaves/<storeUserId>/slot_*.dat:
-      tags:
-      - save
-      when:
-      - os: windows
-        store: steam
-    <winLocalAppData>/Virtuallyz Gaming/Syberia - Remastered/SteamSaves/settings.dat:
-      tags:
-      - config
-      when:
-      - os: windows
-        store: steam
-  gog:
-    id: 1221479835
-  id:
-    lutris: syberia-remastered
-  installDir:
-    Syberia Remastered: {}
-  launch:
-    <base>/SyberiaHD.exe:
-    - when:
-      - store: steam
-  steam:
-    id: 3660220
+  alias: 'Syberia: Remastered'
 Syberia 3:
   cloud:
     gog: true
@@ -1131466,6 +1131545,45 @@ Syberia II:
         store: steam
   steam:
     id: 46510
+'Syberia: Remastered':
+  cloud:
+    gog: true
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3660220.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3660220.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/Virtuallyz Gaming/Syberia - Remastered/SteamSaves/<storeUserId>/slot_*.dat:
+      tags:
+      - save
+      when:
+      - os: windows
+        store: steam
+    <winLocalAppData>/Virtuallyz Gaming/Syberia - Remastered/SteamSaves/settings.dat:
+      tags:
+      - config
+      when:
+      - os: windows
+        store: steam
+  gog:
+    id: 1221479835
+  id:
+    lutris: syberia-remastered
+  installDir:
+    Syberia Remastered: {}
+  launch:
+    <base>/SyberiaHD.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 3660220
 'Syberia: The World Before':
   cloud:
     gog: true
@@ -1169822,6 +1169940,30 @@ The Crimson Diamond:
         store: steam
   steam:
     id: 1098770
+The Crimson Hunt:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4485020.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4485020.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    lutris: the-crimson-hunt
+    steamExtra:
+    - 4662870
+  installDir:
+    The Crimson Hunt: {}
+  launch:
+    <base>/The Crimson Hunt.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 4485020
 The Crimson Maid:
   cloud:
     epic: true
@@ -1190739,6 +1190881,30 @@ The Killing Antidote:
         store: steam
   steam:
     id: 2254890
+The Killing Cloud:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1518380.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1518380.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  gog:
+    id: 1121778705
+  installDir:
+    TheKillingCloud: {}
+  launch:
+    <base>/dosbox_windows/dosbox.exe:
+    - arguments: '"KILLING.EXE" -conf "dosbox_killingcloud.conf" -noconsole'
+      when:
+      - os: windows
+        store: steam
+  steam:
+    id: 1518380
 The Kindeman Remedy:
   cloud:
     gog: true
@@ -1254525,6 +1254691,14 @@ Total Tank Simulator:
       - store: steam
   gog:
     id: 1688411272
+  installDir:
+    Shogun 2 Complete Edition: {}
+  launch:
+    <base>/shogun2_complete_edition.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 3846830
 'Total War: Shogun 2 - Fall of the Samurai':
@@ -1304148,8 +1304322,34 @@ Valor Mortis:
       - save
       when:
       - store: steam
+    <winLocalAppData>/ValorMortis/Saved/SaveGames/*.bak:
+      when:
+      - store: steam
+    <winLocalAppData>/ValorMortis/Saved/SaveGames/*.sig:
+      when:
+      - store: steam
+    <winLocalAppData>/ValorMortis/Saved/SaveGames/AchievementsSaveGame.sav:
+      when:
+      - store: steam
+    <winLocalAppData>/ValorMortis/Saved/SaveGames/Autosave0.sav:
+      when:
+      - store: steam
+    <winLocalAppData>/ValorMortis/Saved/SaveGames/UserSettingsSaveGame.sav:
+      when:
+      - store: steam
   id:
     lutris: valor-mortis
+    steamExtra:
+    - 4641840
+    - 5250300
+  installDir:
+    Valor Mortis: {}
+  launch:
+    <base>/ValorMortis.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 2828710
 Valor Time:
@@ -1348651,6 +1348851,8 @@ Wild Metal Country:
       - save
       when:
       - store: steam
+  id:
+    lutris: wild-metal-country
   installDir:
     Wild Metal Country: {}
   launch:
@@ -1353987,6 +1354189,30 @@ Witch Blood:
         store: steam
   steam:
     id: 925690
+Witch Cabin Cleanup:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4991240.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4991240.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Witch Cabin Cleanup: {}
+  launch:
+    <base>/WCC.exe:
+    - when:
+      - store: steam
+    - arguments: -dx11
+      when:
+      - os: windows
+        store: steam
+  steam:
+    id: 4991240
 Witch College:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1116020.bin:
