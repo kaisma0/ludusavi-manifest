@@ -61752,6 +61752,8 @@ Ancient Warfare 3:
       - config
       when:
       - os: windows
+  id:
+    lutris: ancient-wars-sparta-definitive-edition
   installDir:
     Ancient Wars Sparta: {}
   launch:
@@ -77445,6 +77447,15 @@ Arkhelom 3D:
     <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4732690.bin:
       tags:
       - save
+      when:
+      - store: steam
+  installDir:
+    Arknights Endfield: {}
+  launch:
+    <base>/Endfield.exe:
+    - when:
+      - store: steam
+    - arguments: -force-d3d11
       when:
       - store: steam
   registry:
@@ -142899,7 +142910,8 @@ Blaster! (2026):
   launch:
     <base>/Blaster!.exe:
     - when:
-      - store: steam
+      - os: windows
+        store: steam
     <base>/Start_BLASTER.sh:
     - when:
       - os: linux
@@ -152609,6 +152621,17 @@ Bluey's Happy Snaps:
       - save
       when:
       - store: steam
+    <winLocalAppData>/BMC/Saved/SaveGames/<storeUserId>/**/*.sav:
+      when:
+      - store: steam
+  installDir:
+    BMC: {}
+  launch:
+    <base>/BMC.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 3064040
 Bluey's Quest for the Gold Pen:
@@ -181272,6 +181295,13 @@ Cabela's Big Game Hunter 2006 Trophy Season:
     <base>/Data/Saves:
       tags:
       - save
+      when:
+      - os: windows
+Cabela's Big Game Hunter 4:
+  files:
+    <base>/BGH4.INI:
+      tags:
+      - config
       when:
       - os: windows
 Cabela's Big Game Hunter Pro Hunts:
@@ -311167,6 +311197,30 @@ Desolus:
       - save
       when:
       - store: steam
+    <base>/The Quantum Astrophysicists Guild/DESOLUS/*Save*:
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/The Quantum Astrophysicists Guild/DESOLUS/*Save*:
+      when:
+      - os: windows
+        store: steam
+    <home>/Library/Application Support/The Quantum Astrophysicists Guild/DESOLUS/*Save*:
+      when:
+      - os: mac
+        store: steam
+  id:
+    lutris: desolus
+  installDir:
+    Desolus: {}
+  launch:
+    <base>/Desolus.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/Desolus.exe:
+    - when:
+      - os: windows
+        store: steam
   steam:
     id: 1003460
 Desordre:
@@ -350440,6 +350494,24 @@ Drosoph Hotel:
         store: steam
   steam:
     id: 717020
+'Drova II: Torn Lands':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4193180.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4193180.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  gog:
+    id: 2147392504
+  steam:
+    id: 4193180
 'Drova: Forsaken Kin':
   cloud:
     gog: true
@@ -350469,6 +350541,8 @@ Drosoph Hotel:
     id: 1254250206
   id:
     lutris: drova-forsaken-kin
+    steamExtra:
+    - 1585800
   installDir:
     Drova - Forsaken Kin: {}
   launch:
@@ -443026,11 +443100,8 @@ Football Manager 2010:
       - save
       when:
       - store: steam
-    <winDocuments>/Sports Interactive/Football Manager 2010:
-      tags:
-      - save
-      when:
-      - os: windows
+  id:
+    lutris: football-manager-2010
   steam:
     id: 34009
 Football Manager 2011:
@@ -443050,6 +443121,8 @@ Football Manager 2011:
       - save
       when:
       - os: windows
+  id:
+    lutris: football-manager-2011
   installDir:
     Football Manager 2011: {}
   launch:
@@ -443080,6 +443153,8 @@ Football Manager 2012:
       - save
       when:
       - os: windows
+  id:
+    lutris: football-manager-2012
   installDir:
     Football Manager 2012: {}
   launch:
@@ -443160,6 +443235,8 @@ Football Manager 2014:
       - save
       when:
       - os: linux
+  id:
+    lutris: football-manager-2014
   installDir:
     Football Manager 2014: {}
   launch:
@@ -443289,6 +443366,7 @@ Football Manager 2016:
       - os: linux
         store: steam
   id:
+    lutris: football-manager-2016
     steamExtra:
     - 383900
     - 383901
@@ -447516,6 +447594,35 @@ Forgotten Gifts:
       - store: steam
   steam:
     id: 997450
+'Forgotten Haven: The First Call':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5051490.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5051490.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/Infotrium Inc_/Forgotten Haven_ The First Call/savegame.json:
+      tags:
+      - save
+      when:
+      - os: windows
+  installDir:
+    Forgotten Haven The First Call: {}
+  launch:
+    <base>/ForgottenHaven.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+  steam:
+    id: 5051490
 Forgotten Heroes:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_510220.bin:
@@ -481880,6 +481987,7 @@ Ghostship Chronicles:
 'Ghostwire: Tokyo':
   cloud:
     epic: true
+    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1475810.bin:
@@ -481928,6 +482036,19 @@ Ghostship Chronicles:
       when:
       - os: windows
         store: microsoft
+  gog:
+    id: 1180670910
+  id:
+    gogExtra:
+    - 1203320424
+    - 1383417467
+    - 1486490536
+    - 1772404570
+    steamExtra:
+    - 1702820
+    - 1702821
+    - 1944840
+    - 2650130
   installDir:
     Ghostwire Tokyo: {}
   launch:
@@ -489501,6 +489622,33 @@ Goblin Harvest - The Mighty Quest:
         store: steam
   steam:
     id: 604060
+Goblin Nest:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3782910.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3782910.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/goblin_nest/*.json:
+      tags:
+      - save
+      when:
+      - os: windows
+  installDir:
+    Goblin Nest: {}
+  launch:
+    <base>/GoblinNest.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 3782910
 'Goblin Quest: Escape!':
   cloud:
     steam: true
@@ -506887,6 +507035,8 @@ Ground Control:
       - os: windows
   gog:
     id: 1207658782
+  id:
+    lutris: ground-control-2-operation-exodus-special-edition
   installDir:
     Ground Control II: {}
   launch:
@@ -703740,6 +703890,15 @@ Mall Tycoon 3:
       - config
       when:
       - os: windows
+Mall of America Tycoon:
+  files:
+    <base>/game.ini:
+      tags:
+      - config
+      when:
+      - os: windows
+  id:
+    lutris: mall-of-america-tycoon
 Mallow Drops:
   cloud:
     steam: true
@@ -735696,6 +735855,22 @@ Minecraft Dungeons II:
       - save
       when:
       - store: steam
+    <winLocalAppData>/Dungeons2/Saved/Config/WinGDK:
+      tags:
+      - config
+      when:
+      - os: windows
+        store: microsoft
+    <winLocalAppData>/Dungeons2/Saved/Config/Windows:
+      tags:
+      - config
+      when:
+      - os: windows
+    <winLocalAppData>/Dungeons2/Saved/SaveGames:
+      tags:
+      - save
+      when:
+      - os: windows
   id:
     lutris: minecraft-dungeons-ii
   installDir:
@@ -826104,8 +826279,12 @@ Order of the Sinking Star:
       - store: steam
     <home>/Saved Games/Order of the Sinking Star:
       tags:
-      - config
       - save
+      when:
+      - os: windows
+    <home>/Saved Games/Order of the Sinking Star/settings.menu_state:
+      tags:
+      - config
       when:
       - os: windows
   id:
@@ -866441,10 +866620,24 @@ Pixel Washer:
       - save
       when:
       - store: steam
+    <home>/Library/Application Support/pixel-washer/Local Storage/leveldb:
+      when:
+      - os: mac
+        store: steam
+    <winAppData>/pixel-washer/Local Storage/leveldb:
+      when:
+      - store: steam
   id:
     lutris: pixel-washer
     steamExtra:
     - 3145410
+  installDir:
+    Pixel Washer: {}
+  launch:
+    <base>/pixel-washer.exe:
+    - when:
+      - os: windows
+        store: steam
   steam:
     id: 2572060
 Pixel World:
@@ -1030763,6 +1030956,20 @@ Sker Ritual:
         store: steam
   steam:
     id: 1492070
+'Sker: The Bleeding Veil':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4119440.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4119440.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 4119440
 Sketch Tales:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_384090.bin:
@@ -1089211,6 +1089418,8 @@ Starsiege:
       - config
       when:
       - os: windows
+  id:
+    lutris: starsiege-tribes
 Starsky & Hutch:
   id:
     lutris: starsky-hutch
@@ -1156789,9 +1156998,16 @@ Thank You Bus Driver:
       - save
       when:
       - store: steam
-    <winLocalAppData>/ThankYouBusDriver/Saved/SaveGames/*.sav:
+    <winLocalAppData>/ThankYouBusDriver/Saved/Config/Windows:
+      tags:
+      - config
       when:
-      - store: steam
+      - os: windows
+    <winLocalAppData>/ThankYouBusDriver/Saved/SaveGames/*.sav:
+      tags:
+      - save
+      when:
+      - os: windows
   gog:
     id: 1235237947
   installDir:
@@ -1228876,6 +1229092,26 @@ The Witch's Love Diary:
       - store: steam
   steam:
     id: 972160
+The Witch's Warehouse Management:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3981660.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3981660.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    The Witch's Warehouse Management: {}
+  launch:
+    <base>/The Witch's Warehouse Management.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 3981660
 The Witch's Yarn:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_287740.bin:
@@ -1236544,6 +1236780,8 @@ Throne of Darkness:
       - os: windows
   gog:
     id: 2060341617
+  id:
+    lutris: throne-of-darkness
 Throne of Lies:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_595280.bin:
@@ -1260333,6 +1260571,18 @@ Toy Story:
       - save
       when:
       - store: steam
+    <winAppData>/Disney/Toy Story 3 Complete Edition/**/Saved Game:
+      when:
+      - os: windows
+        store: steam
+  installDir:
+    Toy Story 3 Complete Edition: {}
+  launch:
+    <base>/Toy Story 3 Complete Edition.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 4049180
 'Toy Story 3: The Video Game':
@@ -1260403,6 +1260653,18 @@ Toy Story Mania!:
       - save
       when:
       - store: steam
+    <winAppData>/Disney/Toy Story Retro Roundup!/saves:
+      when:
+      - os: windows
+        store: steam
+  installDir:
+    Toy Story Retro Roundup: {}
+  launch:
+    <base>/Toy Story Retro Roundup!.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 4049170
 Toy Tanks:
@@ -1270211,6 +1270473,9 @@ Tribe of Pok:
         store: steam
   steam:
     id: 388830
+Tribes 2:
+  id:
+    lutris: tribes-2
 'Tribes 3: Rivals':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_2687970.bin:
@@ -1270290,6 +1270555,8 @@ Tribes of Midgard - Open Beta:
       - config
       when:
       - os: windows
+  id:
+    lutris: tribes-ascend
   installDir:
     Tribes: {}
   launch:
@@ -1383943,7 +1384210,7 @@ Zeus vs Monsters:
       when:
       - store: steam
   gog:
-    id: 1207659039
+    id: 120765903
   id:
     lutris: zeus-poseidon-acropolis
   installDir:
