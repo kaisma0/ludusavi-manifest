@@ -142905,6 +142905,14 @@ Blaster! (2026):
       - store: steam
   gog:
     id: 1952785258
+  id:
+    gogExtra:
+    - 1275219184
+    - 1730479498
+    - 2121942105
+    steamExtra:
+    - 4994300
+    - 5173900
   installDir:
     Blaster!: {}
   launch:
@@ -165933,9 +165941,11 @@ Breathedge 2:
       - save
       when:
       - store: steam
-    <winLocalAppData>/Breathedge2Game/Saved/SaveGames/*.sav:
+    <winLocalAppData>/Breathedge2Game/Saved/SaveGames:
+      tags:
+      - save
       when:
-      - store: steam
+      - os: windows
   id:
     lutris: breathedge-2
   installDir:
@@ -202328,6 +202338,44 @@ ChainMan:
     ChainMan: {}
   steam:
     id: 646300
+Chained Beasts:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3569420.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3569420.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/.config/unity3d/Featherweight Games/ChainedBeasts/SaveData:
+      when:
+      - os: linux
+        store: steam
+    <home>/AppData/LocalLow/Featherweight Games/ChainedBeasts/SaveData:
+      when:
+      - store: steam
+    <home>/Library/Application Support/unity.Featherweight Games.ChainedBeasts/SaveData:
+      when:
+      - os: mac
+        store: steam
+  installDir:
+    Chained Beasts: {}
+  launch:
+    <base>/ChainedBeasts.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/ChainedBeasts.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 3569420
 Chained Echoes:
   cloud:
     gog: true
@@ -226832,6 +226880,8 @@ Clutch (2027):
       - save
       when:
       - store: steam
+  id:
+    lutris: clutch--1
   steam:
     id: 3061930
 Clutchball:
@@ -333114,6 +333164,7 @@ Donut County:
   id:
     gogExtra:
     - 1837490372
+    lutris: donut-county
     steamExtra:
     - 931370
   installDir:
@@ -368894,6 +368945,47 @@ Echo Royale:
         store: steam
   steam:
     id: 762010
+Echo Weaver:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2184080.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2184080.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/Moonlight Kids/Echo Weaver/*.dat:
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/Moonlight Kids/Echo Weaver/*.json:
+      when:
+      - store: steam
+    <home>/Library/Application Support/Moonlight Kids/Echo Weaver/*.dat:
+      when:
+      - os: mac
+        store: steam
+    <home>/Library/Application Support/Moonlight Kids/Echo Weaver/*.json:
+      when:
+      - os: mac
+        store: steam
+  installDir:
+    Echo Weaver: {}
+  launch:
+    <base>/Echo Weaver.app/Contents/MacOS/Echo Weaver:
+    - when:
+      - os: mac
+        store: steam
+    <base>/Echo Weaver.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 2184080
 Echo of Combats:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_931070.bin:
@@ -381383,6 +381475,20 @@ Encounter of Galaxies:
       - store: steam
   steam:
     id: 615390
+Encryption:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3348610.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3348610.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 3348610
 End Space:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_753900.bin:
@@ -469905,6 +470011,8 @@ Gallery One:
   steam:
     id: 912260
 Gallipoli:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3065940.bin:
       tags:
@@ -513588,6 +513696,7 @@ Guts and Syringes:
     gogExtra:
     - 1130692937
     - 1251269536
+    lutris: gwent-rogue-mage
     steamExtra:
     - 1971540
   installDir:
@@ -543582,8 +543691,10 @@ Heroes of Science and Fiction:
   id:
     gogExtra:
     - 1604810943
+    - 1918421028
     steamExtra:
     - 4844630
+    - 4865610
   installDir:
     Silence of the Siren: {}
   launch:
@@ -696224,6 +696335,36 @@ Maestro:
     Maestro: {}
   steam:
     id: 2701700
+Maestro VR:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1327920.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1327920.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/Symphonic Games/Maestro VR/*.sav:
+      when:
+      - os: windows
+        store: steam
+    <home>/AppData/LocalLow/Symphonic Games/Maestro VR/*.sav.bak:
+      when:
+      - os: windows
+        store: steam
+  id:
+    lutris: maestro-vr
+    steamExtra:
+    - 3293890
+  installDir:
+    MaestroVR: {}
+  steam:
+    id: 1327920
 'Maestro: Dark Talent':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_995930.bin:
@@ -810787,6 +810928,12 @@ Odd Town:
     id: 1983259736
   id:
     lutris: odd-town--1
+  installDir:
+    Odd Town: {}
+  launch:
+    <base>/Odd Town.exe:
+    - when:
+      - store: steam
   steam:
     id: 2688780
 OddBallers:
@@ -1151567,6 +1151714,8 @@ TendyTrainer:
   steam:
     id: 983120
 Tenebris Somnia:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_2121510.bin:
       tags:
@@ -1151578,6 +1151727,16 @@ Tenebris Somnia:
       - save
       when:
       - store: steam
+    <winLocalAppData>/TenebrisSomnia/Saved/Config/Windows:
+      tags:
+      - config
+      when:
+      - os: windows
+    <winLocalAppData>/TenebrisSomnia/Saved/SaveGames:
+      tags:
+      - save
+      when:
+      - os: windows
   gog:
     id: 2084941195
   id:
@@ -1151586,6 +1151745,12 @@ Tenebris Somnia:
     lutris: tenebris-somnia
     steamExtra:
     - 2578120
+  installDir:
+    Tenebris Somnia: {}
+  launch:
+    <base>/TenebrisSomnia.exe:
+    - when:
+      - store: steam
   steam:
     id: 2121510
 Tenebrous Dungeon:
@@ -1229273,7 +1229438,11 @@ The Witcher:
   gog:
     id: 1207658930
   id:
-    lutris: the-witcher-2-assassins-of-kings-enhanced-edition
+    lutris: the-witcher-2-assassins-of-kings
+    steamExtra:
+    - 206783
+    - 228460
+    - 1229350
   installDir:
     the witcher 2: {}
   launch:
@@ -1260571,10 +1260740,11 @@ Toy Story:
       - save
       when:
       - store: steam
-    <winAppData>/Disney/Toy Story 3 Complete Edition/**/Saved Game:
+    <winAppData>/Roaming/Disney/Toy Story 3 Complete Edition/savedata:
+      tags:
+      - save
       when:
       - os: windows
-        store: steam
   installDir:
     Toy Story 3 Complete Edition: {}
   launch:
@@ -1266156,6 +1266326,8 @@ Transport Fever 3:
       - os: windows
   gog:
     id: 1721456477
+  id:
+    lutris: transport-fever-3
   installDir:
     Transport Fever 3: {}
   launch:
