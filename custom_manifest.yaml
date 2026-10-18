@@ -94442,6 +94442,13 @@ Auto Chess:
         store: steam
   steam:
     id: 1530300
+Auto Concentration:
+  files:
+    <base>/AUTOCON.T10:
+      tags:
+      - save
+      when:
+      - os: windows
 Auto Dealership Tycoon:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_393920.bin:
@@ -129941,12 +129948,24 @@ Beyond These Stars:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/Balancing Monkey Games/Beyond These Stars/Saves:
+      when:
+      - os: windows
+        store: steam
   gog:
     id: 1107179410
   id:
     lutris: beyond-these-stars
     steamExtra:
     - 2546270
+  installDir:
+    Beyond These Stars: {}
+  launch:
+    <base>/Beyond These Stars.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 2295060
 Beyond Zork:
@@ -189758,6 +189777,20 @@ CarX Drift Racing Online:
       - config
   steam:
     id: 635260
+CarX Rally:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3883610.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3883610.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 3883610
 CarX Street:
   cloud:
     steam: true
@@ -345040,9 +345073,22 @@ Dreadline Express:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/DavidKonecny/DreadlineExpress/steam<storeUserId>/Saves/**/*.data:
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/DavidKonecny/DreadlineExpress/steam<storeUserId>/Saves/**/*.json:
+      when:
+      - store: steam
   id:
     steamExtra:
     - 3411220
+  installDir:
+    DreadlineExpress: {}
+  launch:
+    <base>/DreadlineExpress.exe:
+    - when:
+      - os: windows
+        store: steam
   steam:
     id: 3327120
 Dreadnought:
@@ -384845,13 +384891,18 @@ Enshrouded:
       - save
       when:
       - store: steam
-    <home>/Saved Games/Enshrouded:
+    <home>/Saved Games/keen games/Enshrouded:
       tags:
       - config
       when:
       - os: windows
         store: steam
-    <root>/userdata/<storeUserId>/1203620/remote:
+    <root>/userdata/<storeUserId>/1203620/remote/*.json:
+      tags:
+      - config
+      when:
+      - store: steam
+    <root>/userdata/<storeUserId>/1203620/remote/*.ksd:
       tags:
       - save
       when:
@@ -431805,6 +431856,37 @@ Fire With Fire Tower Attack and Defense:
         store: steam
   steam:
     id: 351630
+Fire and Ashes:
+  cloud:
+    gog: true
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1751730.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1751730.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/SavesDir/*.sav:
+      when:
+      - store: steam
+  gog:
+    id: 2146521586
+  id:
+    lutris: fire-and-ashes
+  installDir:
+    FireAndAshes: {}
+  launch:
+    <base>/FireAndAshes.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 1751730
 'Fire and Fury: English Civil War':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_715270.bin:
@@ -506611,6 +506693,9 @@ Grobnopolis Last Days:
       - save
       when:
       - store: steam
+  id:
+    steamExtra:
+    - 4670260
   steam:
     id: 3851090
 Groggers!:
@@ -774566,6 +774651,18 @@ NHRA Drag Racing Main Event:
       - config
       when:
       - os: windows
+'NHRA Drag Racing: Top Fuel Thunder':
+  files:
+    <base>/UserData/Replay:
+      tags:
+      - save
+      when:
+      - os: windows
+    <base>/UserData/settings.cfg:
+      tags:
+      - config
+      when:
+      - os: windows
 'NHRA: Speed for All':
   alias: 'NHRA Championship Drag Racing: Speed for All'
 NIGHT FALLEN:
@@ -893965,6 +894062,8 @@ Project Rabbit:
       - save
       when:
       - store: steam
+  id:
+    lutris: project-rabbit
   steam:
     id: 4683260
 Project Rampage VR:
@@ -969800,6 +969899,8 @@ Rugosi:
       when:
       - os: windows
         store: steam
+  id:
+    lutris: rugrats-adventures-in-gameland
   installDir:
     Rugrats Advenutres in Gameland: {}
   launch:
@@ -1028765,7 +1028866,6 @@ Sinner:
     id: 1086500
 'Sinner: Sacrifice for Redemption':
   cloud:
-    origin: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_691280.bin:
@@ -1028800,6 +1028900,8 @@ Sinner:
       - save
       when:
       - os: windows
+  id:
+    lutris: sinner-sacrifice-for-redemption
   installDir:
     SINNER: {}
   launch:
@@ -1075109,6 +1075211,9 @@ Sponchies:
         store: steam
   steam:
     id: 593670
+'SpongeBob SquarePants: Battle for Bikini Bottom':
+  id:
+    lutris: spongebob-squarepants-battle-for-bikini-bottom--3
 'SpongeBob SquarePants: Battle for Bikini Bottom - Rehydrated':
   cloud:
     gog: true
@@ -1100255,12 +1100360,6 @@ Stranded Deep:
       - config
       when:
       - os: mac
-    <winLocalAppData>/Packages/BeamTeamPublishing.StrandedDeepPC_z3g0437ken9pg/SystemAppData/wgs:
-      tags:
-      - save
-      when:
-      - os: windows
-        store: microsoft
     <xdgConfig>/unity3d/Beam Team Games/Stranded Deep/Data:
       tags:
       - save
@@ -1142060,6 +1142159,16 @@ Tales of Eternia Remastered:
       - save
       when:
       - store: steam
+    <winLocalAppData>/BANDAI NAMCO Entertainment/Tales of Eternia Remastered:
+      when:
+      - store: steam
+  installDir:
+    Tales of Eternia Remastered: {}
+  launch:
+    <base>/Tales of Eternia Remastered.exe:
+    - when:
+      - os: windows
+        store: steam
   steam:
     id: 3470960
 Tales of Glacier (VR):
@@ -1174115,6 +1174224,8 @@ The Dinosaur Operation:
   steam:
     id: 603640
 The DioField Chronicle:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1399080.bin:
       tags:
@@ -1208740,6 +1208851,8 @@ The Pines:
       - save
       when:
       - store: steam
+  id:
+    lutris: the-pines
   steam:
     id: 4271520
 The Pink Panther in Hokus Pokus Pink:
@@ -1222277,6 +1222390,8 @@ The Talos Principle 3:
       - save
       when:
       - store: steam
+  id:
+    lutris: the-talos-principle-iii
   steam:
     id: 3703630
 The Talos Principle VR:
@@ -1229891,6 +1230006,12 @@ The Wolf Among Us:
       - config
       when:
       - os: windows
+    <winLocalAppData>/Packages/TelltaleGames.TheWolfAmongUs-ATelltaleGamesSeries_4p9dzwrngadje/SystemAppData/wgs:
+      tags:
+      - save
+      when:
+      - os: windows
+        store: microsoft
   gog:
     id: 1432213513
   installDir:
@@ -1243944,6 +1244065,8 @@ Tiny Chills - Not From Ear:
       - store: steam
   id:
     lutris: tiny-chills-not-from-ear
+    steamExtra:
+    - 5237240
   steam:
     id: 3878740
 Tiny Combat Arena:
@@ -1251641,6 +1251764,8 @@ Tony Hawk's Pro Skater HD:
       - save
       when:
       - os: windows
+  id:
+    lutris: tony-hawks-pro-skater-hd
   installDir:
     Tony Hawk's Pro Skater HD: {}
   launch:
@@ -1260775,6 +1260900,8 @@ Toy Story:
       - save
       when:
       - os: windows
+  id:
+    lutris: toy-story-3
   installDir:
     Toy Story 3: {}
   launch:
