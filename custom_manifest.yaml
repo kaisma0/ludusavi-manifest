@@ -55764,6 +55764,13 @@ Amalgam:
       - config
   steam:
     id: 1389950
+Amanagi:
+  files:
+    <base>/SaveFile.dat:
+      tags:
+      - save
+      when:
+      - os: windows
 Amanda the Adventurer:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_2166060.bin:
@@ -66199,6 +66206,8 @@ Anno 1404:
       - save
       when:
       - os: windows
+  id:
+    lutris: anno-1404-history-edition
   installDir:
     Anno 1404 - History Edition: {}
   launch:
@@ -66244,6 +66253,8 @@ Anno 1503:
       - save
       when:
       - os: windows
+  id:
+    lutris: anno-1503-history-edition
   installDir:
     Anno 1503 - History Edition: {}
   launch:
@@ -66299,6 +66310,8 @@ Anno 1503:
       - config
       when:
       - os: windows
+  id:
+    lutris: anno-1602-history-edition
   installDir:
     Anno 1602 - History Edition: {}
   launch:
@@ -66376,6 +66389,8 @@ Anno 1701:
       - save
       when:
       - os: windows
+  id:
+    lutris: anno-1701-history-edition
   installDir:
     Anno 1701 - History Edition: {}
   launch:
@@ -81024,6 +81039,26 @@ Arthur's Birthday:
       - store: steam
   steam:
     id: 2471140
+Arthur's Brainteasers:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3461500.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3461500.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Arthur's Thinking Games: {}
+  launch:
+    <base>/Park.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 3461500
 Arthur's Camping Adventure:
   cloud:
     steam: true
@@ -81205,6 +81240,28 @@ Arthur's Preschool:
       when:
       - os: windows
 Arthur's Reading Games:
+  alias: Arthur's Reading Roundup
+Arthur's Reading Race:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2471160.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2471160.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Arthur's Reading Race: {}
+  launch:
+    <base>/Launch Arthur's Reading Race.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 2471160
+Arthur's Reading Roundup:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_4056610.bin:
       tags:
@@ -81228,26 +81285,6 @@ Arthur's Reading Games:
       workingDir: <base>/2001
   steam:
     id: 4056610
-Arthur's Reading Race:
-  files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_2471160.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2471160.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-  installDir:
-    Arthur's Reading Race: {}
-  launch:
-    <base>/Launch Arthur's Reading Race.exe:
-    - when:
-      - store: steam
-  steam:
-    id: 2471160
 Arthur's Sand Castle Contest:
   cloud:
     steam: true
@@ -81304,25 +81341,7 @@ Arthur's Teacher Trouble:
   steam:
     id: 2471150
 Arthur's Thinking Games:
-  files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_3461500.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3461500.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-  installDir:
-    Arthur's Thinking Games: {}
-  launch:
-    <base>/Park.exe:
-    - when:
-      - store: steam
-  steam:
-    id: 3461500
+  alias: Arthur's Brainteasers
 Arthurian Legends:
   cloud:
     steam: true
@@ -108542,6 +108561,8 @@ Balls of Steel:
       - store: steam
   gog:
     id: 1207659165
+  id:
+    lutris: balls-of-steel
   installDir:
     Balls of Steel: {}
   launch:
@@ -183611,7 +183632,7 @@ Call of Duty Black Ops Cold War:
     Call of Duty Black Ops 6: {}
   launch:
     <base>/bootstrapper.exe:
-    - arguments: cod.exe
+    - arguments: cod-cod24.exe
       when:
       - bit: 64
         os: windows
@@ -272520,6 +272541,11 @@ DEFCON:
       - save
       when:
       - store: steam
+    <base>/preferences.txt:
+      tags:
+      - config
+      when:
+      - os: windows
     <home>/.defcon:
       tags:
       - config
@@ -272536,6 +272562,11 @@ DEFCON:
       - config
       when:
       - os: mac
+    <winLocalAppData>/Introversion/Defcon/preferences.txt:
+      tags:
+      - config
+      when:
+      - os: windows
   gog:
     id: 1207659075
   installDir:
@@ -405149,6 +405180,13 @@ F/A-18E Super Hornet:
       - store: steam
   steam:
     id: 776050
+F1 2000:
+  files:
+    <base>/Save:
+      tags:
+      - save
+      when:
+      - os: windows
 F1 2010:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_44310.bin:
@@ -523373,7 +523411,7 @@ Hard Truck 2:
   installDir:
     Hard Truck 2 King of the Road: {}
   launch:
-    <base>/king.exe:
+    <base>/WorkshopModSync.exe:
     - when:
       - os: windows
         store: steam
@@ -627771,7 +627809,7 @@ Killing Time (2017):
   installDir:
     Killing Time Remastered: {}
   launch:
-    <base>/imentet_Shipping_Steam_x64.exe:
+    <base>/KillingTimeResurrected.exe:
     - when:
       - bit: 64
         os: windows
@@ -656793,6 +656831,8 @@ Legion:
       - config
       when:
       - os: windows
+  id:
+    lutris: legion-gold
   installDir:
     Legion: {}
   launch:
@@ -670122,6 +670162,24 @@ Little Big Adventure 2:
     Twinsen's Little Big Adventure Classic: {}
   steam:
     id: 397330
+'Little Big Adventure: Purple Empire':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2352230.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2352230.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  gog:
+    id: 1842768333
+  steam:
+    id: 2352230
 Little Big Workshop:
   cloud:
     epic: true
@@ -703425,6 +703483,7 @@ Makeover Desire - HENSHIN GANBO:
       when:
       - os: windows
   id:
+    lutris: making-history-the-calm-the-storm
     steamExtra:
     - 371190
   installDir:
@@ -736250,10 +736309,14 @@ Minecraft Legends:
       - save
       when:
       - os: mac
+    <winDocuments>/Telltale Games/Minecraft - Story Mode:
+      tags:
+      - save
+      when:
+      - os: windows
     <winDocuments>/Telltale Games/Minecraft Story Mode:
       tags:
       - config
-      - save
       when:
       - os: windows
   gog:
@@ -737288,7 +737351,7 @@ Mini Metro:
   installDir:
     MiniMetro: {}
   launch:
-    <base>/MiniMetro.app/Contents/MacOS/MiniMetro:
+    <base>/MiniMetro.app:
     - when:
       - os: mac
         store: steam
@@ -737360,7 +737423,7 @@ Mini Motorways:
   installDir:
     Mini Motorways: {}
   launch:
-    <base>/Mini Motorways.app/Contents/MacOS/Mini Motorways:
+    <base>/Mini Motorways.app:
     - when:
       - os: mac
         store: steam
@@ -778160,6 +778223,27 @@ Narcosis:
         store: steam
   steam:
     id: 637860
+"Narg\xFCl: Humans Are Among Us":
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1646810.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1646810.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/3DDDgames/NARGUL - Humans are among us:
+      tags:
+      - save
+      when:
+      - os: windows
+  installDir:
+    NARGUL-HumansAreAmongUs: {}
+  steam:
+    id: 1646810
 'Narin: The Orange Room':
   cloud:
     steam: true
@@ -894104,6 +894188,8 @@ Project Reignition:
       - save
       when:
       - os: windows
+  id:
+    lutris: project-reignition
 Project Remedium:
   cloud:
     steam: true
@@ -919288,6 +919374,8 @@ Rails Across America:
       - save
       when:
       - os: windows
+  id:
+    lutris: rails-across-america
   installDir:
     Rails Across America: {}
   launch:
@@ -927303,6 +927391,9 @@ Realm of Ink:
       - os: windows
   id:
     lutris: realm-of-ink
+    steamExtra:
+    - 2708460
+    - 2710500
   installDir:
     Realm of Ink: {}
   launch:
@@ -987009,6 +987100,8 @@ Sanctum:
       - config
       when:
       - os: windows
+  id:
+    lutris: sanctum
   installDir:
     Sanctum: {}
   launch:
@@ -987064,6 +987157,8 @@ Sanctum 2:
       - save
       when:
       - os: linux
+  id:
+    lutris: sanctum-2
   installDir:
     Sanctum2: {}
   launch:
@@ -1002081,6 +1002176,12 @@ Sengoku Rance:
       - os: windows
   gog:
     id: 1567591607
+  installDir:
+    Sengoku Rance: {}
+  launch:
+    <base>/Rance7.exe:
+    - when:
+      - store: steam
   steam:
     id: 3867170
 Senity:
@@ -1100296,6 +1100397,18 @@ Stranded:
         store: steam
   steam:
     id: 295250
+Stranded (2003):
+  files:
+    <base>/sav:
+      tags:
+      - save
+      when:
+      - os: windows
+    <base>/settings.cfg:
+      tags:
+      - config
+      when:
+      - os: windows
 Stranded Alone:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_780260.bin:
@@ -1120481,6 +1120594,8 @@ Super Sanctum TD:
       when:
       - os: windows
         store: steam
+  id:
+    lutris: super-sanctum-td
   installDir:
     SanctumTD: {}
   launch:
@@ -1142148,6 +1142263,8 @@ Tales of Escape:
   steam:
     id: 587860
 Tales of Eternia Remastered:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3470960.bin:
       tags:
@@ -1142159,9 +1142276,12 @@ Tales of Eternia Remastered:
       - save
       when:
       - store: steam
-    <winLocalAppData>/BANDAI NAMCO Entertainment/Tales of Eternia Remastered:
+    <winLocalAppData>/BANDAI NAMCO Entertainment/Tales of Eternia Remastered/Saved:
+      tags:
+      - config
+      - save
       when:
-      - store: steam
+      - os: windows
   installDir:
     Tales of Eternia Remastered: {}
   launch:
@@ -1157838,6 +1157958,11 @@ The 11th Hour:
       - save
       when:
       - store: steam
+    <home>/.config/unity3d/Attic Door Productions/The13thDoll:
+      tags:
+      - config
+      when:
+      - os: linux
   gog:
     id: 1365954542
   installDir:
@@ -1219620,17 +1219745,16 @@ The Spectrum Retreat:
       - save
       when:
       - store: steam
+    <root>/userdata/<storeUserId>/763250/remote:
+      tags:
+      - save
+      when:
+      - store: steam
     <winDocuments>/My Games/TheSpectrumRetreat/Saves/SpectrumData:
       tags:
       - save
       when:
       - os: windows
-    <winPublic>/Documents/Steam/<storeUserId>/763250:
-      tags:
-      - save
-      when:
-      - os: windows
-        store: steam
   installDir:
     Spectrum: {}
   launch:
@@ -1229277,6 +1229401,33 @@ The Witch & the 66 Mushrooms:
       - store: steam
   steam:
     id: 891170
+The Witch's Bakery:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2967950.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2967950.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/Sunny Lab/The Witch's Bakery/GameFiles/Slot_0/*.lunne:
+      when:
+      - os: windows
+        store: steam
+  installDir:
+    The Witch's Bakery: {}
+  launch:
+    <base>/The Witch's Bakery.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 2967950
 The Witch's House MV:
   cloud:
     gog: true
@@ -1260939,6 +1261090,8 @@ Toy Story Mania!:
   steam:
     id: 317580
 'Toy Story: Retro Roundup!':
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_4049170.bin:
       tags:
@@ -1260950,18 +1261103,28 @@ Toy Story Mania!:
       - save
       when:
       - store: steam
-    <winAppData>/Disney/Toy Story Retro Roundup!/saves:
+    <winAppData>/Disney/Toy Story Retro Roundup!/saves/*.bst0:
+      tags:
+      - save
       when:
       - os: windows
-        store: steam
+    <winAppData>/Disney/Toy Story Retro Roundup!/saves/*.bst1:
+      tags:
+      - save
+      when:
+      - os: windows
+    <winAppData>/Disney/Toy Story Retro Roundup!/saves/*.bst2:
+      tags:
+      - save
+      when:
+      - os: windows
+    <winAppData>/Disney/Toy Story Retro Roundup!/settings_main.json:
+      tags:
+      - config
+      when:
+      - os: windows
   installDir:
     Toy Story Retro Roundup: {}
-  launch:
-    <base>/Toy Story Retro Roundup!.exe:
-    - when:
-      - bit: 64
-        os: windows
-        store: steam
   steam:
     id: 4049170
 Toy Tanks:
@@ -1280864,23 +1281027,7 @@ Twins of the Pasture:
   steam:
     id: 649580
 Twinsen's Little Big Adventure 2 Remastered:
-  cloud:
-    steam: true
-  files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_2352230.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2352230.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-  gog:
-    id: 1842768333
-  steam:
-    id: 2352230
+  alias: 'Little Big Adventure: Purple Empire'
 Twinsen's Little Big Adventure Remastered:
   alias: "Little Big Adventure \u2013 Twinsen\u2019s Quest"
 Twinship:
