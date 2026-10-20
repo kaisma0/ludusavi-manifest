@@ -148817,6 +148817,8 @@ Blood will be Spilled:
       - os: windows
   gog:
     id: 1971203245
+  id:
+    lutris: blood-refreshed-supply
   installDir:
     Blood - Refreshed Supply: {}
   launch:
@@ -179432,56 +179434,6 @@ CART Precision Racing:
       - config
       when:
       - os: windows
-'CASE: Animatronics':
-  cloud:
-    steam: true
-  files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_489360.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_489360.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <root>/userdata/<storeUserId>/489360/remote:
-      tags:
-      - config
-      - save
-      when:
-      - os: windows
-        store: steam
-  installDir:
-    CASE Animatronics: {}
-  launch:
-    <base>/case.app/Contents/MacOS/case:
-    - when:
-      - os: mac
-        store: steam
-    <base>/case.x86:
-    - when:
-      - bit: 32
-        os: linux
-        store: steam
-    <base>/case.x86_64:
-    - when:
-      - bit: 64
-        os: linux
-        store: steam
-    <base>/case32.exe:
-    - when:
-      - bit: 32
-        os: windows
-        store: steam
-    <base>/case64.exe:
-    - when:
-      - bit: 64
-        os: windows
-        store: steam
-  steam:
-    id: 489360
 'CASTILLO: Shattered Mirrors':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1870970.bin:
@@ -184068,6 +184020,11 @@ Call of Duty Black Ops Cold War:
       - save
       when:
       - store: steam
+    <winLocalAppData>/Activision/Call of Duty/players/<storeUserId>:
+      tags:
+      - save
+      when:
+      - os: windows
   steam:
     id: 4435490
 'Call of Duty: Modern Warfare II':
@@ -193468,13 +193425,13 @@ Cartoony Cars 2:
       - save
       when:
       - store: steam
+    <winLocalAppData>/Case/Saved/SaveGames/*.sav:
+      when:
+      - store: steam
+  id:
+    lutris: case-2-animatronics-survival
   installDir:
     CASE 2 Animatronics Survival: {}
-  launch:
-    <base>/Case2.exe:
-    - when:
-      - os: windows
-        store: steam
   steam:
     id: 722960
 Case 8:
@@ -193526,6 +193483,65 @@ Case Opener Guns:
         store: steam
   steam:
     id: 976720
+'Case Records: Fear of Abduction':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2826400.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2826400.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/AuroraCityofHorrors/Saved/SaveGames/Slot1.sav:
+      when:
+      - os: windows
+        store: steam
+  id:
+    lutris: case-records-fear-of-abduction
+  installDir:
+    CASE RECORDS Fear of Abduction: {}
+  launch:
+    <base>/AuroraCityofHorrors.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 2826400
+'Case Records: Lost Night':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3520330.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3520330.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/ToyFactory/Saved/DefoltSlot/*.sav:
+      when:
+      - os: windows
+        store: steam
+  id:
+    lutris: case-records-lost-night
+  installDir:
+    CASE RECORDS Lost Night: {}
+  launch:
+    <base>/ToyFactory.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+  steam:
+    id: 3520330
 Case Simulator Weapons and Armors:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_973200.bin:
@@ -193550,6 +193566,77 @@ Case Simulator Weapons and Armors:
         store: steam
   steam:
     id: 973200
+'Case: Animatronics':
+  cloud:
+    epic: true
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_489360.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_489360.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <root>/userdata/<storeUserId>/489360/remote:
+      tags:
+      - config
+      - save
+      when:
+      - os: windows
+        store: steam
+  id:
+    lutris: case-animatronics
+    steamExtra:
+    - 500650
+  installDir:
+    CASE Animatronics: {}
+  launch:
+    <base>/case.app/Contents/MacOS/case:
+    - when:
+      - os: mac
+        store: steam
+    <base>/case.x86:
+    - when:
+      - bit: 32
+        os: linux
+        store: steam
+    <base>/case.x86_64:
+    - when:
+      - bit: 64
+        os: linux
+        store: steam
+    <base>/case32.exe:
+    - when:
+      - bit: 32
+        os: windows
+        store: steam
+    <base>/case64.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+  steam:
+    id: 489360
+'Case: Animatronics Redux':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5037250.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5037250.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5037250
 Casey Powell Lacrosse 16:
   cloud:
     steam: true
@@ -301445,6 +301532,12 @@ Deer Hunter 2004:
       - config
       when:
       - os: windows
+'Deer Hunter 3: The Legend Continues':
+  id:
+    lutris: deer-hunter-3-the-legend-continues
+'Deer Hunter 4: World-Class Record Bucks':
+  id:
+    lutris: deer-hunter-4-world-class-record-bucks
 'Deer Hunter 5: Tracking Trophies':
   id:
     lutris: deer-hunter-5-tracking-trophies
@@ -338274,6 +338367,20 @@ Dr. Green:
       - config
   steam:
     id: 409160
+Dr. Matben:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2907670.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2907670.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 2907670
 Dr. Pills:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_836790.bin:
@@ -347394,32 +347501,7 @@ Dreamwild:
   steam:
     id: 2168450
 Dreamworks Spirit Lucky's Big Adventure:
-  cloud:
-    steam: true
-  files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_1270720.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1270720.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <home>/AppData/LocalLow/aheartfulofgames/Dreamworks Spirit Lucky's Big Adventure:
-      when:
-      - store: steam
-  installDir:
-    Spirit: {}
-  launch:
-    <base>/Spirit.exe:
-    - when:
-      - bit: 64
-        os: windows
-        store: steam
-  steam:
-    id: 1270720
+  alias: 'Spirit: Lucky''s Big Adventure'
 Dredge:
   cloud:
     epic: true
@@ -409405,6 +409487,31 @@ Fading Afternoon:
         store: steam
   steam:
     id: 1687000
+Fading Echo:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2467880.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2467880.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/UE_YGRO/Saved/SaveGames/<storeUserId>/*.sav:
+      when:
+      - store: steam
+  installDir:
+    "Project Ygr\u03CC": {}
+  launch:
+    <base>/FadingEcho.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 2467880
 Fading Hearts:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_259720.bin:
@@ -432619,9 +432726,6 @@ Fireside Feelings:
   steam:
     id: 2990600
 Firestone Idle RPG:
-  cloud:
-    epic: true
-    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1013320.bin:
       tags:
@@ -432633,9 +432737,13 @@ Firestone Idle RPG:
       - save
       when:
       - store: steam
-    <base>/SavesDir/*.sav:
+    Stored on the developer's servers.:
+      tags:
+      - save
       when:
-      - store: steam
+      - os: windows
+      - os: mac
+      - os: linux
   installDir:
     Firestone: {}
   launch:
@@ -456509,6 +456617,12 @@ Fries Drive:
   id:
     steamExtra:
     - 4185570
+  installDir:
+    Fries Drive: {}
+  launch:
+    <base>/Fries Drive.exe:
+    - when:
+      - store: steam
   steam:
     id: 3897690
 Fright:
@@ -499292,6 +499406,13 @@ Graphite:
       - save
       when:
       - store: steam
+  installDir:
+    Graphite: {}
+  launch:
+    <base>/Graphite.exe:
+    - when:
+      - os: windows
+        store: steam
   steam:
     id: 3080560
 Grapple:
@@ -700129,6 +700250,33 @@ Magilore:
         store: steam
   steam:
     id: 724520
+'Magin: The Rat Project Stories':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1205270.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1205270.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/The Rat Project/Magin_ The Rat Project Stories/Slot_*.save:
+      when:
+      - os: windows
+        store: steam
+  installDir:
+    The Rat Project: {}
+  launch:
+    <base>/Magin The Rat Project Stories.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 1205270
 Magistrangers:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1129110.bin:
@@ -793709,8 +793857,35 @@ Nighthawks:
       - save
       when:
       - store: steam
+    <base>/saves/**/*.*:
+      when:
+      - store: steam
+    <home>/.local/share/Nighthawks/saves/**/*.*:
+      when:
+      - os: linux
+        store: steam
+    <home>/Library/Application Support/Nighthawks/saves/**/*.*:
+      when:
+      - os: mac
+        store: steam
+    <winAppData>/Nighthawks/saves/**/*.*:
+      when:
+      - os: windows
+        store: steam
   gog:
     id: 1732837498
+  installDir:
+    Nighthawks: {}
+  launch:
+    <base>/nighthawks.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/nighthawks.x86_64:
+    - when:
+      - bit: 64
+        os: linux
+        store: steam
   steam:
     id: 1221950
 Nightingale:
@@ -877179,6 +877354,12 @@ Poly Fighter:
   id:
     steamExtra:
     - 4398040
+  installDir:
+    Poly Fighter: {}
+  launch:
+    <base>/Poly Fighter.exe:
+    - when:
+      - store: steam
   steam:
     id: 3977340
 Poly Fishing:
@@ -883391,6 +883572,8 @@ Powerslide:
       - store: steam
   gog:
     id: 1207659116
+  id:
+    lutris: powerslide
   installDir:
     Powerslide: {}
   launch:
@@ -925610,6 +925793,20 @@ ReThink 5:
         store: steam
   steam:
     id: 3363310
+'ReThink: Evolved Free':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4081880.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4081880.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 4081880
 'ReThink: Lite':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_2481710.bin:
@@ -1013877,6 +1014074,36 @@ Sheepo:
         store: steam
   steam:
     id: 1568400
+Shell of a King:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2384130.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2384130.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/RosuneStudios/Shell of a King/File*:
+      tags:
+      - save
+      when:
+      - os: windows
+  id:
+    lutris: shell-of-a-king
+  installDir:
+    Shell of a King: {}
+  launch:
+    <base>/Shell of a King.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 2384130
 'ShellBlast: Legacy Edition':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_841440.bin:
@@ -1073668,6 +1073895,35 @@ Spirit of the North 2:
         store: steam
   steam:
     id: 1778840
+'Spirit: Lucky''s Big Adventure':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1270720.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1270720.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/aheartfulofgames/Dreamworks Spirit Lucky's Big Adventure:
+      when:
+      - store: steam
+  id:
+    lutris: dreamworks-spirit-luckys-big-adventure
+  installDir:
+    Spirit: {}
+  launch:
+    <base>/Spirit.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+  steam:
+    id: 1270720
 SpiritSphere:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_458170.bin:
@@ -1098051,6 +1098307,37 @@ Stonekeep:
         store: steam
   steam:
     id: 613240
+Stonemachia:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2982610.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2982610.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/Stonemachia/Saved/Config/Windows:
+      tags:
+      - config
+      when:
+      - os: windows
+    <winLocalAppData>/Stonemachia/Saved/SaveGames:
+      tags:
+      - save
+      when:
+      - os: windows
+  installDir:
+    Stonemachia: {}
+  launch:
+    <base>/Stonemachia.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 2982610
 Stonerid:
   cloud:
     steam: true
@@ -1211829,19 +1212116,7 @@ The Rare Nine:
   steam:
     id: 726800
 The Rat Project:
-  files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_1205270.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1205270.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-  steam:
-    id: 1205270
+  alias: 'Magin: The Rat Project Stories'
 The Raven Remastered:
   cloud:
     gog: true
@@ -1376812,7 +1377087,7 @@ You Know The Drill:
       - save
       when:
       - store: steam
-    <home>/.local/share/godot/app_userdata/You Know The Drill!/saves/*.save:
+    <home>/.local/share/godot/app_userdata/You Know the Drill!/saves/*.save:
       when:
       - os: linux
         store: steam
@@ -1376828,6 +1377103,10 @@ You Know The Drill:
   launch:
     <base>/yktd.exe:
     - when:
+      - os: windows
+        store: steam
+    - arguments: --rendering-driver vulkan
+      when:
       - os: windows
         store: steam
     <base>/yktd.x86_64:
