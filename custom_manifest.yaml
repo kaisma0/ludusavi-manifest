@@ -1257,6 +1257,20 @@ $1 Ride:
         store: steam
   steam:
     id: 1015140
+10 Million Pixels:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4738100.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4738100.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 4738100
 10 Minute Barbarian:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_389120.bin:
@@ -45382,6 +45396,34 @@ Aker Fern:
       - store: steam
   steam:
     id: 719160
+Akiba Lost:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4131220.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4131220.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/IzanagiGames/AKIBA LOST:
+      tags:
+      - config
+      - save
+      when:
+      - os: windows
+  id:
+    lutris: akiba-lost
+    steamExtra:
+    - 4441050
+    - 4885210
+    - 4889930
+  steam:
+    id: 4131220
 'Akiba''s Trip: Hellbound & Debriefed':
   cloud:
     gog: true
@@ -64099,6 +64141,11 @@ Anima Flux:
       when:
       - os: windows
         store: steam
+  gog:
+    id: 1133349270
+  id:
+    gogExtra:
+    - 1187788294
   installDir:
     Anima Gate of Memories I & II Remastered: {}
   launch:
@@ -74969,6 +75016,23 @@ Archery Practice VR:
       - store: steam
   steam:
     id: 587830
+Archi Vista:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2513150.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2513150.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    steamExtra:
+    - 5374740
+  steam:
+    id: 2513150
 Archibald:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_811360.bin:
@@ -110566,6 +110630,24 @@ Baptism:
         store: steam
   steam:
     id: 747160
+Baptiste:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2922250.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2922250.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    lutris: baptiste
+    steamExtra:
+    - 2922270
+  steam:
+    id: 2922250
 Baptize Billy:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_786950.bin:
@@ -189452,6 +189534,41 @@ Car Park Capital:
         store: steam
   steam:
     id: 3031880
+Car Parking Multiplayer 2:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4252340.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4252340.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/Olzhas/Car Parking 2/GraphicsSettings.json:
+      tags:
+      - config
+      when:
+      - os: windows
+    <home>/AppData/LocalLow/Olzhas/Car Parking 2/SaveFile.es3:
+      tags:
+      - save
+      when:
+      - os: windows
+  installDir:
+    CPM2: {}
+  launch:
+    <base>/CPM2.x86_64:
+    - when:
+      - os: linux
+        store: steam
+    <base>/Car Parking 2.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 4252340
 Car Puzzler:
   cloud:
     steam: true
@@ -249020,6 +249137,10 @@ Cozy Game Restoration:
       - store: steam
   id:
     lutris: cozy-game-restoration
+    steamExtra:
+    - 4668150
+    - 4742270
+    - 5338940
   steam:
     id: 3581230
 Cozy Grove:
@@ -382897,6 +383018,11 @@ Endless Legend 2:
       - bit: 64
         os: windows
         store: steam
+    - arguments: -force-d3d11
+      when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 3407390
 Endless Maneuver:
@@ -389679,6 +389805,12 @@ Escape From Cozy Island:
     lutris: escape-from-crimson-manor-trapped-together
     steamExtra:
     - 4214870
+  installDir:
+    Escape From Crimson Manor Trapped Together: {}
+  launch:
+    <base>/Escape From Crimson Manor.exe:
+    - when:
+      - store: steam
   steam:
     id: 2345430
 Escape From Darkmoor Manor:
@@ -423265,6 +423397,8 @@ Fearwoods:
       - store: steam
   id:
     lutris: fearwoods
+    steamExtra:
+    - 4025550
   steam:
     id: 3296990
 'Feast Your Eyes: Little Marshmallow':
@@ -432714,6 +432848,7 @@ Fireside Feelings:
       when:
       - store: steam
   id:
+    lutris: fireside-feelings
     steamExtra:
     - 3805590
   installDir:
@@ -443635,6 +443770,8 @@ Football Manager 2015:
       when:
       - os: linux
         store: steam
+  id:
+    lutris: football-manager-2015
   installDir:
     Football Manager 2015: {}
   launch:
@@ -534735,7 +534872,7 @@ Helldivers 2:
   installDir:
     Helldivers 2: {}
   launch:
-    <base>/bin/helldivers2.exe:
+    <base>/start_protected_game.exe:
     - arguments: --bundle-dir data --release
       when:
       - bit: 64
@@ -572116,6 +572253,7 @@ I Am Your Beast:
   id:
     steamExtra:
     - 3258570
+    - 4578110
   installDir:
     I Am Your Beast: {}
   launch:
@@ -791396,6 +791534,7 @@ Nexus 5X:
     id: 6420
 Neyyah:
   cloud:
+    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1289720.bin:
@@ -791412,17 +791551,31 @@ Neyyah:
       when:
       - os: windows
         store: steam
+  gog:
+    id: 1528554507
   id:
+    gogExtra:
+    - 1287118854
+    - 1623167881
+    - 1799109882
     lutris: neyyah
     steamExtra:
     - 3539930
   installDir:
     Neyyah: {}
   launch:
+    <base>/Neyyah.app:
+    - when:
+      - os: mac
+        store: steam
     <base>/Neyyah.exe:
     - when:
       - bit: 64
         os: windows
+        store: steam
+    <base>/start:
+    - when:
+      - os: linux
         store: steam
   steam:
     id: 1289720
@@ -805920,6 +806073,23 @@ Number Hunt:
     Number Hunt: {}
   steam:
     id: 851770
+'Number Machine: Math Factory':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2231090.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2231090.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    steamExtra:
+    - 2243290
+  steam:
+    id: 2231090
 Number World:
   cloud:
     steam: true
@@ -810841,6 +811011,7 @@ Octogeddon:
 Octopath Traveler:
   cloud:
     epic: true
+    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_921570.bin:
@@ -810869,6 +811040,8 @@ Octopath Traveler:
       when:
       - os: windows
         store: microsoft
+  gog:
+    id: 1323465345
   id:
     steamExtra:
     - 1083770
@@ -850785,6 +850958,8 @@ Payday 3:
       - save
       when:
       - store: steam
+  id:
+    lutris: payday-aces-high
   steam:
     id: 3456660
 'Payday: The Heist':
@@ -861424,9 +861599,16 @@ Pilot Brothers:
   installDir:
     Pilot Brothers: {}
   launch:
-    <base>/bin/Pilot Brothers.exe:
+    <base>/bin/Launcher-ia32.exe:
     - when:
-      - os: windows
+      - bit: 32
+        os: windows
+        store: steam
+      workingDir: <base>/bin
+    <base>/bin/launcher-x64.exe:
+    - when:
+      - bit: 64
+        os: windows
         store: steam
       workingDir: <base>/bin
   steam:
@@ -890620,6 +890802,22 @@ Probably Archery:
         store: steam
   steam:
     id: 263420
+Probably Stolen:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4348910.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4348910.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 4348910
 Procyon:
   cloud:
     steam: true
@@ -925096,6 +925294,10 @@ Re;Lord 1 ~The Witch of Herfort and Stuffed Animals~:
       - save
       when:
       - store: steam
+  id:
+    lutris: reblade-the-death-spiral
+    steamExtra:
+    - 4513800
   steam:
     id: 3489340
 ReBoot:
@@ -937646,6 +937848,9 @@ Remorses:
   steam:
     id: 4461560
 'Remothered: Red Nun''s Legacy':
+  cloud:
+    epic: true
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3335310.bin:
       tags:
@@ -937661,6 +937866,8 @@ Remorses:
     id: 1933416452
   id:
     lutris: remothered-red-nuns-legacy
+    steamExtra:
+    - 5312670
   steam:
     id: 3335310
 'Remothered: Tormented Fathers':
@@ -942741,6 +942948,24 @@ Retreat to Enen:
       - store: steam
   steam:
     id: 1556490
+Retrieval:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2999120.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2999120.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    lutris: retrieval
+  steam:
+    id: 2999120
 Retro Block VR:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_660820.bin:
@@ -955839,6 +956064,8 @@ Road Rash:
       - config
       - save
 Road Redemption:
+  cloud:
+    gog: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_300380.bin:
       tags:
@@ -955885,6 +956112,23 @@ Road Redemption:
       - save
       when:
       - os: windows
+  gog:
+    id: 1293472819
+  id:
+    gogExtra:
+    - 1099740426
+    - 1580530983
+    - 1875799615
+    - 1900293362
+    - 2069506895
+    - 2081693308
+    steamExtra:
+    - 524890
+    - 625500
+    - 725880
+    - 727050
+    - 727440
+    - 1180010
   installDir:
     RoadRedemption: {}
   launch:
@@ -956772,6 +957016,8 @@ Roark's Attack on Titan Fan Game:
       - config
       when:
       - os: windows
+  id:
+    lutris: roarks-attack-on-titan-fan-game
 Roarr! The Adventures of Rampage Rex:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_834450.bin:
@@ -975162,6 +975408,8 @@ Rustmourne:
       - store: steam
   id:
     lutris: rustmourne
+    steamExtra:
+    - 5011020
   steam:
     id: 3775210
 Rusty Hearts:
@@ -997253,6 +997501,43 @@ Seabed Prelude:
     Seabed Prelude: {}
   steam:
     id: 529730
+Seabun:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4990820.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4990820.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/.local/share/Seabun:
+      tags:
+      - config
+      - save
+      when:
+      - os: linux
+    <home>/Library/Application Support/Seabun:
+      tags:
+      - config
+      - save
+      when:
+      - os: mac
+    <winAppData>/Seabun:
+      tags:
+      - config
+      - save
+      when:
+      - os: windows
+  id:
+    steamExtra:
+    - 5398240
+  steam:
+    id: 4990820
 Seacurity Breach:
   cloud:
     steam: true
@@ -1017496,6 +1017781,32 @@ Shipped:
         store: steam
   steam:
     id: 1037190
+Shipping Store Simulator 2037:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4098030.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4098030.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/Playstrom/Shipping Store Simulator 2037/FileData/Release:
+      when:
+      - os: windows
+        store: steam
+  installDir:
+    Shipping Store Simulator 2037: {}
+  launch:
+    <base>/game.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 4098030
 Ships 2017:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_439460.bin:
@@ -1021110,6 +1021421,20 @@ Shredders:
       - config
   steam:
     id: 1874170
+Shrek 2 Remastered:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2523740.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2523740.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 2523740
 'Shrek 2: Team Action':
   files:
     <base>/Game/Save:
@@ -1067914,6 +1068239,12 @@ Sparkour:
       tags:
       - save
       when:
+      - store: steam
+  installDir:
+    Sparky Rush Purrils in Pawsville!: {}
+  launch:
+    <base>/Vapor Snake.exe:
+    - when:
       - store: steam
   steam:
     id: 3592020
@@ -1185958,6 +1186289,7 @@ The Han Dynasty Imperial Mausoleums:
     id: 568330
 The Hand of Glory:
   cloud:
+    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_961010.bin:
@@ -1185970,6 +1186302,26 @@ The Hand of Glory:
       - save
       when:
       - store: steam
+    <winLocalAppData>/The Hand of Glory/Savegames:
+      tags:
+      - save
+      when:
+      - os: windows
+    <winLocalAppData>/The Hand of Glory/config.ini:
+      tags:
+      - config
+      when:
+      - os: windows
+  gog:
+    id: 1338405553
+  id:
+    gogExtra:
+    - 1785498767
+    - 1835120204
+    lutris: the-hand-of-glory
+    steamExtra:
+    - 989730
+    - 1934010
   installDir:
     The Hand of Glory: {}
   launch:
@@ -1230454,6 +1230806,8 @@ The Wolf Among Us:
   steam:
     id: 250320
 The Wolf Among Us Remastered:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3884860.bin:
       tags:
@@ -1230465,6 +1230819,9 @@ The Wolf Among Us Remastered:
       - save
       when:
       - store: steam
+  id:
+    steamExtra:
+    - 5280090
   steam:
     id: 3884860
 The Wolf's Bite:
