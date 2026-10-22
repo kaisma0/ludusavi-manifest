@@ -7470,6 +7470,8 @@ $1 Ride:
       - save
       when:
       - store: steam
+  id:
+    lutris: 3d-ultra-minigolf-adventures-deluxe
   installDir:
     3D Ultra Mini Golf Adventures: {}
   launch:
@@ -17090,6 +17092,32 @@ A Pixel Story:
         store: steam
   steam:
     id: 339460
+A Place Out Here:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3149450.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3149450.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/Stillmere/Saved/SaveGames:
+      when:
+      - store: steam
+    <base>/Stillmere/Saved/SaveGames/DISv4:
+      when:
+      - store: steam
+  installDir:
+    A Place Out Here: {}
+  launch:
+    <base>/SurvivalGame.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 3149450
 A Place for the Unwilling:
   cloud:
     steam: true
@@ -45422,6 +45450,14 @@ Akiba Lost:
     - 4441050
     - 4885210
     - 4889930
+  installDir:
+    AKIBA LOST: {}
+  launch:
+    <base>/AKIBA LOST.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 4131220
 'Akiba''s Trip: Hellbound & Debriefed':
@@ -69324,6 +69360,10 @@ Antivirus Survivors 2003 Professional:
       when:
       - os: linux
         store: steam
+    <home>/.local/share/AntivirusSurvivors/profiles/<storeUserId>/*.json:
+      when:
+      - os: linux
+        store: steam
     <home>/Library/Application Support/AntivirusSurvivors/*.save:
       when:
       - os: mac
@@ -69332,10 +69372,17 @@ Antivirus Survivors 2003 Professional:
       when:
       - os: mac
         store: steam
+    <home>/Library/Application Support/AntivirusSurvivors/profiles/<storeUserId>/*.json:
+      when:
+      - os: mac
+        store: steam
     <winAppData>/AntivirusSurvivors/*.save:
       when:
       - store: steam
     <winAppData>/AntivirusSurvivors/profiles/*.json:
+      when:
+      - store: steam
+    <winAppData>/AntivirusSurvivors/profiles/<storeUserId>/*.json:
       when:
       - store: steam
   id:
@@ -189449,6 +189496,8 @@ Car Mechanic Simulator 2021:
   steam:
     id: 1190000
 Car Mechanic Simulator 2026:
+  alias: Car Mechanic Simulator 2027
+Car Mechanic Simulator 2027:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_2692660.bin:
       tags:
@@ -305970,6 +306019,17 @@ Dementium II:
       - save
       when:
       - store: steam
+    <winLocalAppData>/Dementium II/Saves/*.*:
+      when:
+      - store: steam
+  installDir:
+    Dementium II: {}
+  launch:
+    <base>/Dementium II.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 5342930
 Dementium II HD:
@@ -306022,6 +306082,8 @@ Dementium II HD:
     <winLocalAppData>/Dementium - The Ward/saves/*.*:
       when:
       - store: steam
+  id:
+    lutris: dementium-the-ward
   installDir:
     Dementium - The Ward: {}
   launch:
@@ -486678,6 +486740,25 @@ GloGo:
         store: steam
   steam:
     id: 764080
+Glob & the Missing Globbies:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4935930.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4935930.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    steamExtra:
+    - 4950650
+  steam:
+    id: 4935930
 Global ATC Simulator:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_270830.bin:
@@ -507855,6 +507936,20 @@ Grounds of Glory:
         store: steam
   steam:
     id: 869120
+Groundwork Simulator:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5306540.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5306540.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5306540
 Grove flowers:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1031290.bin:
@@ -566467,6 +566562,22 @@ Hunger:
         store: steam
   steam:
     id: 581740
+Hunger (2026):
+  cloud:
+    epic: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1752080.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1752080.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 1752080
 Hunger Apartment:
   cloud:
     steam: true
@@ -603634,6 +603745,20 @@ IxSHE Tell:
       - store: steam
   steam:
     id: 1340120
+'Iz and Auggie: Escape from Dimension Q':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5461430.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5461430.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5461430
 Izanami's Dream Battle:
   cloud:
     steam: true
@@ -759522,6 +759647,9 @@ Mr. Records:
       - store: steam
   gog:
     id: 1897263287
+  id:
+    steamExtra:
+    - 4869950
   steam:
     id: 3053470
 Mr. Rescue:
@@ -967342,6 +967470,58 @@ Root Letter:
       - config
   steam:
     id: 550310
+'Roots in the Sky: The Hand of Glory 2':
+  cloud:
+    gog: true
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2062380.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2062380.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/Madit Entertainment/Roots in the Sky - The Hand of Glory 2/Savegames:
+      tags:
+      - save
+      when:
+      - os: windows
+    <winLocalAppData>/Madit Entertainment/Roots in the Sky - The Hand of Glory 2/config.ini:
+      tags:
+      - config
+      when:
+      - os: windows
+  gog:
+    id: 1910404586
+  id:
+    gogExtra:
+    - 1768727131
+    - 1788507471
+    lutris: roots-in-the-sky-the-hand-of-glory-2
+    steamExtra:
+    - 2285560
+    - 5167490
+  installDir:
+    Roots in the Sky - The Hand of Glory 2: {}
+  launch:
+    <base>/Roots in the Sky - The Hand of Glory 2.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/Roots in the Sky.exe:
+    - when:
+      - os: windows
+        store: steam
+    <base>/start:
+    - when:
+      - os: linux
+        store: steam
+  steam:
+    id: 2062380
 Roots of Insanity:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_598440.bin:
@@ -1005355,6 +1005535,22 @@ Serious Sam's Bogus Detour:
       - store: steam
   steam:
     id: 41060
+'Serious Sam: The Third Encounter':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_459920.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_459920.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 459920
 'Serious Sam: Tormental':
   cloud:
     steam: true
@@ -1083763,6 +1083959,18 @@ Star Trek Timelines:
       - save
       when:
       - store: steam
+  installDir:
+    Star Trek Outposts Unknown: {}
+  launch:
+    <base>/StarTrekOutpostsUnknown.app/Contents/MacOS/StarTrekOutpostsUnknown:
+    - when:
+      - os: mac
+        store: steam
+    <base>/StarTrekOutpostsUnknown.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 3469910
 'Star Trek: Resurgence':
@@ -1097967,19 +1098175,7 @@ Still Wakes the Deep:
   steam:
     id: 3465690
 Stillmere:
-  files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_3149450.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3149450.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-  steam:
-    id: 3149450
+  alias: A Place Out Here
 Stilt Fella:
   cloud:
     steam: true
@@ -1107031,10 +1107227,29 @@ Stupid Never Dies:
       - save
       when:
       - store: steam
+    <base>/StupidNeverDies/Saved/SaveGames/<storeUserId>/*.json:
+      when:
+      - store: steam
+    <base>/StupidNeverDies/Saved/SaveGames/<storeUserId>/*.sav:
+      when:
+      - store: steam
+    <winLocalAppData>/StupidNeverDies/Saved/SaveGames/<storeUserId>/*.json:
+      when:
+      - store: steam
+    <winLocalAppData>/StupidNeverDies/Saved/SaveGames/<storeUserId>/*.sav:
+      when:
+      - store: steam
   id:
     lutris: stupid-never-dies
     steamExtra:
     - 4880100
+  installDir:
+    StupidNeverDies: {}
+  launch:
+    <base>/StupidNeverDies.exe:
+    - when:
+      - os: windows
+        store: steam
   steam:
     id: 3486530
 Stupid Quest - Medieval Adventures:
@@ -1183828,6 +1184043,48 @@ The Ghosts of Hackney Mills:
         store: steam
   steam:
     id: 739240
+'The Gigglebone Gang: Infinity City':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5460730.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5460730.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5460730
+'The Gigglebone Gang: Pantsylvania':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5442080.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5442080.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5442080
+'The Gigglebone Gang: World Tour':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5460970.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5460970.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5460970
 The Girl and the Robot:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_270070.bin:
@@ -1269090,6 +1269347,16 @@ Treadnauts:
     id: 695970
 Treasure Adventure Game:
   files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_863940.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_863940.bin:
+      tags:
+      - save
+      when:
+      - store: steam
     <base>/config.ini:
       tags:
       - config
@@ -1269102,6 +1269369,15 @@ Treasure Adventure Game:
       - os: windows
   gog:
     id: 1207659013
+  installDir:
+    TreasureAdventureGame: {}
+  launch:
+    <base>/tag_launcher.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 863940
 Treasure Adventure World:
   cloud:
     steam: true
@@ -1294019,6 +1294295,23 @@ Unhappy Ever After:
         store: steam
   steam:
     id: 552350
+Unharvest:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5138990.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5138990.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    steamExtra:
+    - 5165160
+  steam:
+    id: 5138990
 Unheard:
   cloud:
     steam: true
@@ -1300184,6 +1300477,17 @@ Usurper:
       - save
       when:
       - store: steam
+    <base>/savedata:
+      when:
+      - store: steam
+  installDir:
+    Utawarerumono ZAN 2: {}
+  launch:
+    <base>/UtawarerumonoZAN2.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 3074850
 Uterine Supremacy:
@@ -1309725,6 +1310029,20 @@ Velev:
         store: steam
   steam:
     id: 2790930
+Velma's Costume Closet:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5464760.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5464760.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5464760
 Velocibox:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_317710.bin:
