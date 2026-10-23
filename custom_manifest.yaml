@@ -149995,8 +149995,19 @@ Bloodville:
       - save
       when:
       - store: steam
+    <winLocalAppData>/BLOODVILLE/Saved/SaveGames/*.sav:
+      when:
+      - os: windows
+        store: steam
   id:
     lutris: bloodville
+  installDir:
+    BLOODVILLE: {}
+  launch:
+    <base>/BLOODVILLE.exe:
+    - when:
+      - bit: 64
+        store: steam
   steam:
     id: 3802770
 'Bloodwings: Pumpkinhead''s Revenge':
@@ -170556,6 +170567,33 @@ Brotato:
         store: steam
   steam:
     id: 1942280
+Brothel Master:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3892630.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3892630.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/BrothelSim/Saved/SaveGames/save.sav:
+      when:
+      - os: windows
+        store: steam
+  installDir:
+    Brothel Master: {}
+  launch:
+    <base>/BrothelMaster.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 3892630
 Brother Bear:
   files:
     <winProgramData>/Disney Interactive/Brother Bear/System:
@@ -176339,6 +176377,13 @@ Buried Alive VR:
     Buried Alive VR: {}
   steam:
     id: 678830
+Buried stars:
+  files:
+    <home>/AppData/LocalLow/LINE Games/BURIED STARS:
+      tags:
+      - save
+      when:
+      - os: windows
 'Buried: An Interactive Story':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_434370.bin:
@@ -238805,6 +238850,9 @@ Concrete and Steel:
   steam:
     id: 444830
 Concubine:
+  cloud:
+    gog: true
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_2426120.bin:
       tags:
@@ -391476,6 +391524,42 @@ Escape from Paradise 2:
       - store: steam
   steam:
     id: 47120
+Escape from Playtime:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2087540.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2087540.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/EscapeFromPlaytime/Saved/Config/Windows:
+      tags:
+      - config
+      when:
+      - os: windows
+    <winLocalAppData>/EscapeFromPlaytime/Saved/SaveGames:
+      tags:
+      - save
+      when:
+      - os: windows
+  id:
+    steamExtra:
+    - 5309180
+    - 5401680
+  installDir:
+    Escape From Playtime: {}
+  launch:
+    <base>/EscapeFromPlaytime.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+  steam:
+    id: 2087540
 Escape from Pleasure Planet:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_504410.bin:
@@ -407049,6 +407133,8 @@ FIFA 17:
       - config
       when:
       - os: windows
+  id:
+    lutris: fifa-17
 FIFA 18:
   cloud:
     origin: true
@@ -418869,8 +418955,6 @@ Farming Incremental But With Guns:
       - save
       when:
       - os: windows
-  id:
-    lutris: farming-incremental-but-with-guns
   installDir:
     Farming Incremental But With Guns: {}
   launch:
@@ -429074,6 +429158,23 @@ Final Fantasy Resonance:
       tags:
       - save
       when:
+      - store: steam
+    <winLocalAppData>/FFRS/Steam/<storeUserId>/GameSaveData*.sav:
+      when:
+      - os: windows
+        store: steam
+    <winLocalAppData>/FFRS_DEMO/Steam/<storeUserId>/GameSaveData*.sav:
+      when:
+      - os: windows
+        store: steam
+  id:
+    steamExtra:
+    - 4347910
+  installDir:
+    FINAL FANTASY RESONANCE: {}
+  launch:
+    <base>/FFRS.exe:
+    - when:
       - store: steam
   steam:
     id: 3259780
@@ -451567,6 +451668,50 @@ Foundry:
         store: steam
   steam:
     id: 983870
+Fountains:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1841240.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1841240.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>.local/share/godot/app_userdata/Fountains/saves_RELEASE/*.fsave:
+      when:
+      - os: linux
+        store: steam
+    <home>/Library/Application Support/Godot/app_userdata/Fountains/saves_RELEASE/*.fsave:
+      when:
+      - os: mac
+        store: steam
+    <winAppData>/Godot/app_userdata/Fountains/saves_RELEASE/**/*.fsave:
+      when:
+      - store: steam
+  installDir:
+    FOUNTAINS: {}
+  launch:
+    <base>/FOUNTAINS.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/FOUNTAINS.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+    <base>/FOUNTAINS.x86_64:
+    - when:
+      - bit: 64
+        os: linux
+        store: steam
+  steam:
+    id: 1841240
 Four Color Jump:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1656640.bin:
@@ -561402,6 +561547,7 @@ Hotel Architect:
     id: 1602000
 Hotel Barcelona:
   cloud:
+    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_2286600.bin:
@@ -561419,6 +561565,14 @@ Hotel Barcelona:
       - save
       when:
       - os: windows
+  gog:
+    id: 1296112477
+  id:
+    gogExtra:
+    - 1082855294
+    - 1216529154
+    steamExtra:
+    - 4582750
   installDir:
     HOTEL BARCELONA: {}
   launch:
@@ -683258,6 +683412,10 @@ Love Language Japanese:
     - when:
       - os: windows
         store: steam
+  registry:
+    HKEY_CURRENT_USER/Software/Initiative Media/Love Language Japanese:
+      tags:
+      - save
   steam:
     id: 445800
 Love Letter:
@@ -690547,6 +690705,27 @@ Lyne:
       - config
   steam:
     id: 266010
+'Lynked: Banner of the Spark':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3159570.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3159570.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Lynked Banner of the Spark: {}
+  launch:
+    <base>/Saturn.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 3159570
 Lynne:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_885640.bin:
@@ -801875,6 +802054,25 @@ Nomad:
         store: steam
   steam:
     id: 378370
+Nomad Drive:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2223980.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2223980.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    steamExtra:
+    - 4451030
+    - 4568400
+    - 5199100
+  steam:
+    id: 2223980
 Nomad Fleet:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_371010.bin:
@@ -820104,6 +820302,8 @@ One Piece Odyssey:
       - save
       when:
       - store: steam
+  id:
+    lutris: one-piece-grand-gourmet
   steam:
     id: 3905010
 'One Piece: Pirate Warriors 3':
@@ -916128,6 +916328,7 @@ RaceRoom Racing Experience:
       when:
       - os: windows
   id:
+    lutris: raceroom-racing-experience
     steamExtra:
     - 272770
     - 331800
@@ -916140,6 +916341,13 @@ RaceRoom Racing Experience:
     - 455280
   installDir:
     raceroom racing experience: {}
+  launch:
+    <base>/Game/x64dxvk/RRRE64.exe:
+    - when:
+      - bit: 64
+        os: linux
+        store: steam
+      workingDir: <base>/Game/x64dxvk
   steam:
     id: 211500
 RaceXXL Space:
@@ -1066388,6 +1066596,27 @@ SpaceShot:
         store: steam
   steam:
     id: 675940
+SpaceTanks:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4185150.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4185150.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Space Tanks: {}
+  launch:
+    <base>/Space_Tanks.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 4185150
 SpaceTone:
   cloud:
     steam: true
@@ -1107242,6 +1107471,7 @@ Stupid Never Dies:
   id:
     lutris: stupid-never-dies
     steamExtra:
+    - 4228930
     - 4880100
   installDir:
     StupidNeverDies: {}
@@ -1184043,6 +1184273,20 @@ The Ghosts of Hackney Mills:
         store: steam
   steam:
     id: 739240
+'The Gigglebone Gang: AlphaBonk Farm':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5450950.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5450950.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5450950
 'The Gigglebone Gang: Infinity City':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_5460730.bin:
@@ -1269817,6 +1270061,8 @@ Treasure of Nadia:
       - os: windows
   gog:
     id: 1592693763
+  id:
+    lutris: treasure-of-nadia
   installDir:
     Treasure of Nadia: {}
   launch:
@@ -1314758,6 +1315004,32 @@ Vikings Wars:
       - store: steam
   steam:
     id: 1216930
+'Vikings: Sex and Blood':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2774580.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2774580.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/Viking/Saved/SaveGames/**/*.sav:
+      when:
+      - store: steam
+  installDir:
+    Vikings Sex and Blood: {}
+  launch:
+    <base>/VikingsSexAndBlood.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 2774580
 'Vikings: Wolves of Midgard':
   cloud:
     steam: true
@@ -1315559,6 +1315831,16 @@ Vintage Hero:
     id: 667240
 Vintage Story:
   files:
+    <home>/.config/VintagestoryData/Saves:
+      tags:
+      - save
+      when:
+      - os: linux
+    <home>/.config/VintagestoryData/clientsettings.json:
+      tags:
+      - config
+      when:
+      - os: linux
     <home>/.var/app/at.vintagestory.VintageStory/config/VintagestoryData/Saves:
       tags:
       - save
@@ -1340786,6 +1341068,17 @@ We Were Here Tomorrow:
       - save
       when:
       - store: steam
+    <base>/SavesDir/*.data:
+      when:
+      - store: steam
+  installDir:
+    We Were Here Tomorrow: {}
+  launch:
+    <base>/We Were Here Tomorrow.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 2315050
 We Were Here Too:
@@ -1351426,6 +1351719,22 @@ Wildcat Gun Machine:
         store: steam
   steam:
     id: 1288610
+Wildekin:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1368180.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1368180.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    lutris: wildekin
+  steam:
+    id: 1368180
 Wildermyth:
   cloud:
     gog: true
