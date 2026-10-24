@@ -28235,23 +28235,31 @@ Ace Attorney Investigations Collection:
   id:
     steamExtra:
     - 3594180
+    - 3635880
   installDir:
     ACE COMBAT 8: {}
   steam:
     id: 2288340
 'Ace Combat Zero: The Belkan War':
+  cloud:
+    steam: true
   files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_3635880.bin:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5370600.bin:
       tags:
       - save
       when:
       - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3635880.bin:
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5370600.bin:
       tags:
       - save
       when:
       - store: steam
     <base>/ACE COMBAT 8/ACZero/settings/setting.ini:
+      tags:
+      - config
+      when:
+      - os: windows
+    <base>/ACZero/settings/setting.ini:
       tags:
       - config
       when:
@@ -28262,8 +28270,13 @@ Ace Attorney Investigations Collection:
       when:
       - os: windows
         store: steam
+  id:
+    steamExtra:
+    - 3635880
+  installDir:
+    ACE COMBAT ZERO THE BELKAN WAR (Steam Version): {}
   steam:
-    id: 3635880
+    id: 5370600
 'Ace Combat: Assault Horizon - Enhanced Edition':
   cloud:
     steam: true
@@ -122854,6 +122867,8 @@ Beat Saber:
     - 4886390
     - 4886400
     - 4886410
+    - 5191250
+    - 5308330
   installDir:
     Beat Saber: {}
   steam:
@@ -126665,6 +126680,9 @@ Ben and Ed - Blood Party:
   steam:
     id: 500260
 Bendy and the Dark Revival:
+  cloud:
+    epic: true
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1063660.bin:
       tags:
@@ -126683,6 +126701,10 @@ Bendy and the Dark Revival:
       - os: windows
   gog:
     id: 1466311710
+  id:
+    lutris: bendy-and-the-dark-revival
+    steamExtra:
+    - 4297080
   installDir:
     Bendy and the Dark Revival: {}
   launch:
@@ -184199,6 +184221,8 @@ Call of Duty Black Ops Cold War:
       - save
       when:
       - os: windows
+  id:
+    lutris: call-of-duty-modern-warfare-4
   steam:
     id: 4435490
 'Call of Duty: Modern Warfare II':
@@ -238874,6 +238898,8 @@ Concubine:
       - save
       when:
       - os: windows
+  gog:
+    id: 1237009719
   id:
     lutris: concubine
   installDir:
@@ -270671,6 +270697,14 @@ Cyberpunk 2077:
       - config
       when:
       - os: windows
+      - os: windows
+        store: microsoft
+    <winLocalAppData>/Packages/CDPROJEKTSA.4d0e9834-20b1-4580-9bdc-4501ef2ffaac_0xkrdv0gjmk28/SystemAppData/wgs:
+      tags:
+      - save
+      when:
+      - os: windows
+        store: microsoft
   id:
     gogExtra:
     - 1256837418
@@ -320341,7 +320375,12 @@ Dimetrosaur:
   steam:
     id: 887550
 Dimhaven - The Lost Source:
+  alias: 'Dimhaven: The Lost Source'
+Dimhaven Enigmas:
+  alias: 'Dimhaven: The Lost Source'
+'Dimhaven: The Lost Source':
   cloud:
+    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_2458980.bin:
@@ -320365,10 +320404,15 @@ Dimhaven - The Lost Source:
       when:
       - os: linux
         store: steam
+  gog:
+    id: 1308963382
   id:
+    gogExtra:
+    - 1949666569
     lutris: dimhaven-the-lost-source
     steamExtra:
     - 3010310
+    - 5215080
   installDir:
     Dimhaven - The Lost Source: {}
   launch:
@@ -320386,8 +320430,6 @@ Dimhaven - The Lost Source:
         store: steam
   steam:
     id: 2458980
-Dimhaven Enigmas:
-  alias: Dimhaven - The Lost Source
 Diminutive:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_694400.bin:
@@ -429159,14 +429201,16 @@ Final Fantasy Resonance:
       - save
       when:
       - store: steam
-    <winLocalAppData>/FFRS/Steam/<storeUserId>/GameSaveData*.sav:
+    <winLocalAppData>/FFRS/Saved/Config/Windows:
+      tags:
+      - config
       when:
       - os: windows
-        store: steam
-    <winLocalAppData>/FFRS_DEMO/Steam/<storeUserId>/GameSaveData*.sav:
+    <winLocalAppData>/FFRS/Steam/<storeUserId>:
+      tags:
+      - save
       when:
       - os: windows
-        store: steam
   id:
     steamExtra:
     - 4347910
@@ -597518,6 +597562,12 @@ Invincible VS:
       - save
       when:
       - store: steam
+    <winLocalAppData>/TagFighter/Saved/SaveGames/<storeUserId>/EnhancedInputUserSettings.sav:
+      when:
+      - store: steam
+    <winLocalAppData>/TagFighter/Saved/SaveGames/<storeUserId>/Slot*.sav:
+      when:
+      - store: steam
   id:
     lutris: invincible-vs
     steamExtra:
@@ -633918,6 +633968,37 @@ Kinky Fight Club:
       - store: steam
   steam:
     id: 1237530
+'KinnikuNeko: Super Muscle Cat':
+  cloud:
+    epic: true
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1332950.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1332950.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/Kamotachi/KinnikuNeko SUPER MUSCLE CAT:
+      tags:
+      - config
+      - save
+      when:
+      - os: windows
+  id:
+    lutris: kinnikuneko-super-muscle-cat
+  installDir:
+    KinnikuNeko SUPER MUSCLE CAT: {}
+  launch:
+    <base>/KinnikuNeko SUPER MUSCLE CAT.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 1332950
 Kio's Adventure:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_612070.bin:
@@ -702324,6 +702405,8 @@ Mahjongg The Ultimate Collection 2:
   steam:
     id: 503480
 Mahou Arms:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1165870.bin:
       tags:
@@ -728589,6 +728672,11 @@ Metro 2033 Redux:
       - save
       when:
       - os: mac
+    <root>/userdata/<storeUserId>/286690/remote/user.cfg:
+      tags:
+      - config
+      when:
+      - store: steam
     <winDocuments>/4A Games/Metro 2033:
       tags:
       - save
@@ -752680,15 +752768,11 @@ Moonlighter:
     lutris: moonlighter-2-the-endless-vault
     steamExtra:
     - 3670000
-    - 4036250
     - 4935250
+    - 5026660
+    - 5031290
   installDir:
     Moonlighter 2 The Endless Vault: {}
-  launch:
-    <base>/Moonlighter 2 The Endless Vault.exe:
-    - when:
-      - os: windows
-        store: steam
   steam:
     id: 2350790
 Moonlit Mayhem:
@@ -756349,6 +756433,8 @@ Moto Racer 3:
       - os: windows
   gog:
     id: 1207658897
+  id:
+    lutris: moto-racer-3-gold-edition
   installDir:
     Moto Racer Collection: {}
   launch:
@@ -785468,6 +785554,42 @@ Neon Boost:
         store: steam
   steam:
     id: 1057850
+'Neon Breaker: Endless Arcade':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5054650.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5054650.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/Library/Application Support/NeonBreaker:
+      tags:
+      - save
+      when:
+      - os: mac
+    <home>/Library/Application Support/NeonBreaker/settings.cfg:
+      tags:
+      - config
+      when:
+      - os: mac
+    <winLocalAppData>/NeonBreaker:
+      tags:
+      - save
+      when:
+      - os: windows
+    <winLocalAppData>/NeonBreaker/settings.cfg:
+      tags:
+      - config
+      when:
+      - os: windows
+  steam:
+    id: 5054650
 Neon Brood:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_801360.bin:
@@ -820302,8 +820424,18 @@ One Piece Odyssey:
       - save
       when:
       - store: steam
+    <winLocalAppData>/OPGG/saves/<storeUserId>:
+      when:
+      - store: steam
   id:
     lutris: one-piece-grand-gourmet
+  installDir:
+    ONE PIECE Grand Gourmet: {}
+  launch:
+    <base>/OPGG.exe:
+    - when:
+      - os: windows
+        store: steam
   steam:
     id: 3905010
 'One Piece: Pirate Warriors 3':
@@ -1007137,6 +1007269,31 @@ Sex Kills:
       - store: steam
   steam:
     id: 1027910
+'Sex King: From Rags to Sexcess':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4467560.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4467560.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Sex King From Rags to Sexcess: {}
+  launch:
+    <base>/Sex King.exe:
+    - when:
+      - os: windows
+        store: steam
+    <base>/Sexking.app:
+    - when:
+      - os: mac
+        store: steam
+  steam:
+    id: 4467560
 Sex Search:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1914680.bin:
@@ -1166600,6 +1166757,7 @@ The Book of Unwritten Tales:
     id: 1207659081
   id:
     steamExtra:
+    - 215180
     - 215200
   installDir:
     The Book of Unwritten Tales: {}
@@ -1268709,6 +1268867,52 @@ Trash Bomber:
       - store: steam
   steam:
     id: 2067760
+Trash Day:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3314580.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3314580.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/OffByOne/Trash/achievements.json*:
+      tags:
+      - save
+      when:
+      - os: windows
+    <home>/AppData/LocalLow/OffByOne/Trash/options.json*:
+      tags:
+      - config
+      when:
+      - os: windows
+    <home>/AppData/LocalLow/OffByOne/Trash/save_*:
+      tags:
+      - save
+      when:
+      - os: windows
+  id:
+    steamExtra:
+    - 5386580
+    - 5394290
+  installDir:
+    TrashDay: {}
+  launch:
+    <base>/Trash.exe:
+    - when:
+      - os: windows
+        store: steam
+  registry:
+    HKEY_CURRENT_USER/Software/OffByOne/Trash:
+      tags:
+      - config
+  steam:
+    id: 3314580
 Trash Rage:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_963180.bin:
@@ -1334787,6 +1334991,8 @@ Warlords Battlecry:
       - os: windows
   gog:
     id: 1207659110
+  id:
+    lutris: warlords-battlecry
 Warlords Battlecry II:
   files:
     <winDocuments>/Warlords Battlecry II:
@@ -1334816,6 +1335022,8 @@ Warlords Battlecry III:
       - os: windows
   gog:
     id: 1207658725
+  id:
+    lutris: warlords-battlecry-iii
   installDir:
     Warlords Battlecry III: {}
   launch:
@@ -1335072,6 +1335280,29 @@ Warma:
         store: steam
   steam:
     id: 697630
+'Warmachine: Rogue-Scout':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5006180.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5006180.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Warmachine Rogue-Scout: {}
+  launch:
+    <base>/Warmachine Rogue-Scout.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 5006180
 'Warmachine: Tactics':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_253510.bin:
@@ -1335929,6 +1336160,10 @@ Warring States:
       - save
       when:
       - store: steam
+  id:
+    lutris: warrior-cats-clans-of-the-forest
+    steamExtra:
+    - 4467800
   steam:
     id: 3960600
 Warrior Fighter:
@@ -1364736,6 +1364971,9 @@ World of Goo 2:
     - 4972740
     - 4972760
     - 5130590
+    - 5130600
+    - 5130610
+    - 5130730
   installDir:
     WOG: {}
   launch:
