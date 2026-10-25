@@ -102296,6 +102296,10 @@ BROK - Natal Tail, A New Christmas:
       - save
       when:
       - store: steam
+  gog:
+    id: 1435190833
+  id:
+    lutris: brok-natal-tail-a-new-christmas
   installDir:
     BROKChristmas: {}
   launch:
@@ -137611,6 +137615,28 @@ Black Forest:
         store: steam
   steam:
     id: 523070
+'Black Friday Janitor: Clean the Whole Mall':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3396010.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3396010.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/BlackFridayJanitor/Saved/SaveGames/cloud/*.sav:
+      when:
+      - os: windows
+        store: steam
+  installDir:
+    blackfridayjanitor: {}
+  steam:
+    id: 3396010
 'Black Friday: The Game':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_712700.bin:
@@ -189347,6 +189373,8 @@ Car Mechanic Simulator 2014:
   steam:
     id: 270850
 Car Mechanic Simulator 2015:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_320300.bin:
       tags:
@@ -189364,6 +189392,7 @@ Car Mechanic Simulator 2015:
       when:
       - os: windows
   id:
+    lutris: car-mechanic-simulator-2015
     steamExtra:
     - 361820
     - 361840
@@ -201984,6 +202013,8 @@ Celsius:
   steam:
     id: 1130640
 Celsius Strays:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_4271620.bin:
       tags:
@@ -201995,6 +202026,14 @@ Celsius Strays:
       - save
       when:
       - store: steam
+  gog:
+    id: 1426577730
+  id:
+    gogExtra:
+    - 1468565130
+    lutris: celsius-strays--1
+    steamExtra:
+    - 4272400
   steam:
     id: 4271620
 Celtabula:
@@ -266118,6 +266157,30 @@ Cubway:
         store: steam
   steam:
     id: 511160
+Cucina Stellata:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3976340.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3976340.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    steamExtra:
+    - 5307250
+  installDir:
+    "Cucina Stellata \u2726 Starred Cuisine": {}
+  launch:
+    "<base>/Cucina Stellata \u2726 Starred Cuisine.exe":
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 3976340
 Cuckold Simulator:
   alias: 'Cuckold Simulator: Life as a Beta Male Cuck'
 'Cuckold Simulator: Life as a Beta Male Cuck':
@@ -317792,6 +317855,22 @@ Dice Gambit:
       - store: steam
   steam:
     id: 1812860
+Dice Hoarder:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3687090.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3687090.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 3687090
 Dice Keeper:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1047020.bin:
@@ -323351,6 +323430,13 @@ Discontinue:
     Discontinue: {}
   steam:
     id: 1061220
+Discord Times:
+  files:
+    <base>/_Global.ini:
+      tags:
+      - config
+      when:
+      - os: windows
 Discounty:
   cloud:
     steam: true
@@ -332750,6 +332836,23 @@ Don't Pick On The Fat Kid:
         store: steam
   steam:
     id: 793600
+Don't Pick Up:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4878690.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4878690.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    steamExtra:
+    - 5208890
+  steam:
+    id: 4878690
 Don't Play This Game:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_679240.bin:
@@ -395705,6 +395808,7 @@ Euro Truck Simulator 2:
     - 2780810
     - 2932420
     - 3034950
+    - 3796990
     - 4159240
     - 4348650
   installDir:
@@ -581607,6 +581711,13 @@ Immunity:
       - store: steam
   steam:
     id: 811470
+Imp:
+  files:
+    <base>/config.ini:
+      tags:
+      - config
+      when:
+      - os: windows
 Imp of the Sun:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1535780.bin:
@@ -617727,6 +617838,22 @@ Just VR Slingshot Target Practice:
     Just VR Slingshot Target Practice: {}
   steam:
     id: 586990
+Just Volleyball:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5037200.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5037200.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5037200
 Just a Cleric:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_467330.bin:
@@ -780355,6 +780482,29 @@ Nautical Life:
         store: steam
   steam:
     id: 817200
+Nautical Survival:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2860990.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2860990.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    lutris: nautical-survival
+  installDir:
+    Nautical Survival: {}
+  launch:
+    <base>/Nautical Survival.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 2860990
 Nauticrawl:
   cloud:
     steam: true
@@ -802189,6 +802339,7 @@ Nomad Drive:
       when:
       - store: steam
   id:
+    lutris: nomad-drive
     steamExtra:
     - 4451030
     - 4568400
@@ -832648,6 +832799,46 @@ Outerverse:
         store: steam
   steam:
     id: 1293540
+Outhold:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3767740.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3767740.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/Library/Application Support/Godot/app_userdata/Outhold:
+      tags:
+      - save
+      when:
+      - os: mac
+    <winAppData>/Godot/app_userdata/Outhold:
+      tags:
+      - config
+      - save
+      when:
+      - os: windows
+  id:
+    lutris: outhold
+  installDir:
+    Outhold: {}
+  launch:
+    <base>/outhold_macos.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/windows/outhold_windows.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 3767740
 Outland:
   cloud:
     steam: true
@@ -895349,6 +895540,30 @@ Project SolarBot:
         store: steam
   steam:
     id: 1144690
+Project Solaris:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3002740.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3002740.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    steamExtra:
+    - 3400280
+  installDir:
+    Project Solaris: {}
+  launch:
+    <base>/ProjectSolaris.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 3002740
 Project Songbird:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3180410.bin:
@@ -909372,6 +909587,25 @@ Queen of Thieves:
         store: steam
   steam:
     id: 524200
+Queen's Domain:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1799840.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1799840.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    steamExtra:
+    - 4081520
+  steam:
+    id: 1799840
 'Queen''s Garden: Halloween':
   cloud:
     steam: true
@@ -1015341,6 +1015575,40 @@ Sheltered 2:
       - store: steam
   steam:
     id: 1289380
+Shelve the Potions!:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4928820.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4928820.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/Knight Owl Games/Shelve the Potions!/<storeUserId>:
+      when:
+      - store: steam
+    ? <xdgData>/.local/share/steam/steamapps/compatdata/2521630/pfx/drive_c/users/steamuser/AppData/LocalLow/Knight
+      Owl Games/Shelve the Potions!/<storeUserId>
+    : when:
+      - os: linux
+        store: steam
+  id:
+    steamExtra:
+    - 4959170
+    - 4959200
+  installDir:
+    Shelf the Potions!: {}
+  launch:
+    <base>/Shelve the Potions!.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 4928820
 Shenmue I & II:
   cloud:
     steam: true
@@ -1027571,8 +1027839,10 @@ Silver Pines:
       when:
       - store: steam
     <home>/AppData/LocalLow/Wych Elm/Silver Pines/<storeUserId>:
+      tags:
+      - save
       when:
-      - store: steam
+      - os: windows
   id:
     lutris: silver-pines
     steamExtra:
@@ -1038234,6 +1038504,31 @@ Slayaway Camp:
       - config
   steam:
     id: 530390
+Slayblade:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4117730.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4117730.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/Slayblade/*.save:
+      when:
+      - store: steam
+  installDir:
+    Slayblade: {}
+  launch:
+    <base>/Slayblade.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 4117730
 Slayer Shock:
   cloud:
     steam: true
@@ -1107602,6 +1107897,8 @@ Stupid Invaders:
       when:
       - os: windows
 Stupid Never Dies:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3486530.bin:
       tags:
@@ -1107613,18 +1107910,12 @@ Stupid Never Dies:
       - save
       when:
       - store: steam
-    <base>/StupidNeverDies/Saved/SaveGames/<storeUserId>/*.json:
+    <base>/StupidNeverDies/Saved/SaveGames/<storeUserId>:
+      tags:
+      - config
+      - save
       when:
-      - store: steam
-    <base>/StupidNeverDies/Saved/SaveGames/<storeUserId>/*.sav:
-      when:
-      - store: steam
-    <winLocalAppData>/StupidNeverDies/Saved/SaveGames/<storeUserId>/*.json:
-      when:
-      - store: steam
-    <winLocalAppData>/StupidNeverDies/Saved/SaveGames/<storeUserId>/*.sav:
-      when:
-      - store: steam
+      - os: windows
   id:
     lutris: stupid-never-dies
     steamExtra:
@@ -1170563,6 +1170854,20 @@ The Coin Game:
         store: steam
   steam:
     id: 598980
+The Coin Goblin:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5254020.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5254020.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5254020
 The Cold War Era:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_504280.bin:
@@ -1280826,6 +1281131,9 @@ Turok (2015):
         store: steam
   steam:
     id: 1996770
+'Turok: Dinosaur Hunter':
+  id:
+    lutris: turok-dinosaur-hunter
 'Turok: Dinosaur Hunter (2015)':
   alias: Turok (2015)
 'Turok: Escape from Lost Valley':
@@ -1336160,10 +1336468,22 @@ Warring States:
       - save
       when:
       - store: steam
+    <winLocalAppData>/Wrc/Saved/SaveGames/*.sav:
+      when:
+      - os: windows
+        store: steam
   id:
     lutris: warrior-cats-clans-of-the-forest
     steamExtra:
     - 4467800
+  installDir:
+    Warrior Cats Clans of the Forest: {}
+  launch:
+    <base>/Wrc/Binaries/Win64/Wrc-Win64-ShippingDRM.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 3960600
 Warrior Fighter:
@@ -1347268,6 +1347588,20 @@ Where Cards Fall:
         store: steam
   steam:
     id: 589450
+Where Did I Park?:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5195880.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5195880.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5195880
 Where Dolls Hang:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_4581370.bin:
