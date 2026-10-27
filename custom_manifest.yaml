@@ -8250,6 +8250,23 @@ $1 Ride:
         store: steam
   steam:
     id: 648580
+4:AM:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2537270.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2537270.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    steamExtra:
+    - 4711490
+  steam:
+    id: 2537270
 4:LOOP:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3355360.bin:
@@ -165433,6 +165450,23 @@ Break the Empire:
       - store: steam
   steam:
     id: 2975180
+"Break the Pi\xF1atas":
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5210430.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5210430.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    steamExtra:
+    - 5211050
+  steam:
+    id: 5210430
 Break the Targets:
   cloud:
     steam: true
@@ -181073,6 +181107,8 @@ CS2D:
       - save
       when:
       - store: steam
+  id:
+    lutris: csi-hard-evidence
   installDir:
     CSI Hard Evidence: {}
   launch:
@@ -181093,6 +181129,8 @@ CS2D:
       - save
       when:
       - store: steam
+  id:
+    lutris: csi-ny-the-game
   installDir:
     CSI New York: {}
   launch:
@@ -272378,6 +272416,8 @@ D3D Inside:
       - store: steam
   gog:
     id: 1852354510
+  id:
+    lutris: d-the-game
   installDir:
     D: {}
   launch:
@@ -487711,10 +487751,19 @@ Gloomgrave:
   installDir:
     Gloomgrave: {}
   launch:
+    <base>/Gloomgrave.app:
+    - when:
+      - os: mac
+        store: steam
     <base>/Gloomgrave.exe:
     - when:
       - bit: 64
         os: windows
+        store: steam
+    <base>/Gloomgrave_x86_64:
+    - when:
+      - bit: 64
+        os: linux
         store: steam
   steam:
     id: 1907000
@@ -561397,6 +561446,8 @@ Hot Wheels Unleashed:
       - save
       when:
       - os: windows
+  id:
+    lutris: hot-wheels-unleashedtm-2-turbocharged
   installDir:
     "HOT WHEELS UNLEASHED\u2122 2 - Turbocharged": {}
   launch:
@@ -561446,6 +561497,8 @@ Hot Wheels World's Best Driver:
       - save
       when:
       - os: windows
+  id:
+    lutris: hot-wheelstm-worlds-best-drivertm
   installDir:
     Hot Wheels WBD: {}
   launch:
@@ -582760,6 +582813,22 @@ Impossible Jumpy Quest:
         store: steam
   steam:
     id: 787050
+Impossible Mission II:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1400680.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1400680.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Impossible Mission II: {}
+  steam:
+    id: 1400680
 Impossible Quest:
   cloud:
     steam: true
@@ -759492,6 +759561,24 @@ Mr Joshua Carrot:
         store: steam
   steam:
     id: 1113340
+Mr Magpie's Harmless Card Game:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3616280.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3616280.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    lutris: mr-magpies-harmless-card-game
+    steamExtra:
+    - 3796720
+  steam:
+    id: 3616280
 Mr Makeshifter:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_395480.bin:
@@ -770576,6 +770663,31 @@ Mysterium:
         store: steam
   steam:
     id: 438560
+'Mystery Case Files: Huntsville':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_50960.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_50960.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    HKEY_CURRENT_USER/Software/Big Fish Games/Games/Mystery Case Files - Huntsville:
+      tags:
+      - save
+      when:
+      - os: windows
+  installDir:
+    Mystery Case Files Huntsville: {}
+  launch:
+    <base>/Huntsville.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 50960
 'Mystery Case Files: Key to Ravenhearst':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1082470.bin:
@@ -774463,6 +774575,8 @@ NBA 2K26:
       - save
       when:
       - store: steam
+  id:
+    lutris: nba-2k26
   installDir:
     NBA 2K26: {}
   launch:
@@ -774471,6 +774585,39 @@ NBA 2K26:
       - store: steam
   steam:
     id: 3472040
+NBA 2K27:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4356430.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4356430.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/2K Sports/NBA 2K27/VideoSettings.cfg:
+      tags:
+      - config
+      when:
+      - os: windows
+    <winLocalAppData>/Packages/79ACB67D.NBA2K27PC_yn88nk35a38zw/SystemAppData/wgs:
+      tags:
+      - save
+      when:
+      - os: windows
+        store: microsoft
+  installDir:
+    NBA 2K27: {}
+  launch:
+    <base>/start_protected_game.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 4356430
 NBA 2K9:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_7740.bin:
@@ -937122,13 +937269,22 @@ Reka:
       - os: windows
   id:
     lutris: reka
+    steamExtra:
+    - 1783630
+    - 3179550
   installDir:
     Reka: {}
   launch:
     <base>/Reka.exe:
-    - when:
-      - os: windows
-        store: steam
+    - arguments: -force-d3d11
+      when:
+      - store: steam
+    - arguments: -force-d3d12
+      when:
+      - store: steam
+    - arguments: -force-vulkan
+      when:
+      - store: steam
   steam:
     id: 1737870
 Rekindling:
@@ -1053626,6 +1053782,7 @@ Song of Farca:
     id: 1435670
 Song of Horror:
   cloud:
+    epic: true
     gog: true
     steam: true
   files:
@@ -1053652,6 +1053809,7 @@ Song of Horror:
   gog:
     id: 1957403324
   id:
+    lutris: song-of-horror
     steamExtra:
     - 1151730
     - 1157230
@@ -1279413,6 +1279571,23 @@ Tube Tycoon:
         store: steam
   steam:
     id: 611040
+Tube2K:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_756510.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_756510.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    steamExtra:
+    - 4907870
+  steam:
+    id: 756510
 TubeLife:
   cloud:
     steam: true
