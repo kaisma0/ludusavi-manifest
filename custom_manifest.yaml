@@ -37924,6 +37924,39 @@ Afterparty:
       - config
   steam:
     id: 762220
+'Aftershock: Coastline':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2450040.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2450040.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/Alex Rassloff/Aftershock_ Coastline/SaveData:
+      tags:
+      - save
+      when:
+      - os: windows
+  id:
+    lutris: aftershock-coastline
+  installDir:
+    Aftershock Coastline: {}
+  launch:
+    <base>/Aftershock Coastline.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+  registry:
+    'HKEY_CURRENT_USER/Software/Alex Rassloff/Aftershock: Coastline':
+      tags:
+      - config
+  steam:
+    id: 2450040
 Again:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_810570.bin:
@@ -98888,9 +98921,16 @@ Ayakashigami:
       - save
       when:
       - store: steam
-    <base>/Aya/Saved/SaveGames/*.sav:
+    <winLocalAppData>/Aya/Saved/Config/Windows:
+      tags:
+      - config
       when:
-      - store: steam
+      - os: windows
+    <winLocalAppData>/Aya/Saved/SaveGames:
+      tags:
+      - save
+      when:
+      - os: windows
   id:
     lutris: ayasa-shadows-of-silence
     steamExtra:
@@ -98901,7 +98941,11 @@ Ayakashigami:
   launch:
     <base>/Aya.exe:
     - when:
-      - bit: 64
+      - os: windows
+        store: steam
+    <base>/Aya.sh:
+    - when:
+      - os: linux
         store: steam
   steam:
     id: 3146120
@@ -266468,6 +266512,18 @@ Culdcept The First:
       - save
       when:
       - store: steam
+    <home>/Saved Games/Culdcept The First/*.bin:
+      when:
+      - os: windows
+        store: steam
+  installDir:
+    Culdcept The First: {}
+  launch:
+    <base>/S-Tribute.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 3825600
 'Culina: Hands in the Kitchen':
@@ -286978,19 +287034,14 @@ Dawn of Magic 2:
     id: 1839978015
   id:
     lutris: dawn-of-magic-2
+    steamExtra:
+    - 33550
   installDir:
     Dawn of Magic II: {}
   launch:
-    <base>/launcher-ia32.exe:
+    <base>/dawnofmagic2.exe:
     - when:
-      - bit: 32
-        os: windows
-        store: steam
-    <base>/launcher-x64.exe:
-    - when:
-      - bit: 64
-        os: windows
-        store: steam
+      - store: steam
   steam:
     id: 33540
 Dawn of Man:
@@ -294989,6 +295040,18 @@ Deadweight:
       - save
       when:
       - store: steam
+    <winLocalAppData>/Oak/Saved/Config/Windows:
+      tags:
+      - save
+      when:
+      - os: windows
+        store: steam
+    <winLocalAppData>/Oak/Saved/SaveGames:
+      tags:
+      - save
+      when:
+      - os: windows
+        store: steam
   steam:
     id: 4465790
 Dealer's Life:
@@ -329418,6 +329481,18 @@ Dog Jam:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/Floor 84 Studio/Dog Man_ Bark in Action/<storeUserId>/*.dat:
+      when:
+      - os: windows
+        store: steam
+  installDir:
+    Dog Man Bark in Action: {}
+  launch:
+    <base>/Dog Man Bark in Action.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 4782240
 'Dog Man: Mission Impawsible':
@@ -370652,6 +370727,9 @@ Ecotone:
   steam:
     id: 446070
 Ecstatica:
+  cloud:
+    gog: true
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_4834840.bin:
       tags:
@@ -370672,9 +370750,25 @@ Ecstatica:
       - os: windows
   gog:
     id: 1333226285
+  id:
+    gogExtra:
+    - 1335460878
+    - 1942439921
+    steamExtra:
+    - 5418140
+    - 5418150
+  installDir:
+    Ecstatica: {}
+  launch:
+    <base>/Ecstatica.exe:
+    - when:
+      - store: steam
   steam:
     id: 4834840
 Ecstatica II:
+  cloud:
+    gog: true
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_4834850.bin:
       tags:
@@ -370695,6 +370789,12 @@ Ecstatica II:
       - os: windows
   gog:
     id: 1434747230
+  installDir:
+    Ecstatica II: {}
+  launch:
+    <base>/Ecstatica II.exe:
+    - when:
+      - store: steam
   steam:
     id: 4834850
 Ectolibrium:
@@ -478879,6 +478979,40 @@ Genius! NAZI-GIRL GoePPels-Chan ep3:
         store: steam
   steam:
     id: 1111220
+Gennady:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2430010.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2430010.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winAppData>/Feed 64/Gennady/stable/345961400/controls.dat:
+      tags:
+      - config
+      when:
+      - os: windows
+    <winAppData>/Feed 64/Gennady/stable/345961400/savegame.dat:
+      tags:
+      - save
+      when:
+      - os: windows
+    <winAppData>/Feed 64/Gennady/stable/config.json:
+      tags:
+      - config
+      when:
+      - os: windows
+  gog:
+    id: 1268630104
+  id:
+    steamExtra:
+    - 5456610
+  steam:
+    id: 2430010
 Geno The Fallen King:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_972180.bin:
@@ -488151,6 +488285,28 @@ Glory of Deep Skies:
       - os: windows
   id:
     lutris: touhou-mukyuushi-glory-of-deep-skies
+Glory of the Heroes:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2239670.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2239670.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Glory to the Heroes: {}
+  launch:
+    <base>/GloryToTheHeroes.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+  steam:
+    id: 2239670
 Glory of the Self-Styled Diehard Girl:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_762920.bin:
@@ -670069,6 +670225,16 @@ Link's Awakening DX HD:
       - save
       when:
       - os: windows
+    <winLocalAppData>/Zelda_LA/achievements:
+      tags:
+      - save
+      when:
+      - os: windows
+    <winLocalAppData>/Zelda_LA/advanced:
+      tags:
+      - config
+      when:
+      - os: windows
     <winLocalAppData>/Zelda_LA/settings:
       tags:
       - config
@@ -670077,6 +670243,16 @@ Link's Awakening DX HD:
     <xdgData>/Zelda_LA/SaveFiles:
       tags:
       - save
+      when:
+      - os: linux
+    <xdgData>/Zelda_LA/achievements:
+      tags:
+      - save
+      when:
+      - os: linux
+    <xdgData>/Zelda_LA/advanced:
+      tags:
+      - config
       when:
       - os: linux
     <xdgData>/Zelda_LA/settings:
@@ -697175,6 +697351,7 @@ Madison:
     lutris: madison
     steamExtra:
     - 1949860
+    - 2624150
   installDir:
     MADiSON: {}
   launch:
@@ -786067,6 +786244,18 @@ Neon Boost:
       - config
       when:
       - os: windows
+  installDir:
+    Neon Breaker: {}
+  launch:
+    <base>/Neon Breaker.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/NeonBreaker.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 5054650
 Neon Brood:
@@ -802688,6 +802877,12 @@ Nomad Drive:
     - 4451030
     - 4568400
     - 5199100
+  installDir:
+    Nomad Drive: {}
+  launch:
+    <base>/Nomad Drive.exe:
+    - when:
+      - store: steam
   steam:
     id: 2223980
 Nomad Fleet:
@@ -804211,6 +804406,13 @@ Northgard Battlegrounds:
   id:
     steamExtra:
     - 5090100
+  installDir:
+    Northgard Battlegrounds: {}
+  launch:
+    <base>/Northgard Battlegrounds.exe:
+    - when:
+      - os: windows
+        store: steam
   steam:
     id: 4487060
 Northland:
@@ -820557,6 +820759,20 @@ One More Roll:
         store: steam
   steam:
     id: 911520
+One Mote:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5480410.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5480410.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5480410
 One Move Away:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3172440.bin:
@@ -834662,6 +834878,8 @@ Over the Hill:
       - config
       when:
       - os: windows
+  gog:
+    id: 1442763024
   id:
     lutris: over-the-hill
     steamExtra:
@@ -858193,6 +858411,8 @@ Phantom Astronaut Lucid VR:
   steam:
     id: 1146810
 Phantom Blade Zero:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_4115450.bin:
       tags:
@@ -858204,8 +858424,20 @@ Phantom Blade Zero:
       - save
       when:
       - store: steam
+    <base>/ProjectPBZ/Saved/SaveGames/Steam/<storeUserId>/**/*.sav:
+      when:
+      - os: windows
+        store: steam
   id:
     lutris: phantom-blade-0
+  installDir:
+    PBZ: {}
+  launch:
+    <base>/steam/PBZ.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 4115450
 Phantom Brave PC:
@@ -912146,6 +912378,20 @@ Qvadriga:
       - config
   steam:
     id: 297760
+Qwak Reborn:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4704570.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4704570.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 4704570
 Qwerty's Prison:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1103000.bin:
@@ -938924,6 +939170,7 @@ Remorses:
 'Remothered: Red Nun''s Legacy':
   cloud:
     epic: true
+    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3335310.bin:
@@ -938936,12 +939183,26 @@ Remorses:
       - save
       when:
       - store: steam
+    <winLocalAppData>/Remothered3/Saved/SaveGames/*.sav:
+      when:
+      - os: windows
+        store: steam
   gog:
     id: 1933416452
   id:
     lutris: remothered-red-nuns-legacy
     steamExtra:
+    - 5312420
+    - 5312450
     - 5312670
+  installDir:
+    REMT: {}
+  launch:
+    <base>/Remothered.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 3335310
 'Remothered: Tormented Fathers':
@@ -944488,6 +944749,32 @@ Retro Racers 2:
         store: steam
   steam:
     id: 887870
+Retro Racing 2:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3739960.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3739960.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/Mr Qwak/Retro Racing 2/player:
+      when:
+      - store: steam
+  installDir:
+    Retro Racing 2: {}
+  launch:
+    <base>/retroracing_2.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 3739960
 Retro Racing City:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1027110.bin:
@@ -952093,6 +952380,20 @@ Ring the City:
         store: steam
   steam:
     id: 1070320
+Ringfort:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5480400.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5480400.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5480400
 Ringies:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_394480.bin:
@@ -1058138,6 +1058439,20 @@ SoulSet:
         store: steam
   steam:
     id: 589860
+SoulTrap:
+  files:
+    <base>/Games:
+      tags:
+      - save
+      when:
+      - os: windows
+  registry:
+    HKEY_CURRENT_USER/Software/Microforum/SoulTrap:
+      tags:
+      - config
+    HKEY_LOCAL_MACHINE/Software/WOW6432Node/Microforum/SoulTrap:
+      tags:
+      - config
 SoulWorker:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1377580.bin:
@@ -1108439,9 +1108754,16 @@ Stupid Raft Battle Simulator:
   gog:
     id: 1777704954
   id:
+    gogExtra:
+    - 1411519552
+    - 1729223972
+    - 1947569167
+    - 2108929928
     lutris: stygian-outer-gods
     steamExtra:
     - 4060460
+    - 5404580
+    - 5445690
   installDir:
     Stygian - Outer Gods: {}
   launch:
@@ -1139373,6 +1139695,9 @@ TTT Classic:
     <base>/ttt/karma.txt:
       when:
       - store: steam
+    <base>/ttt/sprays/*.wad:
+      when:
+      - store: steam
     <base>/ttt/voice_ban.dt:
       when:
       - store: steam
@@ -1139380,12 +1139705,17 @@ TTT Classic:
       when:
       - store: steam
   installDir:
-    TTT Classic: {}
+    TTTClassic: {}
   launch:
     <base>/ttt.exe:
-    - arguments: -game ttt -gl -steam -secure
+    - arguments: -game ttt -gl -steam -secure -addons
       when:
       - os: windows
+        store: steam
+    <base>/ttt.sh:
+    - arguments: -steam -game ttt -addons -gl -secure
+      when:
+      - os: linux
         store: steam
   steam:
     id: 4570530
@@ -1199630,6 +1199960,21 @@ The Legend of Viccess:
       when:
       - os: windows
       - os: linux
+    <xdgData>/soh/Save/file*.sav:
+      tags:
+      - save
+      when:
+      - os: linux
+    <xdgData>/soh/Save/global.sav:
+      tags:
+      - config
+      when:
+      - os: linux
+    <xdgData>/soh/shipofharkinian.json:
+      tags:
+      - config
+      when:
+      - os: linux
 'The Legend of Zelda: Ocarina of Time (Ship of Harkinian/unofficial PC port)':
   alias: 'The Legend of Zelda: Ocarina of Time (Ship of Harkinian)'
 'The Legend of Zelda: Twilight Princess (Dusk)':
@@ -1246737,6 +1247082,20 @@ Tiny Mortals VR:
     Tiny Mortals VR: {}
   steam:
     id: 1061460
+Tiny Night Market:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5480430.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5480430.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5480430
 Tiny Pasture:
   cloud:
     steam: true
@@ -1318865,10 +1319224,20 @@ Virtue and a Sledgehammer:
       - save
       when:
       - store: steam
+    <base>/Sledgehammer/UserDir/Saved/SaveGames/<storeUserId>/*.sav:
+      when:
+      - store: steam
   id:
     lutris: virtue-and-a-sledgehammer
     steamExtra:
     - 3743280
+  installDir:
+    Virtue and a Sledgehammer: {}
+  launch:
+    <base>/Virtue and a Sledgehammer.exe:
+    - arguments: -UserDir=".\UserDir"
+      when:
+      - store: steam
   steam:
     id: 3743260
 Virtuelle Moorhuhn Jagd:
@@ -1365099,6 +1365468,8 @@ World War II Online:
       - save
       when:
       - store: steam
+  id:
+    lutris: world-war-ii-panzer-claws
   installDir:
     World War II Panzer Claws: {}
   launch:
@@ -1365175,6 +1365546,8 @@ World War II Online:
       - save
       when:
       - store: steam
+  id:
+    lutris: world-war-iii-black-gold
   installDir:
     World War III Black Gold: {}
   launch:
@@ -1378511,6 +1378884,12 @@ You Are Empty:
       - save
       when:
       - os: windows
+  installDir:
+    You Are Empty Absolute Edition: {}
+  launch:
+    <base>/you_are_empty.exe:
+    - when:
+      - store: steam
   steam:
     id: 4760480
 You Are God:
