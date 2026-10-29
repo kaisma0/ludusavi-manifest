@@ -44483,6 +44483,11 @@ Airport Contraband:
       - save
       when:
       - store: steam
+    <winLocalAppData>/AirportContraband/Saved/SaveGames/*.sav:
+      when:
+      - store: steam
+  installDir:
+    Airport Contraband: {}
   steam:
     id: 1167820
 Airport Fire Department - The Simulation:
@@ -202914,17 +202919,12 @@ Chained Beasts:
       - save
       when:
       - store: steam
-    <home>/.config/unity3d/Featherweight Games/ChainedBeasts/SaveData:
+    <home>/AppData/LocalLow/Featherweight Games/ChainedBeasts:
+      tags:
+      - config
+      - save
       when:
-      - os: linux
-        store: steam
-    <home>/AppData/LocalLow/Featherweight Games/ChainedBeasts/SaveData:
-      when:
-      - store: steam
-    <home>/Library/Application Support/unity.Featherweight Games.ChainedBeasts/SaveData:
-      when:
-      - os: mac
-        store: steam
+      - os: windows
   installDir:
     Chained Beasts: {}
   launch:
@@ -242727,6 +242727,7 @@ Control Freak:
 Control Resonant:
   cloud:
     epic: true
+    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3669870.bin:
@@ -242750,7 +242751,16 @@ Control Resonant:
       - config
       when:
       - os: windows
+  gog:
+    id: 1627372090
   id:
+    gogExtra:
+    - 1339377452
+    - 1454509523
+    - 1532195723
+    - 1723844482
+    - 1846427364
+    - 1885803931
     lutris: control-resonant--1
     steamExtra:
     - 4403940
@@ -409473,6 +409483,8 @@ Faces of War:
       - os: windows
   gog:
     id: 1428586504
+  id:
+    lutris: faces-of-war
   installDir:
     Faces of War: {}
   launch:
@@ -459081,6 +459093,7 @@ Front Mission Evolved:
       when:
       - os: windows
   id:
+    lutris: front-mission-evolved
     steamExtra:
     - 43005
     - 43006
@@ -523570,6 +523583,8 @@ Happy Wars:
   steam:
     id: 246280
 Happy Wheels:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_4705510.bin:
       tags:
@@ -694186,6 +694201,8 @@ MX vs. ATV Reflex:
       when:
       - os: windows
         store: steam
+  id:
+    lutris: mx-vs-atv-reflex
   installDir:
     MX vs ATV Reflex: {}
   launch:
@@ -765530,6 +765547,20 @@ My Arctic Farm:
         store: steam
   steam:
     id: 1025390
+My Arms Are Longer Now:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2646170.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2646170.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 2646170
 My Beastly Lovers:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_776610.bin:
@@ -857319,6 +857350,20 @@ Petal Crash:
         store: steam
   steam:
     id: 1211110
+Petal Runner:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2795110.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2795110.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 2795110
 Peter Jackson's King Kong:
   files:
     <base>/KingKong.sav:
@@ -892062,6 +892107,16 @@ Probably Stolen:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/Questing Goose Studio/Probably Stolen/*.es3:
+      when:
+      - os: windows
+        store: steam
+  installDir:
+    Probably Stolen: {}
+  launch:
+    <base>/Probably Stolen.exe:
+    - when:
+      - store: steam
   steam:
     id: 4348910
 Procyon:
@@ -912390,6 +912445,17 @@ Qwak Reborn:
       - save
       when:
       - store: steam
+  installDir:
+    Qwak: {}
+  launch:
+    <base>/qwak.exe:
+    - when:
+      - os: windows
+        store: steam
+    <base>/qwakreborn-steam.app/Contents/MacOS/qwakreborn-steam:
+    - when:
+      - os: mac
+        store: steam
   steam:
     id: 4704570
 Qwerty's Prison:
@@ -939183,13 +939249,24 @@ Remorses:
       - save
       when:
       - store: steam
-    <winLocalAppData>/Remothered3/Saved/SaveGames/*.sav:
+    <winLocalAppData>/Remothered3/Saved/Config/Windows:
+      tags:
+      - config
       when:
       - os: windows
-        store: steam
+    <winLocalAppData>/Remothered3/Saved/SaveGames:
+      tags:
+      - config
+      - save
+      when:
+      - os: windows
   gog:
     id: 1933416452
   id:
+    gogExtra:
+    - 1362656589
+    - 1522902240
+    - 1722156069
     lutris: remothered-red-nuns-legacy
     steamExtra:
     - 5312420
@@ -1106214,6 +1106291,8 @@ Strider (2014):
       - save
       when:
       - store: steam
+  id:
+    lutris: strider-2014
   installDir:
     Strider: {}
   launch:
@@ -1112163,6 +1112242,12 @@ Sulfur:
       - save
       when:
       - os: windows
+  id:
+    lutris: sulfur
+    steamExtra:
+    - 2845200
+    - 3025640
+    - 4268010
   installDir:
     SULFUR: {}
   launch:
@@ -1134484,11 +1134569,15 @@ Syberia 3:
       - save
       when:
       - os: windows
+      - os: windows
+        store: microsoft
     <home>/AppData/LocalLow/Microids/Syberia3/Options:
       tags:
       - config
       when:
       - os: windows
+      - os: windows
+        store: microsoft
   gog:
     id: 1965973671
   id:
@@ -1257921,7 +1258010,7 @@ Total Tank Simulator:
       - save
       when:
       - os: windows
-    <winAppData>/The Creative Assembly/Shogun2/scripts/*.txt:
+    <winAppData>/The Creative Assembly/Shogun2/scripts:
       tags:
       - config
       when:
@@ -1355529,6 +1355618,22 @@ Winds of Trade:
         store: steam
   steam:
     id: 576260
+Winds of Viridia:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5178570.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5178570.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5178570
 Windscape:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_363950.bin:
@@ -1388823,6 +1388928,17 @@ Zombie Army VR:
     steamExtra:
     - 3929860
     - 4377450
+  installDir:
+    Zombie Assault: {}
+  launch:
+    <base>/zombieassault.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/zombieassault.exe:
+    - when:
+      - os: windows
+        store: steam
   registry:
     HKEY_CURRENT_USER/Software/Ninja Kiwi/Zombie Assault:
       tags:
