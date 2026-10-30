@@ -17135,6 +17135,59 @@ A Place Out Here:
       - store: steam
   steam:
     id: 3149450
+A Place for Every Potion:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5189500.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5189500.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/CubeQuad/A Place for Every Potion/GlobalProgress:
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/CubeQuad/A Place for Every Potion/PlayerProgress:
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/CubeQuad/A Place for Every Potion/PlayerSettings:
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/CubeQuad/A Place for Every Potion/PotionsPersistentData_*:
+      when:
+      - store: steam
+    <home>/Library/Application Support/CubeQuad/A Place for Every Potion/GlobalProgress:
+      when:
+      - os: mac
+        store: steam
+    <home>/Library/Application Support/CubeQuad/A Place for Every Potion/PlayerProgress:
+      when:
+      - os: mac
+        store: steam
+    <home>/Library/Application Support/CubeQuad/A Place for Every Potion/PlayerSettings:
+      when:
+      - os: mac
+        store: steam
+    <home>/Library/Application Support/CubeQuad/A Place for Every Potion/PotionsPersistentData_*:
+      when:
+      - os: mac
+        store: steam
+  installDir:
+    A Place for Every Potion: {}
+  launch:
+    <base>/A Place for Every Potion.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/A Place for Every Potion.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 5189500
 A Place for the Unwilling:
   cloud:
     steam: true
@@ -63493,6 +63546,13 @@ Angry Birds:
     <winAppData>/Rovio/Angry Birds/settings.lua:
       tags:
       - config
+      when:
+      - os: windows
+Angry Birds Epic:
+  files:
+    <home>/AppData/LocalLow/Rovio Entertainment Ltd_/Epic/prefs/player:
+      tags:
+      - save
       when:
       - os: windows
 Angry Birds Rio:
@@ -119547,6 +119607,10 @@ Battlestar Galactica Deadlock:
   installDir:
     BattlestarGalacticaScatteredHopes: {}
   launch:
+    <base>/BattlestarGalacticaScatteredHopes.app/Contents/MacOS/Battlestar Galactica Scattered Hopes:
+    - when:
+      - os: mac
+        store: steam
     <base>/BattlestarGalacticaScatteredHopes.exe:
     - when:
       - bit: 64
@@ -157567,6 +157631,20 @@ Boom Squad:
       - store: steam
   steam:
     id: 712360
+Boom or Bloom:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5503620.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5503620.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5503620
 Boom! Boom!:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1038850.bin:
@@ -182608,6 +182686,11 @@ Cairn:
   gog:
     id: 1300489906
   id:
+    gogExtra:
+    - 1421906078
+    - 1855069799
+    - 1883087033
+    - 2073429017
     lutris: cairn--3
     steamExtra:
     - 3937220
@@ -257724,6 +257807,7 @@ Croc 2:
       - config
 'Croc 2: Kingdom of the Gobbos':
   cloud:
+    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_4198360.bin:
@@ -257736,8 +257820,21 @@ Croc 2:
       - save
       when:
       - store: steam
+    <winAppData>/Croc 2/saves/<storeUserId>:
+      when:
+      - os: windows
+        store: steam
   gog:
     id: 1402283956
+  id:
+    lutris: croc-2-kingdom-of-the-gobbos
+  installDir:
+    Croc 2: {}
+  launch:
+    <base>/croc2.exe:
+    - when:
+      - os: windows
+        store: steam
   steam:
     id: 4198360
 Croc's World Construction Kit:
@@ -326771,6 +326868,7 @@ Dive Inside:
     id: 955980
 'Dive or Die: Children of Rain':
   cloud:
+    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3590290.bin:
@@ -326789,6 +326887,8 @@ Dive Inside:
       - save
       when:
       - os: windows
+  gog:
+    id: 1169559449
   id:
     lutris: dive-or-die-children-of-rain
     steamExtra:
@@ -358375,6 +358475,48 @@ Dungeons & Darkness:
         store: steam
   steam:
     id: 479990
+Dungeons & Degenerate Gamblers:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2400510.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2400510.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/.local/share/godot/app_userdata/Dungeons & Degenerate Gamblers/1/*.cfg:
+      when:
+      - os: linux
+        store: steam
+    <home>/Library/Application Support/Godot/app_userdata/Dungeons & Degenerate Gamblers/1/*.cfg:
+      when:
+      - store: steam
+    <winAppData>/Godot/app_userdata/Dungeons & Degenerate Gamblers/1/*.cfg:
+      when:
+      - os: windows
+        store: steam
+  installDir:
+    Dungeons & Degenerate Gamblers: {}
+  launch:
+    <base>/DnDG_64.exe:
+    - when:
+      - os: windows
+        store: steam
+    <base>/DnDG_linux.x86_64:
+    - when:
+      - os: linux
+        store: steam
+    <base>/Dungeons & Degenerate Gamblers.app:
+    - when:
+      - os: mac
+        store: steam
+  steam:
+    id: 2400510
 Dungeons & Dragons Online:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_206480.bin:
@@ -611254,6 +611396,9 @@ Jimmy Kamikaze:
       - store: steam
   steam:
     id: 918370
+Jimmy Neutron vs. Jimmy Negatron:
+  id:
+    lutris: jimmy-neutron-vs-jimmy-negatron
 'Jimmy Neutron: Boy Genius':
   files:
     <base>/JimmyGameX.tsk:
@@ -611656,6 +611801,14 @@ Joe & Mac Retro Collection:
       - save
       when:
       - store: steam
+  installDir:
+    Joe & Mac Retro Collection: {}
+  launch:
+    <base>/Joe & Mac.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 3672840
 Joe & Mac Returns:
@@ -632152,6 +632305,18 @@ Kingdom Elemental:
         store: steam
   steam:
     id: 285350
+Kingdom Hearts 358/2 Days:
+  files:
+    <base>/saves:
+      tags:
+      - save
+      when:
+      - os: windows
+    <base>/saves/settings.ini:
+      tags:
+      - config
+      when:
+      - os: windows
 Kingdom Hearts HD 1.5 + 2.5 ReMIX:
   cloud:
     steam: true
@@ -693084,6 +693249,12 @@ MINImax Tinyverse:
       - save
       when:
       - store: steam
+    <winLocalAppData>/MIO/Saves/Steam/<storeUserId>:
+      tags:
+      - save
+      when:
+      - os: windows
+        store: steam
     <winLocalAppData>/Packages/FocusHomeInteractiveSA.MioMemoriesinOrbit_4hny5m903y3g0/SystemAppData/wgs:
       tags:
       - save
@@ -703856,6 +704027,8 @@ Majesty Gold HD:
       - config
       when:
       - os: linux
+  id:
+    lutris: majesty-gold-edition
   installDir:
     Majesty Gold Edition: {}
   launch:
@@ -774182,6 +774355,7 @@ NASCAR Heat Evolution:
       when:
       - os: windows
   id:
+    lutris: nascar-heat-evolution
     steamExtra:
     - 524630
     - 525180
@@ -858469,12 +858643,25 @@ Phantom Blade Zero:
       - save
       when:
       - store: steam
-    <base>/ProjectPBZ/Saved/SaveGames/Steam/<storeUserId>/**/*.sav:
+    <base>/ProjectPBZ/Saved:
+      tags:
+      - config
       when:
       - os: windows
-        store: steam
+    <base>/ProjectPBZ/Saved/SaveGames/Steam/<storeUserId>:
+      tags:
+      - save
+      when:
+      - os: windows
+    <winLocalAppData>/ProjectPBZ/Saved/Config/Windows:
+      tags:
+      - config
+      when:
+      - os: windows
   id:
     lutris: phantom-blade-0
+    steamExtra:
+    - 5041150
   installDir:
     PBZ: {}
   launch:
@@ -1000600,6 +1000787,25 @@ Secret Files 3:
       - store: steam
   steam:
     id: 40330
+'Secret Files: Tunguska - Remastered':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4504840.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4504840.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  gog:
+    id: 1362256803
+  id:
+    steamExtra:
+    - 5363640
+  steam:
+    id: 4504840
 Secret Government:
   cloud:
     steam: true
@@ -1004169,6 +1004375,7 @@ Sengoku Neet:
 Sengoku Rance:
   cloud:
     gog: true
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3867170.bin:
       tags:
@@ -1032657,6 +1032864,20 @@ Skate City:
         store: steam
   steam:
     id: 1361670
+Skate Shop Simulator:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1919480.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1919480.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 1919480
 Skate Story:
   cloud:
     gog: true
@@ -1075465,6 +1075686,20 @@ Spirit Arena:
         store: steam
   steam:
     id: 2113850
+Spirit Crossing:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2321960.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2321960.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 2321960
 Spirit Fighters:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1149200.bin:
@@ -1079399,6 +1079634,8 @@ Spy Drops Gaiden:
     <base>/Saves/*.*:
       when:
       - store: steam
+  id:
+    lutris: spy-fox-2-some-assembly-required
   installDir:
     Spy Fox 2: {}
   launch:
@@ -1079438,6 +1079675,8 @@ Spy Drops Gaiden:
     <base>/Saves/*.*:
       when:
       - store: steam
+  id:
+    lutris: spy-fox-3-operation-ozone
   installDir:
     Spy Fox 3: {}
   launch:
@@ -1079501,6 +1079740,8 @@ Spy Drops Gaiden:
       - config
       when:
       - os: windows
+  id:
+    lutris: spy-fox-in-cheese-chase
   installDir:
     Spy Fox In Cheese Chase: {}
   launch:
@@ -1079540,6 +1079781,8 @@ Spy Drops Gaiden:
     <base>/Saves/*.*:
       when:
       - store: steam
+  id:
+    lutris: spy-fox-in-hold-the-mustard
   installDir:
     Spy Fox In Hold the Mustard: {}
   launch:
@@ -1079591,6 +1079834,8 @@ Spy Drops Gaiden:
       - save
       when:
       - os: windows
+  id:
+    lutris: spy-fox-in-dry-cereal
   installDir:
     Spy Fox 1: {}
   launch:
@@ -1133537,6 +1133782,7 @@ Sword of the Samurai:
 Sword of the Sea:
   cloud:
     epic: true
+    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_2453160.bin:
@@ -1133559,7 +1133805,11 @@ Sword of the Sea:
       - save
       when:
       - os: windows
+  gog:
+    id: 1798252985
   id:
+    gogExtra:
+    - 1250101750
     lutris: sword-of-the-sea
   installDir:
     Sword of the Sea: {}
@@ -1154430,6 +1154680,20 @@ Tenis PC3:
       - config
       when:
       - os: windows
+Tenjutsu:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1363940.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1363940.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 1363940
 Tenkyu:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_818350.bin:
@@ -1160110,18 +1160374,22 @@ That's Not My Neighbor:
     <winAppData>/Godot/app_userdata/That's not my neighbor:
       tags:
       - config
+      when:
+      - os: windows
+    <winAppData>/That's not my Neighbor:
+      tags:
       - save
       when:
       - os: windows
   installDir:
     That's not my Neighbor: {}
   launch:
-    <base>/That's not my neighbor (Steam).exe:
+    <base>/That's not my neighbor.exe:
     - when:
       - bit: 64
         os: windows
         store: steam
-    <base>/That's not my neighbor (Steam).x86_64:
+    <base>/That's not my neighbor.x86_64:
     - when:
       - bit: 64
         os: linux
@@ -1232646,9 +1232914,18 @@ The Wolf Among Us Remastered:
       - save
       when:
       - store: steam
+    <winDocuments>/Telltale Games/The Wolf Among Us Remastered:
+      when:
+      - store: steam
   id:
     steamExtra:
     - 5280090
+  installDir:
+    The Wolf Among Us Remastered: {}
+  launch:
+    <base>/TheWolfAmongUsRemastered.exe:
+    - when:
+      - store: steam
   steam:
     id: 3884860
 The Wolf's Bite:
@@ -1286973,6 +1287250,13 @@ USAGIRI:
         store: steam
   steam:
     id: 1153950
+USAR Hooters ProCup Racing:
+  files:
+    <base>/VIDEO.CFG:
+      tags:
+      - config
+      when:
+      - os: windows
 'USC: Counterforce':
   cloud:
     gog: true
@@ -1366107,6 +1366391,8 @@ World of Goo (2008):
       - os: windows
   gog:
     id: 1421855536
+  id:
+    lutris: world-of-goo
   installDir:
     World of Goo: {}
   launch:
@@ -1378985,6 +1379271,16 @@ You Are Empty:
       when:
       - os: windows
     <winDocuments>/My Games/YaE/savegames:
+      tags:
+      - save
+      when:
+      - os: windows
+    <winDocuments>/My Games/YaE_Absolute/config_*:
+      tags:
+      - config
+      when:
+      - os: windows
+    <winDocuments>/My Games/YaE_Absolute/savegames/Save*:
       tags:
       - save
       when:
