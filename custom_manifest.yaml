@@ -89628,7 +89628,6 @@ Asylopole:
 Asylum:
   cloud:
     epic: true
-    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_230210.bin:
@@ -89657,6 +89656,7 @@ Asylum:
     lutris: asylum--1
     steamExtra:
     - 1311020
+    - 1311030
   installDir:
     Asylum: {}
   launch:
@@ -140248,7 +140248,11 @@ Blackshard:
       when:
       - os: windows
         store: steam
+  gog:
+    id: 1447508775
   id:
+    gogExtra:
+    - 1953880831
     lutris: blackshard
     steamExtra:
     - 3462270
@@ -257860,6 +257864,16 @@ Croc's World Construction Kit:
     id: 831910
 'Croc: Legend of the Gobbos':
   files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5226010.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5226010.bin:
+      tags:
+      - save
+      when:
+      - store: steam
     <base>/key.txt:
       tags:
       - config
@@ -257875,6 +257889,8 @@ Croc's World Construction Kit:
     HKEY_LOCAL_MACHINE/SOFTWARE/WOW6432Node/Argonaut Software/Croc:
       tags:
       - config
+  steam:
+    id: 5226010
 'Croc: Legend of the Gobbos (2024)':
   alias: 'Croc: Legend of the Gobbos (2025)'
 'Croc: Legend of the Gobbos (2025)':
@@ -292802,8 +292818,89 @@ Dead of the Brain:
       - save
       when:
       - store: steam
+    <home>/.pcx/DeadoftheBrain/*.bin:
+      when:
+      - os: linux
+        store: steam
+    <home>/.pcx/DeadoftheBrain/*.sav:
+      when:
+      - os: linux
+        store: steam
+    <home>/.pcx/DeadoftheBrain/FLAG*:
+      when:
+      - os: linux
+        store: steam
+    <home>/.pcx/DeadoftheBrain/NAME.DEF:
+      when:
+      - os: linux
+        store: steam
+    <home>/.pcx/DeadoftheBrain/pcx-save-keys.txt:
+      when:
+      - os: linux
+        store: steam
+    <home>/.pcx/DeadoftheBrain/persistent:
+      when:
+      - os: linux
+        store: steam
+    <home>/Library/PCX/DeadoftheBrain/*.bin:
+      when:
+      - os: mac
+        store: steam
+    <home>/Library/PCX/DeadoftheBrain/*.sav:
+      when:
+      - os: mac
+        store: steam
+    <home>/Library/PCX/DeadoftheBrain/FLAG*:
+      when:
+      - os: mac
+        store: steam
+    <home>/Library/PCX/DeadoftheBrain/NAME.DEF:
+      when:
+      - os: mac
+        store: steam
+    <home>/Library/PCX/DeadoftheBrain/pcx-save-keys.txt:
+      when:
+      - os: mac
+        store: steam
+    <home>/Library/PCX/DeadoftheBrain/persistent:
+      when:
+      - os: mac
+        store: steam
+    <winAppData>/PCX/DeadoftheBrain/**/*.bin:
+      when:
+      - store: steam
+    <winAppData>/PCX/DeadoftheBrain/*.sav:
+      when:
+      - store: steam
+    <winAppData>/PCX/DeadoftheBrain/FLAG*:
+      when:
+      - store: steam
+    <winAppData>/PCX/DeadoftheBrain/NAME.DEF:
+      when:
+      - store: steam
+    <winAppData>/PCX/DeadoftheBrain/pcx-save-keys.txt:
+      when:
+      - store: steam
+    <winAppData>/PCX/DeadoftheBrain/persistent:
+      when:
+      - store: steam
   id:
     lutris: dead-of-the-brain
+  installDir:
+    Dead of the Brain: {}
+  launch:
+    <base>/Dead of the Brain.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/Dead of the Brain.exe:
+    - when:
+      - os: windows
+        store: steam
+    <base>/Dead of the Brain.sh:
+    - when:
+      - os: linux
+        store: steam
   steam:
     id: 5056390
 Dead or Alive 5 Last Round:
@@ -329344,6 +329441,33 @@ Dodging Fake News With Donald Trump:
       - store: steam
   steam:
     id: 1084450
+Dodo Duckie:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3358170.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3358170.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/DoDoDuck/Saved/SaveGames/*.sav:
+      when:
+      - os: windows
+        store: steam
+  installDir:
+    Dodo Duckie: {}
+  launch:
+    <base>/DoDoDuck.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 3358170
 Dodo Peak:
   cloud:
     epic: true
@@ -337452,6 +337576,8 @@ Double Dragon Neon:
       - save
       when:
       - os: windows
+  id:
+    lutris: double-dragon-neon
   installDir:
     Double Dragon Neon: {}
   launch:
@@ -347915,6 +348041,18 @@ Dreams of Solari - Chapter 1:
         store: steam
   steam:
     id: 1107450
+Dreams to Reality:
+  files:
+    <base>/DATA/GAME:
+      tags:
+      - save
+      when:
+      - os: windows
+    <base>/DHOOK.ini:
+      tags:
+      - config
+      when:
+      - os: windows
 Dreamscape:
   cloud:
     steam: true
@@ -370907,6 +371045,55 @@ Ecstatica:
     - 1335460878
     - 1942439921
     steamExtra:
+    - 5418140
+    - 5418150
+  installDir:
+    Ecstatica: {}
+  launch:
+    <base>/Ecstatica.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 4834840
+Ecstatica (2026):
+  cloud:
+    gog: true
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4834840.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4834840.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winAppData>/SNEG/Ecstatica/Save Slots/000*.ecs:
+      when:
+      - store: steam
+    <winAppData>/SNEG/Ecstatica/Save Slots/000*.png:
+      when:
+      - store: steam
+    <winAppData>/SNEG/Ecstatica/controls.bin:
+      when:
+      - store: steam
+    <winAppData>/SNEG/Ecstatica/settings.json:
+      when:
+      - store: steam
+    <winAppData>/SNEG/Ecstatica/store.bin:
+      when:
+      - store: steam
+  gog:
+    id: 1333226285
+  id:
+    gogExtra:
+    - 1335460878
+    - 1942439921
+    lutris: ecstatica
+    steamExtra:
+    - 5307880
     - 5418140
     - 5418150
   installDir:
@@ -398919,6 +399106,33 @@ Everything is Black and White:
         store: steam
   steam:
     id: 365430
+Everything is Crab:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3526710.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3526710.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/Odd Dreams Digital/Everything is Crab/SyncedData/Steam/**/Slot_*_*v*save:
+      when:
+      - store: steam
+  installDir:
+    Everything is Crab: {}
+  launch:
+    <base>/Everything is Crab.exe:
+    - arguments: -timestamps
+      when:
+      - os: windows
+        store: steam
+  steam:
+    id: 3526710
 Everything is Mayo:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1097900.bin:
@@ -466432,6 +466646,20 @@ GPRO:
         store: steam
   steam:
     id: 2169220
+GRASS.EXE:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5459380.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5459380.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5459380
 GRAV:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_332500.bin:
@@ -497450,6 +497678,8 @@ Gorky 17:
       - save
       when:
       - os: windows
+  id:
+    lutris: gorky-zero-beyond-honor
 Gorn:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_578620.bin:
@@ -508052,6 +508282,26 @@ Groove Runner:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/NoRyte Studios/Groovekeeper/save_slot_*.es3:
+      when:
+      - os: windows
+        store: steam
+    <home>/AppData/LocalLow/NoRyte Studios/Groovekeeper/save_slot_*.es3.bak:
+      when:
+      - os: windows
+        store: steam
+    <home>/AppData/LocalLow/NoRyte Studios/Groovekeeper/save_slot_*.es3.tmp.bak:
+      when:
+      - os: windows
+        store: steam
+  installDir:
+    Groovekeeper: {}
+  launch:
+    <base>/Groovekeeper.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 4953280
 Groovy:
@@ -510286,6 +510536,16 @@ Guards of the Gate:
     id: 1620920
 Gubble 2:
   files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5511700.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5511700.bin:
+      tags:
+      - save
+      when:
+      - store: steam
     <base>/gubble0*.sav:
       tags:
       - save
@@ -510295,6 +510555,8 @@ Gubble 2:
     HKEY_CURRENT_USER/Software/Actual Entertainment/Gubble 2:
       tags:
       - config
+  steam:
+    id: 5511700
 Gubble HD:
   files:
     <base>/*.sav:
@@ -535086,7 +535348,23 @@ Hell is Us:
   gog:
     id: 1774500758
   id:
+    gogExtra:
+    - 1090940828
+    - 1165122201
+    - 1174177493
+    - 1420106896
+    - 1441208969
+    - 1643292408
+    - 1920579039
     lutris: hell-is-us
+    steamExtra:
+    - 1237358
+    - 2912150
+    - 3494340
+    - 3494350
+    - 3494370
+    - 3494380
+    - 3494390
   installDir:
     Hell Is Us: {}
   launch:
@@ -572133,6 +572411,9 @@ Hypnorain:
   steam:
     id: 495230
 Hypnos:
+  cloud:
+    gog: true
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_2861210.bin:
       tags:
@@ -572144,6 +572425,12 @@ Hypnos:
       - save
       when:
       - store: steam
+    <winLocalAppData>/HYPNOS/Saved/SaveGames/*.sav:
+      when:
+      - os: windows
+        store: steam
+  gog:
+    id: 1334825172
   id:
     lutris: hypnos
     steamExtra:
@@ -663646,12 +663933,26 @@ Level Devil:
       - save
       when:
       - store: steam
+    <xdgConfig>/share/leveldevil:
+      tags:
+      - config
+      when:
+      - os: linux
   installDir:
     Level Devil: {}
   launch:
+    <base>/Level Devil.app:
+    - when:
+      - os: mac
+        store: steam
     <base>/Level Devil.exe:
     - when:
-      - store: steam
+      - os: windows
+        store: steam
+    <base>/LevelDevil.x86_64:
+    - when:
+      - os: linux
+        store: steam
   steam:
     id: 3242750
 Level Up!:
@@ -671822,6 +672123,44 @@ Little Comet:
         store: steam
   steam:
     id: 856100
+Little Devil:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3242750.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3242750.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <xdgConfig>/share/leveldevil:
+      tags:
+      - config
+      when:
+      - os: linux
+  id:
+    lutris: game-level-devil
+  installDir:
+    Level Devil: {}
+  launch:
+    <base>/Level Devil.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/Level Devil.exe:
+    - when:
+      - os: windows
+        store: steam
+    <base>/LevelDevil.x86_64:
+    - when:
+      - os: linux
+        store: steam
+  steam:
+    id: 3242750
 Little Diggel:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_580960.bin:
@@ -685245,6 +685584,39 @@ Love, Sam:
     Love, Sam: {}
   steam:
     id: 1073820
+'Love: Fall in Death':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3077540.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3077540.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/SNR/Love Fall in Death:
+      tags:
+      - config
+      - save
+      when:
+      - os: windows
+  id:
+    lutris: love-fall-in-death
+    steamExtra:
+    - 5090500
+  installDir:
+    Love Fall in Death: {}
+  launch:
+    <base>/Love Fall in Death.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 3077540
 LoveBeat:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_354290.bin:
@@ -843428,6 +843800,22 @@ Pangeon:
         store: steam
   steam:
     id: 983670
+Pangit:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3841640.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3841640.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    lutris: pangit
+  steam:
+    id: 3841640
 Panic 64:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_4752390.bin:
@@ -895684,72 +896072,21 @@ Project P.I.T.T.:
       - save
       when:
       - store: steam
-    <home>/Library/Application Support/Godot/app_userdata/Project P.I.T.T/*.save:
-      when:
-      - os: mac
-        store: steam
-    <home>/Library/Application Support/Godot/app_userdata/Project P.I.T.T/*.save.bak:
-      when:
-      - os: mac
-        store: steam
-    <home>/Library/Application Support/Godot/app_userdata/Project P.I.T.T/keybindings.cfg:
-      when:
-      - os: mac
-        store: steam
-    <home>/Library/Application Support/Godot/app_userdata/Project P.I.T.T/locale.cfg:
-      when:
-      - os: mac
-        store: steam
-    <home>/Library/Application Support/Godot/app_userdata/Project P.I.T.T/profile.cfg:
-      when:
-      - os: mac
-        store: steam
-    <home>/Library/Application Support/Godot/app_userdata/Project P.I.T.T/settings.cfg:
-      when:
-      - os: mac
-        store: steam
-    <winAppData>/Godot/app_userdata/Project P.I.T.T/*.save:
-      when:
-      - store: steam
-    <winAppData>/Godot/app_userdata/Project P.I.T.T/*.save.bak:
-      when:
-      - store: steam
-    <winAppData>/Godot/app_userdata/Project P.I.T.T/keybindings.cfg:
-      when:
-      - store: steam
-    <winAppData>/Godot/app_userdata/Project P.I.T.T/locale.cfg:
-      when:
-      - store: steam
-    <winAppData>/Godot/app_userdata/Project P.I.T.T/profile.cfg:
-      when:
-      - store: steam
-    <winAppData>/Godot/app_userdata/Project P.I.T.T/settings.cfg:
-      when:
-      - store: steam
-    <xdgData>/godot/app_userdata/Project P.I.T.T/*.save:
+    <home>/.local/share/godot/app_userdata/Project P.I.T.T:
+      tags:
+      - save
       when:
       - os: linux
-        store: steam
-    <xdgData>/godot/app_userdata/Project P.I.T.T/*.save.bak:
+    <home>/Library/Application Support/Godot/app_userdata/Project P.I.T.T:
+      tags:
+      - save
       when:
-      - os: linux
-        store: steam
-    <xdgData>/godot/app_userdata/Project P.I.T.T/keybindings.cfg:
+      - os: mac
+    <winAppData>/Godot/app_userdata/Project P.I.T.T:
+      tags:
+      - save
       when:
-      - os: linux
-        store: steam
-    <xdgData>/godot/app_userdata/Project P.I.T.T/locale.cfg:
-      when:
-      - os: linux
-        store: steam
-    <xdgData>/godot/app_userdata/Project P.I.T.T/profile.cfg:
-      when:
-      - os: linux
-        store: steam
-    <xdgData>/godot/app_userdata/Project P.I.T.T/settings.cfg:
-      when:
-      - os: linux
-        store: steam
+      - os: windows
   id:
     lutris: project-pitt
     steamExtra:
@@ -910438,9 +910775,18 @@ Queen's Domain:
       - save
       when:
       - store: steam
+    <winLocalAppData>/QueensDomain/Saved/SaveGames/<storeUserId>/**/*.sav:
+      when:
+      - store: steam
   id:
     steamExtra:
     - 4081520
+  installDir:
+    QueensDomain: {}
+  launch:
+    <base>/QueensDomain.exe:
+    - when:
+      - store: steam
   steam:
     id: 1799840
 'Queen''s Garden: Halloween':
@@ -943192,6 +943538,20 @@ Resident Evil Zero HD Remaster:
         store: steam
   steam:
     id: 287290
+'Resident Evil: The Umbrella Chronicles':
+  files:
+    <base>/config.json:
+      tags:
+      - config
+      when:
+      - os: windows
+    <base>/saves:
+      tags:
+      - save
+      when:
+      - os: windows
+  id:
+    lutris: resident-evil-the-umbrella-chronicles
 Residual:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1290780.bin:
@@ -996626,6 +996986,36 @@ Scram:
     - 889820
   steam:
     id: 773920
+Scramble Knights Online:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2379350.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2379350.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/saves/<storeUserId>:
+      when:
+      - store: steam
+  installDir:
+    ScrambleKnights: {}
+  launch:
+    <base>/Game/eac_launcher:
+    - when:
+      - os: linux
+        store: steam
+    <base>/ScrambleKnightsBootstrapper.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 2379350
 'Scramble: Battle of Britain':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1530450.bin:
@@ -1015165,38 +1015555,7 @@ Shattered:
   steam:
     id: 712620
 Shattered - Tale of the Forgotten King:
-  cloud:
-    gog: true
-    steam: true
-  files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_1045180.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1045180.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <winLocalAppData>/ShatteredTOTFK/Saved/SaveGames/*.sav:
-      when:
-      - os: windows
-        store: steam
-  gog:
-    id: 1402489296
-  id:
-    lutris: shattered-tale-of-the-forgotten-king
-  installDir:
-    Shattered - Tale of the Forgotten King: {}
-  launch:
-    <base>/ShatteredTOTFK.exe:
-    - when:
-      - bit: 64
-        os: windows
-        store: steam
-  steam:
-    id: 1045180
+  alias: 'Shattered: Tale of the Forgotten King'
 Shattered God - Quest for the Divine Relic:
   cloud:
     steam: true
@@ -1015556,6 +1015915,39 @@ Shattered Universe:
         store: steam
   steam:
     id: 1179840
+'Shattered: Tale of the Forgotten King':
+  cloud:
+    gog: true
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1045180.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1045180.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/ShatteredTOTFK/Saved/SaveGames/*.sav:
+      when:
+      - os: windows
+        store: steam
+  gog:
+    id: 1402489296
+  id:
+    lutris: shattered-tale-of-the-forgotten-king
+  installDir:
+    Shattered - Tale of the Forgotten King: {}
+  launch:
+    <base>/ShatteredTOTFK.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+  steam:
+    id: 1045180
 Shatterline:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_2087030.bin:
@@ -1044196,6 +1044588,9 @@ Smelter:
       - save
       when:
       - store: steam
+  id:
+    steamExtra:
+    - 5453940
   steam:
     id: 4431400
 Smile To Fly:
@@ -1157529,6 +1157924,27 @@ Terrible Laboratory:
         store: steam
   steam:
     id: 985430
+Terrible Lizards:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2920220.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2920220.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/Windows/terrible_lizards/Saved/SaveGames/*.sav:
+      when:
+      - store: steam
+  installDir:
+    Terrible Lizards: {}
+  steam:
+    id: 2920220
 Terrifier The ARTcade Game:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3130400.bin:
@@ -1170301,6 +1170717,12 @@ The Cat in the Hat (2003):
       tags:
       - save
       when:
+      - store: steam
+  installDir:
+    Project CITH: {}
+  launch:
+    <base>/Cat In The Hat.exe:
+    - when:
       - store: steam
   steam:
     id: 3465710
@@ -1232900,8 +1233322,25 @@ The Wolf Among Us:
         store: steam
   steam:
     id: 250320
+The Wolf Among Us 2:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1884870.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1884870.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    lutris: the-wolf-among-us-2
+  steam:
+    id: 1884870
 The Wolf Among Us Remastered:
   cloud:
+    epic: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3884860.bin:
@@ -1232915,8 +1233354,12 @@ The Wolf Among Us Remastered:
       when:
       - store: steam
     <winDocuments>/Telltale Games/The Wolf Among Us Remastered:
+      tags:
+      - config
+      - save
       when:
-      - store: steam
+      - os: windows
+        store: steam
   id:
     steamExtra:
     - 5280090
@@ -1254962,6 +1255405,11 @@ Too Many Toys!:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/Jakub T & 4ydam/Too Many Toys!/*.es3:
+      tags:
+      - save
+      when:
+      - os: windows
   installDir:
     Too Many Toys!: {}
   launch:
@@ -1374244,6 +1374692,39 @@ Xenoraid:
         store: steam
   steam:
     id: 460220
+Xenosensory:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4037830.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4037830.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/Xenosensory:
+      tags:
+      - config
+      - save
+      when:
+      - os: windows
+  id:
+    lutris: xenosensory
+    steamExtra:
+    - 4289240
+  installDir:
+    Xenosensory: {}
+  launch:
+    <base>/Xenosensory.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 4037830
 'Xenosis: Alien Infection':
   cloud:
     steam: true
