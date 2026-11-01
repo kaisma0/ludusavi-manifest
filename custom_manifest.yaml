@@ -75838,6 +75838,15 @@ Arctico:
         store: steam
   steam:
     id: 325210
+Ardennes Offensive:
+  files:
+    <base>/AO_op:
+      tags:
+      - save
+      when:
+      - os: windows
+  id:
+    lutris: ardennes-offensive
 Ardent Seas:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1355680.bin:
@@ -186100,6 +186109,28 @@ Campus Notes - forget me not.:
       - config
       when:
       - os: windows
+Can 'Em All:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5133900.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5133900.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Can 'Em All: {}
+  launch:
+    <base>/Can 'Em All.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+  steam:
+    id: 5133900
 Can You Eat by Yourself:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_761720.bin:
@@ -243781,6 +243812,13 @@ Cop Bastard:
       - save
       when:
       - store: steam
+  installDir:
+    COP BASTARD: {}
+  launch:
+    <base>/COP BASTARD game.exe:
+    - when:
+      - os: windows
+        store: steam
   steam:
     id: 1742440
 Copa City:
@@ -257803,12 +257841,29 @@ Croakwood:
   steam:
     id: 2261380
 Croc 2:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5349950.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5349950.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  gog:
+    id: 2126885033
   id:
+    gogExtra:
+    - 1339998951
     lutris: croc-2
   registry:
     HKEY_LOCAL_MACHINE/SOFTWARE/Argonaut Software/Croc2/1.00:
       tags:
       - config
+  steam:
+    id: 5349950
 'Croc 2: Kingdom of the Gobbos':
   cloud:
     gog: true
@@ -292807,6 +292862,9 @@ Dead of Night:
   steam:
     id: 656630
 Dead of the Brain:
+  cloud:
+    gog: true
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_5056390.bin:
       tags:
@@ -292884,6 +292942,8 @@ Dead of the Brain:
     <winAppData>/PCX/DeadoftheBrain/persistent:
       when:
       - store: steam
+  gog:
+    id: 1645689113
   id:
     lutris: dead-of-the-brain
   installDir:
@@ -296902,6 +296962,8 @@ Death Toll:
       - os: windows
   gog:
     id: 1386697093
+  id:
+    lutris: death-track-resurrection
   installDir:
     Death Track: {}
   launch:
@@ -302187,6 +302249,13 @@ Deer & Boy:
       - store: steam
   steam:
     id: 1803140
+Deer Avenger 3D:
+  files:
+    <base>/savegame:
+      tags:
+      - save
+      when:
+      - os: windows
 Deer Hunt Legends:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_328670.bin:
@@ -321205,6 +321274,10 @@ Ding Dong XL:
     - when:
       - os: linux
         store: steam
+  registry:
+    HKEY_CURRENT_USER/Software/Nickervision Studios/Ding Dong XL:
+      tags:
+      - config
   steam:
     id: 862570
 DingDingDing:
@@ -390246,6 +390319,22 @@ Escape Academy:
       - config
   steam:
     id: 1812090
+'Escape Academy 2: Back 2 School':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3296060.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3296060.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 3296060
 Escape Architect VR:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_812610.bin:
@@ -663933,7 +664022,7 @@ Level Devil:
       - save
       when:
       - store: steam
-    <xdgConfig>/share/leveldevil:
+    <xdgData>/leveldevil:
       tags:
       - config
       when:
@@ -791884,6 +791973,9 @@ New World Horizon:
         store: steam
   steam:
     id: 1017670
+New World Order:
+  id:
+    lutris: new-world-order
 'New World: The Tupis':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_723880.bin:
@@ -834343,6 +834435,37 @@ Outline:
         store: steam
   steam:
     id: 812850
+Outlive 25:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2948680.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2948680.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winAppData>/Continuum/Outlive25/Players/<storeUserId>:
+      when:
+      - os: windows
+        store: steam
+    <winDocuments>/Outlive25/User Maps/**/*.map:
+      when:
+      - os: windows
+        store: steam
+  id:
+    lutris: outlive-25
+  installDir:
+    Outlive 25: {}
+  launch:
+    <base>/Outlive2025.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 2948680
 'Outliver: Redemption':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1011370.bin:
@@ -1130702,6 +1130825,26 @@ Survivor of Eschewal:
         store: steam
   steam:
     id: 738260
+'Survivor: Castaway Island':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2396060.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2396060.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Survivor: {}
+  launch:
+    <base>/Survivor.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 2396060
 'Survivor: The Living Dead':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_386200.bin:
@@ -1201939,6 +1202082,11 @@ The Lion's Song:
       - save
       when:
       - store: steam
+    <base>/engine.cfg:
+      tags:
+      - config
+      when:
+      - os: windows
     <winLocalAppData>/Mipumi/TLS/*.save:
       tags:
       - save
@@ -1201952,8 +1202100,15 @@ The Lion's Song:
   gog:
     id: 1740490644
   id:
+    gogExtra:
+    - 1645403563
+    lutris: the-lions-song
     steamExtra:
+    - 459140
+    - 477020
+    - 477030
     - 477040
+    - 774871
   installDir:
     The Lion's Song: {}
   launch:
@@ -1337012,6 +1337167,8 @@ Warlords Battlecry II:
       - os: windows
   gog:
     id: 1207659137
+  id:
+    lutris: warlords-battlecry-2
 Warlords Battlecry III:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_433280.bin:
@@ -1362838,6 +1362995,12 @@ Wolfpack:
   steam:
     id: 490920
 Wolfschanze:
+  files:
+    <base>/Data/*.sav:
+      tags:
+      - save
+      when:
+      - os: windows
   id:
     lutris: wolfschanze
 Wolfsong:
