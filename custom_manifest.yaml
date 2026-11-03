@@ -67119,6 +67119,45 @@ Anomalies:
         store: steam
   steam:
     id: 546780
+Anomalith:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4017880.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4017880.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/FURYU Corporation/Anomalith/<storeUserId>:
+      tags:
+      - config
+      - save
+      when:
+      - os: windows
+  id:
+    lutris: anomalith
+    steamExtra:
+    - 4383910
+    - 4424530
+    - 4424540
+    - 4682820
+    - 5240430
+    - 5240440
+  installDir:
+    Anomalith: {}
+  launch:
+    <base>/Anomalith.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+  steam:
+    id: 4017880
 Anomaly 1729:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_424320.bin:
@@ -129427,6 +129466,37 @@ Beyond Critical:
         store: steam
   steam:
     id: 960630
+Beyond Dark Castle:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4706300.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4706300.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Beyond Dark Castle: {}
+  launch:
+    <base>/Beyond Dark Castle.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/Linux/Beyond Dark Castle:
+    - when:
+      - os: linux
+        store: steam
+      workingDir: <base>/Linux
+    <base>/Win32/Beyond Dark Castle.exe:
+    - when:
+      - os: windows
+        store: steam
+      workingDir: <base>/Win32
+  steam:
+    id: 4706300
 Beyond Despair:
   cloud:
     steam: true
@@ -134701,13 +134771,12 @@ Bionic Bay:
       - save
       when:
       - store: steam
-    <home>/.config/unity3d/PsychoflowStudio/BionicBay/*.sav:
+    <winDocuments>/Saved Games/BionicBay:
+      tags:
+      - config
+      - save
       when:
-      - os: linux
-        store: steam
-    <winDocuments>/Saved Games/BionicBay/**/*.sav:
-      when:
-      - store: steam
+      - os: windows
   id:
     lutris: bionic-bay
   installDir:
@@ -170824,6 +170893,7 @@ Brotato:
     - 1126351084
     - 1562256538
     - 1638201898
+    - 2120276833
     - 2146695817
     lutris: brotato
     steamExtra:
@@ -217262,9 +217332,16 @@ Cineris Somnia:
       - save
       when:
       - store: steam
-    <home>/AppData/LocalLow/Nayuta Studio/Cineris Somnia/save/*.sav:
+    <winAppData>/LocalLow/Nayuta Studio/Cineris Somnia:
+      tags:
+      - config
       when:
-      - store: steam
+      - os: windows
+    <winAppData>/LocalLow/Nayuta Studio/Cineris Somnia/save:
+      tags:
+      - save
+      when:
+      - os: windows
   id:
     lutris: cineris-somnia
     steamExtra:
@@ -273384,42 +273461,6 @@ DEFCON VR:
         store: steam
   steam:
     id: 1091320
-DERELIKT:
-  files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_3810510.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3810510.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <home>/AppData/LocalLow/Visuwyg/DERELIKT/PersistentData/*/*.drt:
-      tags:
-      - save
-      when:
-      - os: windows
-    <home>/AppData/LocalLow/Visuwyg/DERELIKT/PersistentData/*/data.ctg:
-      tags:
-      - save
-      when:
-      - os: windows
-    <home>/AppData/LocalLow/Visuwyg/DERELIKT/PersistentData/*/settings.stg:
-      tags:
-      - config
-      when:
-      - os: windows
-  id:
-    steamExtra:
-    - 5242870
-  registry:
-    HKEY_CURRENT_USER/Software/Visuwyg/DERELIKT:
-      tags:
-      - config
-  steam:
-    id: 3810510
 DERU - The Art of Cooperation:
   cloud:
     steam: true
@@ -310428,6 +310469,45 @@ Dereliction:
         store: steam
   steam:
     id: 969420
+Derelikt:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3810510.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3810510.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/Visuwyg/DERELIKT/PersistentData/*/*.drt:
+      tags:
+      - save
+      when:
+      - os: windows
+    <home>/AppData/LocalLow/Visuwyg/DERELIKT/PersistentData/*/data.ctg:
+      tags:
+      - save
+      when:
+      - os: windows
+    <home>/AppData/LocalLow/Visuwyg/DERELIKT/PersistentData/*/settings.stg:
+      tags:
+      - config
+      when:
+      - os: windows
+  gog:
+    id: 1370908824
+  id:
+    lutris: derelikt
+    steamExtra:
+    - 5242870
+  registry:
+    HKEY_CURRENT_USER/Software/Visuwyg/DERELIKT:
+      tags:
+      - config
+  steam:
+    id: 3810510
 Derora:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_700540.bin:
@@ -371139,21 +371219,16 @@ Ecstatica (2026):
       - save
       when:
       - store: steam
-    <winAppData>/SNEG/Ecstatica/Save Slots/000*.ecs:
+    <winAppData>/SNEG/Ecstatica:
+      tags:
+      - config
       when:
-      - store: steam
-    <winAppData>/SNEG/Ecstatica/Save Slots/000*.png:
+      - os: windows
+    <winAppData>/SNEG/Ecstatica/Save Slots:
+      tags:
+      - save
       when:
-      - store: steam
-    <winAppData>/SNEG/Ecstatica/controls.bin:
-      when:
-      - store: steam
-    <winAppData>/SNEG/Ecstatica/settings.json:
-      when:
-      - store: steam
-    <winAppData>/SNEG/Ecstatica/store.bin:
-      when:
-      - store: steam
+      - os: windows
   gog:
     id: 1333226285
   id:
@@ -460375,10 +460450,14 @@ Frostpunk 2:
     - 1800456002
     - 1967910805
     - 2072738332
+    lutris: frostpunk-2
     steamExtra:
     - 2791490
     - 2791500
     - 2791510
+    - 3197520
+    - 4124750
+    - 4124760
   installDir:
     Frostpunk2: {}
   launch:
@@ -505571,6 +505650,33 @@ Grey Hack:
         store: steam
   steam:
     id: 605230
+'Grey Heritage: Noble Duty':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2424300.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2424300.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/Save:
+      tags:
+      - save
+      when:
+      - os: windows
+  installDir:
+    Grey Heritage Noble Duty: {}
+  launch:
+    <base>/game.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 2424300
 Grey Phobia:
   cloud:
     steam: true
@@ -744015,6 +744121,46 @@ Mixed Estate:
     Mixed Estate: {}
   steam:
     id: 944840
+'Mixed Spirits: Bartender':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3891400.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3891400.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/.config/unity3d/Rogue Duck Interactive/Mixed Spirits/*.json:
+      when:
+      - os: linux
+        store: steam
+    <home>/AppData/LocalLow/Rogue Duck Interactive/Mixed Spirits/**/*.json:
+      when:
+      - store: steam
+    <home>/Library/Application Support/Rogue Duck Interactive/Mixed Spirits/*.json:
+      when:
+      - os: mac
+        store: steam
+  installDir:
+    Mixed Spirits Bartender Simulator: {}
+  launch:
+    <base>/Mixed Spirits.exe:
+    - when:
+      - os: windows
+        store: steam
+    <base>/app.x86_64:
+    - when:
+      - os: linux
+        store: steam
+    <base>/mac.app:
+    - when:
+      - os: mac
+        store: steam
+  steam:
+    id: 3891400
 Mixolumia:
   cloud:
     steam: true
@@ -924422,8 +924568,6 @@ Raptor Valley:
   steam:
     id: 358360
 'Raptor: Call of the Shadows 2010 Edition':
-  cloud:
-    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_336060.bin:
       tags:
@@ -924441,6 +924585,26 @@ Raptor Valley:
       when:
       - os: windows
     <base>/saveoptions.dat:
+      tags:
+      - config
+      when:
+      - os: windows
+    <home>/ACH_*.DAT:
+      tags:
+      - save
+      when:
+      - os: windows
+    <home>/CHAR*.ACH:
+      tags:
+      - save
+      when:
+      - os: windows
+    <home>/CHAR*.FIL:
+      tags:
+      - save
+      when:
+      - os: windows
+    <home>/options.dat:
       tags:
       - config
       when:
@@ -947064,6 +947228,8 @@ Return to Zork:
       - store: steam
   gog:
     id: 1207658907
+  id:
+    lutris: return-to-zork
   installDir:
     Return to Zork: {}
   launch:
@@ -1004480,6 +1004646,44 @@ Selini:
         store: steam
   steam:
     id: 1434050
+Selkie's Salvage&Co.:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4984870.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4984870.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winAppData>/Selkies Salvage/playerconfig.tres:
+      tags:
+      - config
+      when:
+      - os: windows
+    <winAppData>/Selkies Salvage/save*.tres:
+      tags:
+      - save
+      when:
+      - os: windows
+  installDir:
+    SelkieSalvage&Co: {}
+  launch:
+    <base>/Selkie.exe:
+    - when:
+      - store: steam
+    - arguments: --rendering-driver opengl3
+      when:
+      - store: steam
+    - arguments: --rendering-driver d3d12
+      when:
+      - store: steam
+  steam:
+    id: 4984870
 Selknam Defense:
   cloud:
     steam: true
@@ -1078645,9 +1078849,11 @@ Spooky Cats:
       - save
       when:
       - store: steam
-    <base>/SavesDir/*.sav:
+    <winLocalAppData>/SpookyCats/User Data:
+      tags:
+      - save
       when:
-      - store: steam
+      - os: windows
   installDir:
     Spooky Cats: {}
   launch:
@@ -1080489,6 +1080695,8 @@ SpyParty:
       - os: dos
   gog:
     id: 1207659115
+  id:
+    lutris: spycraft-the-great-game
   installDir:
     Spycraft - The Great Game: {}
   launch:
@@ -1237635,7 +1237843,14 @@ Thief Town:
   gog:
     id: 1477689565
   id:
+    gogExtra:
+    - 1234906600
+    - 2045456986
+    - 2101051339
     lutris: thief-the-dark-project-remastered
+    steamExtra:
+    - 5407730
+    - 5497820
   steam:
     id: 4200960
 Thievery:
@@ -1321385,6 +1321600,34 @@ Vivid!:
       - store: steam
   steam:
     id: 1147870
+Vividlope:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2078510.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2078510.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/VIVIDLOPE/*.viv:
+      when:
+      - store: steam
+    <winLocalAppData>/VIVIDLOPE/*.vivi:
+      when:
+      - store: steam
+  installDir:
+    VIVIDLOPE: {}
+  launch:
+    <base>/VIVIDLOPE.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 2078510
 Vividstasis:
   cloud:
     steam: true
@@ -1329250,7 +1329493,7 @@ Wally and the FANTASTIC PREDATORS:
       - save
       when:
       - os: windows
-    C:/Windows/disney.ini:
+    <winDir>/disney.ini:
       tags:
       - config
       when:
@@ -1385618,6 +1385861,20 @@ Zarvot:
       - store: steam
   steam:
     id: 992930
+Zarya:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2786710.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2786710.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 2786710
 Zarya and the Cursed Skull:
   cloud:
     steam: true
