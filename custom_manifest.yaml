@@ -40710,6 +40710,8 @@ Age of Wonders 4:
     gogExtra:
     - 1113728204
     - 1197286076
+    - 1265819430
+    - 1417766135
     - 1467390423
     - 1578247919
     - 1592003664
@@ -40719,6 +40721,7 @@ Age of Wonders 4:
     - 1701722110
     - 1804193941
     - 1807709024
+    - 1843615102
     - 1857270805
     - 1873500519
     - 1886745991
@@ -40748,6 +40751,12 @@ Age of Wonders 4:
     - 3976900
     - 3976910
     - 4057080
+    - 5094350
+    - 5094360
+    - 5094370
+    - 5094380
+    - 5094390
+    - 5113010
   installDir:
     Age of Wonders 4: {}
   launch:
@@ -166808,6 +166817,8 @@ Brian Lara International Cricket 2007:
       - save
       when:
       - store: steam
+  id:
+    lutris: brian-lara-international-cricket-2007
   installDir:
     Brian Lara International Cricket 2007: {}
   launch:
@@ -217332,12 +217343,12 @@ Cineris Somnia:
       - save
       when:
       - store: steam
-    <winAppData>/LocalLow/Nayuta Studio/Cineris Somnia:
+    <home>/AppData/LocalLow/Nayuta Studio/Cineris Somnia:
       tags:
       - config
       when:
       - os: windows
-    <winAppData>/LocalLow/Nayuta Studio/Cineris Somnia/save:
+    <home>/AppData/LocalLow/Nayuta Studio/Cineris Somnia/save:
       tags:
       - save
       when:
@@ -345971,6 +345982,8 @@ DreadOut 3:
       - save
       when:
       - store: steam
+  id:
+    lutris: dreadout-3
   steam:
     id: 3500810
 DreadOut Remastered Collection:
@@ -488561,6 +488574,10 @@ Gloomy Eyes:
   gog:
     id: 1854583896
   id:
+    gogExtra:
+    - 1524112552
+    - 1686978672
+    - 2012213766
     lutris: gloomy-eyes--1
     steamExtra:
     - 3986200
@@ -493409,6 +493426,21 @@ Godzilla Voxel Wars:
       - save
       when:
       - store: steam
+    <winLocalAppData>/GZPro/Saved/SaveGames/<storeUserId>/GZProSave.sav:
+      when:
+      - os: windows
+        store: steam
+  id:
+    steamExtra:
+    - 4653170
+  installDir:
+    Godzilla Destroy All Monsters Melee Remastered: {}
+  launch:
+    <base>/GZPro/Binaries/Win64/GZProSteam-Win64-Shipping.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 4251460
 Goetia:
@@ -531634,6 +531666,35 @@ Heartbound:
         store: steam
   steam:
     id: 836350
+"Heartfall \u2014 A Tale in Three Lives":
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5257930.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5257930.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    "Heartfall \u2014 A Tale in Three Lives": {}
+  launch:
+    <base>/3rdRPG-shell2.app/Contents/MacOS/3rdRPG-shell2:
+    - when:
+      - os: mac
+        store: steam
+    <base>/Heartfall.exe:
+    - when:
+      - os: windows
+        store: steam
+    <base>/Heartfall.x86_64:
+    - when:
+      - os: linux
+        store: steam
+  steam:
+    id: 5257930
 Hearthlands:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_336300.bin:
@@ -547914,6 +547975,21 @@ Hexzen:
       - os: linux
   id:
     lutris: hexzen
+  installDir:
+    Hexzen: {}
+  launch:
+    <base>/Hexzen.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/hexzen_game:
+    - when:
+      - os: linux
+        store: steam
+    <base>/hexzen_game.exe:
+    - when:
+      - os: windows
+        store: steam
   steam:
     id: 4886450
 'Hi-5: Create, Paint and Play':
@@ -587495,6 +587571,20 @@ Indian Summer:
         store: steam
   steam:
     id: 900380
+Indian Truck Simulator:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5346150.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5346150.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5346150
 Indiana Boy Steam Edition:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_990950.bin:
@@ -623707,12 +623797,12 @@ Katana Dragon:
   installDir:
     Katana Dragon: {}
   launch:
-    <base>/katana_dragon.exe:
+    <base>/katana-dragon.exe:
     - when:
       - bit: 64
         os: windows
         store: steam
-    <base>/katana_dragon.x86_64:
+    <base>/katana-dragon.x86_64:
     - when:
       - bit: 64
         os: linux
@@ -653644,7 +653734,10 @@ Layers of Fear:
     id: 1455107123
   id:
     gogExtra:
+    - 1096897883
     - 1256894029
+    - 1562968029
+    lutris: layers-of-fear
     steamExtra:
     - 493530
     - 550210
@@ -776907,6 +777000,10 @@ NIMBY Rails:
     - when:
       - os: windows
         store: steam
+    <base>/nimbyrails:
+    - when:
+      - os: linux
+        store: steam
   steam:
     id: 1134710
 NIMRODS:
@@ -856715,6 +856812,8 @@ Perimeter:
       - os: windows
   gog:
     id: 1207658667
+  id:
+    lutris: perimeter
   installDir:
     Perimeter: {}
   launch:
@@ -856770,6 +856869,8 @@ Perimeter:
         store: steam
   gog:
     id: 1454498998
+  id:
+    lutris: perimeter-emperors-testament
   installDir:
     PerimeterET: {}
   launch:
@@ -877067,9 +877168,12 @@ Pocket Mirror ~ GoldenerTraum:
       - save
       when:
       - store: steam
-    <base>/save/*.rmmzsave:
+    <base>/save:
+      tags:
+      - config
+      - save
       when:
-      - store: steam
+      - os: windows
   installDir:
     Pocket Mirror - Goldenertraum: {}
   launch:
@@ -908200,6 +908304,30 @@ Qanga:
       - save
       when:
       - store: steam
+    <winLocalAppData>/Qanga/Saved/SaveGames/*Tutorial.sav:
+      when:
+      - os: windows
+        store: steam
+    <winLocalAppData>/Qanga/Saved/SaveGames/BACKUP_Offline/*.sav:
+      when:
+      - os: windows
+        store: steam
+    <winLocalAppData>/Qanga/Saved/SaveGames/LocalData.sav:
+      when:
+      - os: windows
+        store: steam
+    <winLocalAppData>/Qanga/Saved/SaveGames/Offline:
+      when:
+      - os: windows
+        store: steam
+    <winLocalAppData>/Qanga/Saved/SaveGames/QStorage/Offline/**/*.qst:
+      when:
+      - os: windows
+        store: steam
+    <winLocalAppData>/Qanga/Saved/SaveGames/QStorage/Offline/**/*.qst.bak:
+      when:
+      - os: windows
+        store: steam
   installDir:
     Qanga: {}
   launch:
@@ -1028832,6 +1028960,8 @@ Silhouette:
   steam:
     id: 526310
 Silica:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1494420.bin:
       tags:
@@ -1041086,6 +1041216,16 @@ Slice & Dice:
       - save
       when:
       - os: windows
+    <home>/.prefs/slice-and-dice-3:
+      tags:
+      - save
+      when:
+      - os: linux
+    <home>/.prefs/slice-and-dice-3x:
+      tags:
+      - save
+      when:
+      - os: linux
   installDir:
     Slice_n_Dice: {}
   launch:
@@ -1150493,6 +1150633,20 @@ Task Force:
       workingDir: <base>/dosbox_windows
   steam:
     id: 329680
+"Task Force Delta \u2011 Afghanistan":
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1700370.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1700370.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 1700370
 Task is to Survive:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_735410.bin:
@@ -1172357,6 +1172511,23 @@ The Citadel:
         store: steam
   steam:
     id: 1378290
+The Citadel Project:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4795460.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4795460.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    steamExtra:
+    - 5111940
+  steam:
+    id: 4795460
 The Clans - Saga of the Twins:
   cloud:
     steam: true
@@ -1193983,6 +1194154,11 @@ The Jackbox Party Pack 11:
       - save
       when:
       - store: steam
+    <winLocalAppData>/Jackbox Games/The Jackbox Party Pack 11:
+      tags:
+      - save
+      when:
+      - os: windows
   id:
     steamExtra:
     - 4046830
@@ -1194005,6 +1194181,47 @@ The Jackbox Party Pack 11:
         store: steam
   steam:
     id: 3364070
+The Jackbox Party Pack 12:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4199960.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4199960.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/Jackbox Games/The Jackbox Party Pack 12:
+      tags:
+      - save
+      when:
+      - os: windows
+  id:
+    steamExtra:
+    - 5108610
+  installDir:
+    The Jackbox Party Pack 12: {}
+  launch:
+    <base>/Launcher.sh:
+    - when:
+      - bit: 64
+        os: linux
+        store: steam
+    <base>/The Jackbox Party Pack 12.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/The Jackbox Party Pack 12.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+  steam:
+    id: 4199960
 The Jackbox Party Pack 2:
   cloud:
     steam: true
@@ -1194446,6 +1194663,46 @@ The Jackbox Party Starter:
         store: steam
   steam:
     id: 1755580
+The Jackbox Survey Scramble:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2948640.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2948640.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/Jackbox Games/The Jackbox Survey Scramble:
+      tags:
+      - save
+      when:
+      - os: windows
+  id:
+    steamExtra:
+    - 3349110
+  installDir:
+    The Jackbox Survey Scramble: {}
+  launch:
+    <base>/Launcher.sh:
+    - when:
+      - bit: 64
+        os: linux
+        store: steam
+    <base>/The Jackbox Survey Scramble.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/The Jackbox Survey Scramble.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 2948640
 The Janitor:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_502880.bin:
@@ -1222083,6 +1222340,26 @@ The Sinking City Remastered:
     The Sinking City: {}
   steam:
     id: 750130
+'The Sisters 2: Road to Fame':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2434050.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2434050.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    The Sisters 2 - Road to Fame: {}
+  launch:
+    <base>/The Sisters 2 - Road to Fame.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 2434050
 'The Sisters: Party of the Year':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1502540.bin:
@@ -1257652,6 +1257929,7 @@ Tormentor X Punisher:
     id: 500670
 Tormentum II:
   cloud:
+    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_931060.bin:
@@ -1257675,6 +1257953,8 @@ Tormentum II:
       - save
       when:
       - os: windows
+  gog:
+    id: 1169385437
   id:
     lutris: tormentum-ii
     steamExtra:
@@ -1276925,6 +1277205,38 @@ Trivia King:
         store: steam
   steam:
     id: 875780
+Trivia Murder Party 3:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3048060.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3048060.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/TMP3/Saved/Config:
+      tags:
+      - config
+      when:
+      - os: windows
+    <winLocalAppData>/TMP3/Saved/SaveGames:
+      tags:
+      - save
+      when:
+      - os: windows
+  installDir:
+    Trivia Murder Party 3: {}
+  launch:
+    <base>/TMP3.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+  steam:
+    id: 3048060
 Trivia Night:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_628570.bin:
