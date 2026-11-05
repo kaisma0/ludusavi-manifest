@@ -24560,6 +24560,13 @@ ATOM RPG:
       - os: linux
   gog:
     id: 1673367037
+  id:
+    gogExtra:
+    - 1531569593
+    - 2085203195
+    steamExtra:
+    - 1093400
+    - 5210340
   installDir:
     ATOM RPG: {}
   launch:
@@ -92676,6 +92683,13 @@ Atrocity:
         store: steam
   steam:
     id: 979620
+Atrox:
+  files:
+    <base>/Users/<storeUserId>:
+      tags:
+      - save
+      when:
+      - os: windows
 Attached:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1076730.bin:
@@ -133189,6 +133203,20 @@ Bildo:
         store: steam
   steam:
     id: 674390
+Bill & Ted's Excellent Adventure Arcade:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5359820.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5359820.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5359820
 'Billiard: VR':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_566290.bin:
@@ -167986,9 +168014,15 @@ Brief Karate Foolish:
     <base>/SavesDir/*.sav:
       when:
       - store: steam
+  id:
+    lutris: brief-karate-foolish
   installDir:
     Brief Karate Foolish: {}
   launch:
+    <base>/BriefKarateLauncher.exe:
+    - arguments: -netplay
+      when:
+      - store: steam
     <base>/SFWinCf.EXE:
     - when:
       - store: steam
@@ -170908,6 +170942,7 @@ Brotato:
     - 2146695817
     lutris: brotato
     steamExtra:
+    - 1979010
     - 2868390
     - 3281080
     - 4498220
@@ -184566,6 +184601,11 @@ Call of Duty Black Ops Cold War:
       - save
       when:
       - store: steam
+    <winAppData>/Local/Activision/Call of Duty/players:
+      tags:
+      - config
+      when:
+      - os: windows
     <winLocalAppData>/Activision/Call of Duty/players/<storeUserId>:
       tags:
       - save
@@ -547566,6 +547606,8 @@ Hexologic:
       - save
       when:
       - store: steam
+  id:
+    lutris: hexologic
   installDir:
     Hexologic: {}
   launch:
@@ -627317,6 +627359,27 @@ Kiborg:
         store: steam
   steam:
     id: 2796130
+Kick:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3760370.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3760370.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Kick it: {}
+  launch:
+    <base>/Kick.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 3760370
 Kick Ass Commandos:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_359140.bin:
@@ -721937,6 +722000,7 @@ MegaRace 2:
   id:
     gogExtra:
     - 1207658758
+    lutris: megarace-2
   installDir:
     MegaRace 2: {}
   launch:
@@ -721984,6 +722048,8 @@ MegaRace 3:
       - os: windows
   gog:
     id: 1207658764
+  id:
+    lutris: megarace-3
   installDir:
     MegaRace 3: {}
   launch:
@@ -761692,6 +761758,36 @@ Mr.King Luo!Don't be kidding:
         store: steam
   steam:
     id: 1198310
+Mr.Mine:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1397920.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1397920.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    lutris: mr-dot-mine
+  installDir:
+    MrMine: {}
+  launch:
+    <base>/Mr.Mine.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/win-unpacked/Mr.Mine.exe:
+    - arguments: --in-process-gpu --process-start-args "-disable-features=HardwareMediaKeyHandling"
+      when:
+      - os: windows
+        store: steam
+  steam:
+    id: 1397920
 Mr.President Prologue Episode:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_530540.bin:
@@ -853379,6 +853475,11 @@ Peace, Death!:
       - save
       when:
       - store: steam
+    <winLocalAppData>/PeaceDeath/*.ini:
+      tags:
+      - config
+      when:
+      - os: windows
     <winLocalAppData>/PeaceDeath/stageselectroom100.ini:
       tags:
       - save
@@ -878219,6 +878320,25 @@ Pokris:
         store: steam
   steam:
     id: 1036780
+"Pok\xE9Park Wii: Pikachu's Adventure":
+  files:
+    <base>/R8AE01/nand/title/00010000/52384145/data:
+      tags:
+      - save
+      when:
+      - os: windows
+    <base>/R8AE01/nand/title/00010000/52384145/data/GD0:
+      tags:
+      - save
+      when:
+      - os: windows
+    <base>/settings.ini:
+      tags:
+      - config
+      when:
+      - os: windows
+  id:
+    lutris: pokepark-wii-pikachu-s-adventure
 "Pok\xE9mon Trading Card Game Live":
   files:
     <winAppData>/Pokemon/Pokemon TCG Live:
@@ -884231,6 +884351,44 @@ Potata:
         store: steam
   steam:
     id: 1044020
+Potato Please:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5266240.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5266240.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/GoldenHorn/PotatoPlease/profile.json:
+      tags:
+      - save
+      when:
+      - os: windows
+    <home>/AppData/LocalLow/GoldenHorn/PotatoPlease/saves/*.sav:
+      tags:
+      - save
+      when:
+      - os: windows
+  installDir:
+    Potato Please: {}
+  launch:
+    <base>/PotatoPlease.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+  registry:
+    HKEY_CURRENT_USER/Software/GoldenHorn/PotatoPlease:
+      tags:
+      - config
+  steam:
+    id: 5266240
 Potato Thriller Steamed Potato Edition:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_486650.bin:
@@ -894381,6 +894539,37 @@ Project Abyss:
         store: steam
   steam:
     id: 552410
+Project Afterfall:
+  cloud:
+    gog: true
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3360890.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3360890.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  gog:
+    id: 2070989186
+  id:
+    lutris: project-thea
+    steamExtra:
+    - 3799020
+  installDir:
+    Project Thea: {}
+  launch:
+    <base>/ProjectThea.exe:
+    - arguments: -force-d3d11
+      when:
+      - os: windows
+        store: steam
+  steam:
+    id: 3360890
 Project Aftermath:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_21400.bin:
@@ -897349,26 +897538,7 @@ Project Temporality:
   steam:
     id: 290320
 Project Thea:
-  files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_3360890.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3360890.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-  installDir:
-    Project Thea: {}
-  launch:
-    <base>/ProjectThea.exe:
-    - when:
-      - os: windows
-        store: steam
-  steam:
-    id: 3360890
+  alias: Project Afterfall
 Project Three:
   cloud:
     steam: true
@@ -924743,6 +924913,16 @@ Raptor Valley:
       - save
       when:
       - store: steam
+    <winAppData>/Raptor2015:
+      tags:
+      - save
+      when:
+      - os: windows
+    <winAppData>/Raptor2015/options.dat:
+      tags:
+      - config
+      when:
+      - os: windows
   gog:
     id: 1207658879
   installDir:
@@ -1144482,6 +1144662,33 @@ Tale Of Starship:
         store: steam
   steam:
     id: 1081430
+Tale Sweeper:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4764420.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4764420.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/DefaultCompany/Tale Sweeper/save.dat:
+      when:
+      - store: steam
+    <home>/Library/Application Support/DefaultCompany/Tale Sweeper/save.dat:
+      when:
+      - os: mac
+        store: steam
+  installDir:
+    Tale Sweeper: {}
+  launch:
+    <base>/Tale Sweeper.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 4764420
 Tale of Alamar:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_746270.bin:
@@ -1147443,6 +1147650,16 @@ Tametsi:
       - save
       when:
       - os: windows
+    <xdgData>/Epic/Shadows/Config/LinuxNoEditor:
+      tags:
+      - config
+      when:
+      - os: linux
+    <xdgData>/Epic/Shadows/Saved/SaveGames:
+      tags:
+      - save
+      when:
+      - os: linux
   gog:
     id: 1883930697
   id:
@@ -1323388,11 +1323605,10 @@ Void/Breaker:
       - save
       when:
       - store: steam
-    <winLocalAppData>/VOIDBREAKER/Saved/Config/Windows/*.ini:
+    <winLocalAppData>/VOIDBREAKER/Saved/SaveGames/LimaSaveGame.sav:
       when:
-      - os: windows
-        store: steam
-    <winLocalAppData>/VOIDBREAKER/Saved/SaveGames/*.sav:
+      - store: steam
+    <winLocalAppData>/VOIDBREAKER/Saved/SaveGames/TimePlayed.sav:
       when:
       - store: steam
   installDir:
@@ -1346806,6 +1347022,32 @@ Wendy's Mart 3D:
         store: steam
   steam:
     id: 789700
+'WendyQuest: Legend of the Four Corner Stones':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3339970.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3339970.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/package.nw/save/*.rmmzsave:
+      when:
+      - store: steam
+  installDir:
+    Wendy Quest: {}
+  launch:
+    <base>/WendyQuest.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 3339970
 Wenjia:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_933450.bin:
@@ -1376702,32 +1376944,6 @@ YORG.io 3:
     id: 1134480
 YOU - The Untold Stories:
   alias: 'You: The Untold Stories'
-'YOU and ME and HER: A Love Story':
-  files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_1293820.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1293820.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <winAppData>/Nitroplus/totono:
-      tags:
-      - save
-      when:
-      - os: windows
-  installDir:
-    YOU and ME and HER - A Love Story: {}
-  launch:
-    <base>/totono_Steam.exe:
-    - when:
-      - os: windows
-        store: steam
-  steam:
-    id: 1293820
 'YU-NO: A Girl Who Chants Love at the Bound of this World':
   alias: 'YU-NO: A Girl Who Chants Love at the Bound of this World (2017)'
 'YU-NO: A Girl Who Chants Love at the Bound of this World (2017)':
@@ -1381450,6 +1381666,32 @@ You Will Never Get This Achievement:
         store: steam
   steam:
     id: 771410
+'You and Me and Her: A Love Story':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1293820.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1293820.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winAppData>/Nitroplus/totono:
+      tags:
+      - save
+      when:
+      - os: windows
+  installDir:
+    YOU and ME and HER - A Love Story: {}
+  launch:
+    <base>/totono_Steam.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 1293820
 You are Never Alone:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_978020.bin:
