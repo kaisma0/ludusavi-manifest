@@ -186270,6 +186270,16 @@ Can 'Em All:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/LuisDev/Can 'Em All/save.sav:
+      tags:
+      - save
+      when:
+      - os: windows
+    <home>/AppData/LocalLow/LuisDev/Can 'Em All/settings.sav:
+      tags:
+      - config
+      when:
+      - os: windows
   installDir:
     Can 'Em All: {}
   launch:
@@ -186278,6 +186288,10 @@ Can 'Em All:
       - bit: 64
         os: windows
         store: steam
+  registry:
+    HKEY_CURRENT_USER/Software/LuisDev/Can 'Em All:
+      tags:
+      - config
   steam:
     id: 5133900
 Can You Eat by Yourself:
@@ -192780,6 +192794,8 @@ Carnivores 2:
       - save
       when:
       - store: steam
+  id:
+    lutris: carnivores-dinosaur-hunter-reborn
   installDir:
     CarnivoresReborn: {}
   launch:
@@ -454178,6 +454194,8 @@ Fragile Allegiance:
       - os: dos
   gog:
     id: 1207659059
+  id:
+    lutris: fragile-allegiance
   installDir:
     Fragile Allegiance: {}
   launch:
@@ -525837,6 +525855,8 @@ Hardwar:
       - save
       when:
       - os: windows
+  id:
+    lutris: hardwar
   installDir:
     Hardwar: {}
   launch:
@@ -527252,6 +527272,17 @@ Hasbro Games Junior Collection:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/Casual Brothers/Hasbro Games Junior Collection:
+      when:
+      - store: steam
+  installDir:
+    HBGC: {}
+  launch:
+    <base>/HBGC.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 4124830
 Hasfax:
@@ -674925,6 +674956,11 @@ Living The Deal:
       - save
       when:
       - store: steam
+    <base>/Game.ini:
+      tags:
+      - config
+      when:
+      - os: windows
     <base>/Save:
       tags:
       - save
@@ -716824,6 +716860,10 @@ Max, an Autistic Journey:
       - save
       when:
       - store: steam
+  id:
+    lutris: max-the-curse-of-brotherhood
+    steamExtra:
+    - 272390
   installDir:
     Max The Curse of Brotherhood: {}
   launch:
@@ -815022,27 +815062,6 @@ Off Grid:
       - store: steam
   steam:
     id: 526720
-Off The Grid:
-  files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_3659280.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3659280.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <winLocalAppData>/G01/Saved/Config/WindowsClient/GameUserSettings.ini:
-      tags:
-      - config
-      when:
-      - os: windows
-  installDir:
-    OffTheGrid: {}
-  steam:
-    id: 3659280
 'Off The Record: The Art of Deception':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_600170.bin:
@@ -815066,6 +815085,27 @@ Off The Grid:
     id: 600170
 'Off The Record: The Art of Deception Collector''s Edition':
   alias: 'Off The Record: The Art of Deception'
+Off the Grid:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3659280.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3659280.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/G01/Saved/Config/WindowsClient/GameUserSettings.ini:
+      tags:
+      - config
+      when:
+      - os: windows
+  installDir:
+    OffTheGrid: {}
+  steam:
+    id: 3659280
 'Off the Record: Liberty Stone':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_770900.bin:
@@ -853528,7 +853568,8 @@ Payday 3:
   launch:
     <base>/payday_win32_release.exe:
     - when:
-      - store: steam
+      - os: windows
+        store: steam
   steam:
     id: 24240
 Payroll:
@@ -881915,6 +881956,9 @@ Pool of Radiance:
   steam:
     id: 1882370
 'Pool of Radiance: Ruins of Myth Drannor':
+  cloud:
+    gog: true
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_4834760.bin:
       tags:
@@ -881935,6 +881979,12 @@ Pool of Radiance:
     id: 1405279681
   id:
     lutris: pool-of-radiance-ruins-of-myth-drannor
+  installDir:
+    Pool of Radiance Ruins of Myth Drannor: {}
+  launch:
+    <base>/por2launch.exe:
+    - when:
+      - store: steam
   steam:
     id: 4834760
 Pools:
@@ -892009,7 +892059,18 @@ Private Detective Punch Drunk:
 'Privateer 2: The Darkening':
   cloud:
     gog: true
+    steam: true
   files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3067130.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3067130.bin:
+      tags:
+      - save
+      when:
+      - store: steam
     <base>/DARK.CFG:
       tags:
       - config
@@ -892023,7 +892084,15 @@ Private Detective Punch Drunk:
       - os: dos
       - os: windows
   gog:
-    id: 1207659613
+    id: 2120290282
+  id:
+    gogExtra:
+    - 1207659613
+    - 1649380437
+  installDir:
+    Privateer 2 The Darkening: {}
+  steam:
+    id: 3067130
 Privateers:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_903180.bin:
@@ -931128,6 +931197,8 @@ Realms of the Haunting:
       - os: dos
   gog:
     id: 1207658921
+  id:
+    lutris: realms-of-the-haunting
   installDir:
     Realms of the Haunting: {}
   launch:
@@ -958897,11 +958968,36 @@ Road Rage Royale:
   steam:
     id: 884610
 Road Rash:
+  cloud:
+    gog: true
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2448570.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2448570.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  gog:
+    id: 2141922451
+  installDir:
+    RoadRash: {}
+  launch:
+    <base>/RoadRash95.exe:
+    - when:
+      - os: windows
+        store: steam
   registry:
     HKEY_LOCAL_MACHINE/SOFTWARE/WOW6432Node/Electronic Arts/RoadRash 95:
       tags:
       - config
       - save
+  steam:
+    id: 2448570
 Road Redemption:
   cloud:
     gog: true
@@ -1060217,6 +1060313,8 @@ Soulbringer:
       - os: windows
   gog:
     id: 1207659003
+  id:
+    lutris: soulbringer
   installDir:
     Soulbringer: {}
   launch:
@@ -1358148,7 +1358246,18 @@ Wing Commander:
   cloud:
     gog: true
     origin: true
+    steam: true
   files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2008740.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2008740.bin:
+      tags:
+      - save
+      when:
+      - store: steam
     <base>/00000*.WSG:
       tags:
       - save
@@ -1358156,10 +1358265,20 @@ Wing Commander:
       - os: dos
       - os: windows
   gog:
-    id: 1207658966
+    id: 1418263391
   id:
+    gogExtra:
+    - 1207658966
+    - 1784225157
     lutris: wing-commander-iii-heart-of-the-tiger
+  installDir:
+    Wing Commander III: {}
+  steam:
+    id: 2008740
 'Wing Commander IV: The Price of Freedom':
+  cloud:
+    gog: true
+    steam: true
   files:
     <base>/*.WSG:
       tags:
@@ -1358167,6 +1358286,16 @@ Wing Commander:
       when:
       - os: dos
       - os: windows
+    <base>/../../../appcache/stats/UserGameStatsSchema_2008750.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2008750.bin:
+      tags:
+      - save
+      when:
+      - store: steam
     <base>/WC4.CFG:
       tags:
       - config
@@ -1358174,9 +1358303,16 @@ Wing Commander:
       - os: dos
       - os: windows
   gog:
-    id: 1207659021
+    id: 1154804755
   id:
+    gogExtra:
+    - 1207659021
+    - 2023550212
     lutris: wing-commander-iv-the-price-of-freedom
+  installDir:
+    Wing Commander IV: {}
+  steam:
+    id: 2008750
 'Wing Commander: Academy':
   cloud:
     gog: true
@@ -1358283,25 +1358419,83 @@ Wing Commander:
   steam:
     id: 2008760
 'Wing Commander: Prophecy':
+  cloud:
+    gog: true
+    steam: true
   files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3067120.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3067120.bin:
+      tags:
+      - save
+      when:
+      - store: steam
     <base>/save:
       tags:
       - save
       when:
       - os: windows
   gog:
-    id: 1207662663
+    id: 2051767712
   id:
     gogExtra:
     - 1207660153
+    - 1207662663
     lutris: wing-commandertm-5-prophecy-gold-edition
+  installDir:
+    Wing Commander - Prophecy: {}
+  steam:
+    id: 3067120
 'Wing Commander: Secret Ops':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3067120.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3067120.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/Enhanced/Secret Ops/save/**/*.*:
+      when:
+      - os: windows
+        store: steam
+    <base>/Enhanced/history/**/*.*:
+      when:
+      - os: windows
+        store: steam
+    <base>/Enhanced/save/**/*.*:
+      when:
+      - os: windows
+        store: steam
+    <base>/Original/Secret Ops/save/**/*.*:
+      when:
+      - os: windows
+        store: steam
+    <base>/Original/history/**/*.*:
+      when:
+      - os: windows
+        store: steam
+    <base>/Original/save/**/*.*:
+      when:
+      - os: windows
+        store: steam
   gog:
-    id: 1207662673
+    id: 2051767712
   id:
     gogExtra:
     - 1207660153
+    - 1207662673
     lutris: wing-commandertm-5-prophecy-gold-edition
+  installDir:
+    Wing Commander - Prophecy: {}
+  steam:
+    id: 3067120
 Wing of Darkness:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1179060.bin:
