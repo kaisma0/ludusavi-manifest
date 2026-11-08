@@ -65748,6 +65748,30 @@ Animyst:
   steam:
     id: 871100
 Ankh - Anniversary Edition:
+  alias: 'Ankh: Anniversary Edition'
+"Ankh Guardian - Treasure of the Demon's Temple/\u30B4\u30C3\u30C9\u30FB\u30AA\u30D6\u30FB\u30A6\u30A9\u30FC\u30EB \u9B54\u5BAE\u306E\u79D8\u5B9D":
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_975160.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_975160.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Ankh Guardian: {}
+  launch:
+    <base>/Ankh Guardian - Treasure of the Demon's Temple.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+  steam:
+    id: 975160
+'Ankh: Anniversary Edition':
   cloud:
     gog: true
   files:
@@ -65795,28 +65819,6 @@ Ankh - Anniversary Edition:
       workingDir: <base>/bin/release
   steam:
     id: 353980
-"Ankh Guardian - Treasure of the Demon's Temple/\u30B4\u30C3\u30C9\u30FB\u30AA\u30D6\u30FB\u30A6\u30A9\u30FC\u30EB \u9B54\u5BAE\u306E\u79D8\u5B9D":
-  files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_975160.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_975160.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-  installDir:
-    Ankh Guardian: {}
-  launch:
-    <base>/Ankh Guardian - Treasure of the Demon's Temple.exe:
-    - when:
-      - bit: 64
-        os: windows
-        store: steam
-  steam:
-    id: 975160
 'Ankh: Battle of the Gods':
   cloud:
     gog: true
@@ -149185,6 +149187,20 @@ Blood of Steel:
       - store: steam
   steam:
     id: 567630
+Blood of the Lead Moon:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4407900.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4407900.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 4407900
 Blood of the Werewolf:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_260250.bin:
@@ -200094,6 +200110,11 @@ Cave Digger:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/Mekiwi/Cave Digger_ Riches/progress.save:
+      tags:
+      - save
+      when:
+      - os: windows
   installDir:
     Cave Digger: {}
   steam:
@@ -653988,12 +654009,12 @@ Layers of Fear (2023):
       - save
       when:
       - store: steam
-    <winLocalAppData>/Local/Cron/Saved/Config/Windows:
+    <winLocalAppData>/Cron/Saved/Config/Windows:
       tags:
       - config
       when:
       - os: windows
-    <winLocalAppData>/Local/Cron/Saved/SaveGames/<storeUserId>:
+    <winLocalAppData>/Cron/Saved/SaveGames/<storeUserId>:
       tags:
       - save
       when:
@@ -777349,6 +777370,18 @@ NIMRODS:
     id: 2086430
 'NIMRODS: GunCraft Survivor':
   alias: NIMRODS
+'NIRA: Intense Import Drag Racing':
+  files:
+    <base>/NIRA.CFG:
+      tags:
+      - config
+      when:
+      - os: dos
+    <base>/SAVE:
+      tags:
+      - save
+      when:
+      - os: dos
 NIRO:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1448610.bin:
@@ -808532,9 +808565,37 @@ Number Hunt:
       - save
       when:
       - store: steam
+    <home>/.config/unity3d/ARIELEK/Number Machine/Steam_<storeUserId>/*.sav:
+      when:
+      - os: linux
+        store: steam
+    <home>/AppData/LocalLow/ARIELEK/Number Machine/Steam_<storeUserId>/*.sav:
+      when:
+      - store: steam
+    <home>/Library/Application Support/com.ARIELEK.Number Machine/Steam_<storeUserId>/*.sav:
+      when:
+      - os: mac
+        store: steam
   id:
     steamExtra:
     - 2243290
+  installDir:
+    Number Machine: {}
+  launch:
+    <base>/Number Machine.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/Number Machine.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+    <base>/Number Machine.x86_64:
+    - when:
+      - bit: 64
+        os: linux
+        store: steam
   steam:
     id: 2231090
 Number World:
@@ -891925,6 +891986,24 @@ Prison Tycoon Alcatraz:
         store: steam
   steam:
     id: 1515460
+Prison of Husks:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2975260.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2975260.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    lutris: prison-of-husks
+    steamExtra:
+    - 3746300
+  steam:
+    id: 2975260
 Prisoner:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_653210.bin:
@@ -964385,6 +964464,11 @@ Rocko's Quest:
       when:
       - store: steam
     <base>/Options.cfg:
+      tags:
+      - config
+      when:
+      - os: windows
+    <base>/RData/Misc/strujen.opt:
       tags:
       - config
       when:
@@ -1170930,6 +1171014,8 @@ The Callisto Protocol:
       - save
       when:
       - store: steam
+  id:
+    lutris: the-cameron-files-the-secret-at-loch-ness
   installDir:
     The Cameron Files The Secret at Loch Ness: {}
   launch:
@@ -1308049,6 +1308135,8 @@ VRobot:
   steam:
     id: 588560
 VRog:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_589380.bin:
       tags:
@@ -1326259,6 +1326347,11 @@ Vox Machinae:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/SpaceBulletDynamicsCorporation/VoxMachinae:
+      tags:
+      - save
+      when:
+      - os: windows
   installDir:
     Vox Machinae: {}
   launch:
@@ -1358264,6 +1358357,22 @@ Wing Commander:
       when:
       - os: dos
       - os: windows
+    <base>/DOS/*.WSG:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/Kilrathi_Saga/*.WSG:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winAppData>/wc3w_en/*.WSG:
+      tags:
+      - save
+      when:
+      - os: windows
+        store: steam
   gog:
     id: 1418263391
   id:
