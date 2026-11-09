@@ -216019,6 +216019,20 @@ Chrono Project:
         store: steam
   steam:
     id: 893810
+Chrono Punk:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5081550.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5081550.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5081550
 Chrono Trigger:
   cloud:
     steam: true
@@ -325276,6 +325290,7 @@ Disjunction:
   id:
     gogExtra:
     - 1515245162
+    lutris: disney-classic-games-aladdin-and-the-lion-king
     steamExtra:
     - 1636800
   installDir:
@@ -359128,6 +359143,7 @@ Dungeons & Dragons Online:
       - os: windows
         store: microsoft
   id:
+    lutris: dungeons-dragons-dark-alliance
     steamExtra:
     - 1670843
   installDir:
@@ -477333,12 +477349,6 @@ Gears of War 4:
       - save
       when:
       - store: steam
-    <winLocalAppData>/FairlightConcept/Saved/Config/WinGDK:
-      tags:
-      - config
-      when:
-      - os: windows
-        store: microsoft
     <winLocalAppData>/Microsoft/Gears of War E-Day/Saves:
       tags:
       - config
@@ -477351,6 +477361,12 @@ Gears of War 4:
       when:
       - os: windows
         store: steam
+    <winLocalAppData>/Microsoft/Gears of War E-Day/WinGDK/<storeUserId>/Saved/Config/WinGDK:
+      tags:
+      - config
+      when:
+      - os: windows
+        store: microsoft
     <winLocalAppData>/Packages/Microsoft.Fairlightbasegame_8wekyb3d8bbwe/SystemAppData/wgs:
       tags:
       - config
@@ -479887,6 +479903,55 @@ Genome Guardian:
         store: steam
   steam:
     id: 2891310
+Genotype:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2667980.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2667980.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/BolverkGames/GenotypeGame/0:
+      tags:
+      - save
+      when:
+      - os: windows
+    <home>/AppData/LocalLow/BolverkGames/GenotypeGame/1:
+      tags:
+      - save
+      when:
+      - os: windows
+    <home>/AppData/LocalLow/BolverkGames/GenotypeGame/2:
+      tags:
+      - save
+      when:
+      - os: windows
+    <home>/AppData/LocalLow/BolverkGames/GenotypeGame/3:
+      tags:
+      - save
+      when:
+      - os: windows
+    <home>/AppData/LocalLow/BolverkGames/GenotypeGame/4:
+      tags:
+      - save
+      when:
+      - os: windows
+    <home>/AppData/LocalLow/BolverkGames/GenotypeGame/GameSettings.data:
+      tags:
+      - config
+      when:
+      - os: windows
+  id:
+    steamExtra:
+    - 3023920
+  installDir:
+    Genotype: {}
+  steam:
+    id: 2667980
 Genshin Impact:
   registry:
     HKEY_CURRENT_USER/SOFTWARE/miHoYo/Genshin Impact:
@@ -583347,6 +583412,8 @@ Imperial Glory:
 Imperialism:
   gog:
     id: 1207659139
+  id:
+    lutris: imperialism
 'Imperialism II: The Age of Exploration':
   gog:
     id: 1207659153
@@ -617786,6 +617853,7 @@ Jurassic World Evolution 2:
       when:
       - os: windows
   id:
+    lutris: jurassic-world-evolution-2
     steamExtra:
     - 1336321
     - 1336322
@@ -617822,6 +617890,7 @@ Jurassic World Evolution 3:
       when:
       - os: windows
   id:
+    lutris: jurassic-world-evolution-3
     steamExtra:
     - 3651190
     - 3651200
@@ -746900,6 +746969,24 @@ Molly - Can you survive 100 nights?:
         store: steam
   steam:
     id: 1177350
+Molokaust:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4503570.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4503570.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    lutris: molokaust
+    steamExtra:
+    - 4592180
+  steam:
+    id: 4503570
 Molten Armor:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_693670.bin:
@@ -796412,6 +796499,7 @@ Nighthaw-X3000:
 Nighthawks:
   cloud:
     gog: true
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1221950.bin:
       tags:
@@ -893604,10 +893692,11 @@ Probably Stolen:
       - save
       when:
       - store: steam
-    <home>/AppData/LocalLow/Questing Goose Studio/Probably Stolen/*.es3:
+    <winLocalAppData>/Questing Goose Studio/Probably Stolen:
+      tags:
+      - save
       when:
       - os: windows
-        store: steam
   installDir:
     Probably Stolen: {}
   launch:
@@ -959049,6 +959138,7 @@ Road Rage Royale:
 Road Rash:
   cloud:
     gog: true
+    origin: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_2448570.bin:
@@ -1030297,12 +1030387,6 @@ Silver Pines:
     - 5153460
   installDir:
     Silver Pines: {}
-  launch:
-    <base>/Carpenter.exe:
-    - when:
-      - bit: 64
-        os: windows
-        store: steam
   steam:
     id: 2333000
 Silver Tale:
@@ -1084984,6 +1085068,9 @@ Star Fox 64 (Starship):
       - save
       when:
       - os: windows
+Star Fox Adventures:
+  id:
+    lutris: star-fox-adventures
 Star Garden:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3370970.bin:
@@ -1381545,6 +1381632,16 @@ You Are Empty:
       - save
       when:
       - store: steam
+    <winAppData>/YaE_Absolute/config_*:
+      tags:
+      - config
+      when:
+      - os: windows
+    <winAppData>/YaE_Absolute/savegames/Save*:
+      tags:
+      - save
+      when:
+      - os: windows
     <winDocuments>/My Games/YaE:
       tags:
       - config
@@ -1381902,6 +1381999,8 @@ You Don't Know Jack:
       - save
       when:
       - store: steam
+  id:
+    lutris: you-dont-know-jack-vol-1-xl
   installDir:
     YDKJ_VOL1XL: {}
   launch:
