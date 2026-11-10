@@ -1853,6 +1853,10 @@ $1 Ride:
   installDir:
     1000xRESIST: {}
   launch:
+    <base>/1000xRESIST.app/Contents/MacOS/1000xRESIST:
+    - when:
+      - os: mac
+        store: steam
     <base>/1000xRESIST.exe:
     - when:
       - store: steam
@@ -66085,6 +66089,7 @@ Anna - Extended Edition:
     id: 217690
 Anna's Quest:
   cloud:
+    epic: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_327220.bin:
@@ -158191,6 +158196,22 @@ Booster Trooper:
       - store: steam
   steam:
     id: 27920
+BoosterWare:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2268510.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2268510.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 2268510
 'Boot : Game Dev Sim':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1160480.bin:
@@ -172259,6 +172280,28 @@ Bubblien Pop:
         store: steam
   steam:
     id: 764870
+Bubbly:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4706340.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4706340.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Bubbly: {}
+  launch:
+    <base>/Bubbly.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+  steam:
+    id: 4706340
 Bubli:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_815100.bin:
@@ -175590,25 +175633,7 @@ Bunker - Nightmare Begins:
   steam:
     id: 1053740
 Bunker - The Underground Game:
-  files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_354180.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_354180.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-  installDir:
-    Bunker: {}
-  launch:
-    <base>/Bunker.exe:
-    - when:
-      - store: steam
-  steam:
-    id: 354180
+  alias: 'Bunker: The Underground Game'
 Bunker 56:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1126060.bin:
@@ -175750,6 +175775,26 @@ Bunker Tidy Up:
       - store: steam
   steam:
     id: 5212940
+'Bunker: The Underground Game':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_354180.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_354180.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Bunker: {}
+  launch:
+    <base>/Bunker.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 354180
 Bunny & Piggy:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_549810.bin:
@@ -416382,6 +416427,7 @@ Fantasy General II:
   gog:
     id: 1090255211
   id:
+    lutris: fantasy-general-ii
     steamExtra:
     - 1193870
     - 1193871
@@ -431053,6 +431099,18 @@ Final Fantasy XIII-2:
       - save
       when:
       - store: steam
+    <winDocuments>/Square Enix/FFXIII-2/MS/config.json:
+      tags:
+      - config
+      when:
+      - os: windows
+        store: microsoft
+    <winLocalAppData>/Packages/39EA002F.FFXIII-2_n746a19ndrrjg/SystemAppData/wgs:
+      tags:
+      - save
+      when:
+      - os: windows
+        store: microsoft
     <winLocalAppData>/SquareEnix/FinalFantasyXIII-2/save:
       tags:
       - save
@@ -452951,6 +453009,10 @@ Four Last Things:
   installDir:
     Four Last Things: {}
   launch:
+    <base>/Four Last Things.app:
+    - when:
+      - os: mac
+        store: steam
     <base>/Four Last Things.exe:
     - when:
       - os: windows
@@ -578208,28 +578270,6 @@ IREC:
         store: steam
   steam:
     id: 557260
-IRON GUARD VR:
-  cloud:
-    steam: true
-  files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_1213220.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1213220.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <home>/AppData/LocalLow/Xlab Digital/**/*.json:
-      when:
-      - os: windows
-        store: steam
-  installDir:
-    IRON GUARD VR: {}
-  steam:
-    id: 1213220
 IRacing:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_266410.bin:
@@ -600348,6 +600388,28 @@ Iron Ground:
     Iron Ground: {}
   steam:
     id: 853120
+Iron Guard VR:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1213220.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1213220.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/Xlab Digital/IronGuard/save.igsv:
+      when:
+      - os: windows
+        store: steam
+  installDir:
+    IRON GUARD: {}
+  steam:
+    id: 1213220
 Iron Harvest:
   cloud:
     gog: true
@@ -705883,11 +705945,6 @@ Makeover Desire - HENSHIN GANBO:
       - save
       when:
       - store: steam
-    <winProgramData>/Muzzy Lane Software/Making History Gold:
-      tags:
-      - save
-      when:
-      - os: windows
   id:
     lutris: making-history-the-calm-the-storm
     steamExtra:
@@ -708755,6 +708812,23 @@ Marble Blast Gold:
       when:
       - os: windows
     <base>/marble/client/prefs.cs:
+      tags:
+      - save
+      when:
+      - os: windows
+Marble Blast Ultra:
+  files:
+    <winAppData>/GarageGames/Marble Blast Ultra/achievements.cs:
+      tags:
+      - save
+      when:
+      - os: windows
+    <winAppData>/GarageGames/Marble Blast Ultra/prefs.cs:
+      tags:
+      - config
+      when:
+      - os: windows
+    <winAppData>/GarageGames/Marble Blast Ultra/scores.cs:
       tags:
       - save
       when:
@@ -774834,6 +774908,28 @@ N.I.C.E. 2:
       - config
   steam:
     id: 853330
+N.O.M.A.D:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2213260.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2213260.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    NOMAD: {}
+  launch:
+    <base>/game.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 2213260
 N.P.P.D. RUSH - The Milk of Ultraviolet:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_270090.bin:
@@ -787029,6 +787125,44 @@ Neo Cab:
         store: steam
   steam:
     id: 794540
+Neo Junk City:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2378230.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2378230.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/StarBlade Games/Neo Junk City/CloudSaves/<storeUserId>/Data/NeoJunkCity_*.jpg:
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/StarBlade Games/Neo Junk City/CloudSaves/<storeUserId>/Data/NeoJunkCity_*.save:
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/StarBlade Games/Neo Junk City/CloudSaves/<storeUserId>/Data/Profile_*.language:
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/StarBlade Games/Neo Junk City/CloudSaves/<storeUserId>/Data/Profile_*.profile:
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/StarBlade Games/Neo Junk City/CloudSaves/<storeUserId>/Data/active.profile-id:
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/StarBlade Games/Neo Junk City/CloudSaves/<storeUserId>/Data/storage.state:
+      when:
+      - store: steam
+  installDir:
+    Neo Junk City: {}
+  launch:
+    <base>/Neo Junk City.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 2378230
 Neo Neo:
   cloud:
     steam: true
@@ -794727,8 +794861,6 @@ Nickelodeon Extreme Tennis Next!:
   steam:
     id: 1383960
 'Nickelodeon Kart Racers 3: Slime Speedway':
-  cloud:
-    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1620040.bin:
       tags:
@@ -845462,6 +845594,8 @@ Panzer General 3D Assault:
       - os: windows
   gog:
     id: 1207658866
+  id:
+    lutris: panzer-general-3d-assault
 Panzer General II:
   cloud:
     gog: true
@@ -845473,6 +845607,8 @@ Panzer General II:
       - os: windows
   gog:
     id: 1207658871
+  id:
+    lutris: panzer-general-2
 Panzer Hearts:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_809680.bin:
@@ -855947,6 +856083,8 @@ People's General:
       - os: windows
   gog:
     id: 1356099797
+  id:
+    lutris: peoples-general
 PeoplePackages:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_740220.bin:
@@ -870943,6 +871081,8 @@ Pixplode:
   steam:
     id: 631770
 Pixross:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1489680.bin:
       tags:
@@ -1097561,6 +1097701,11 @@ Steel Division 2:
       - save
       when:
       - store: steam
+    <home>/Saved Games/EugenSystems/SteelDivision2:
+      tags:
+      - config
+      when:
+      - os: windows
   gog:
     id: 1911255510
   id:
@@ -1154965,6 +1155110,10 @@ Telling Lies:
       - config
   steam:
     id: 762830
+Telltale Batman Season 1:
+  alias: 'Batman: The Telltale Series'
+Telltale Batman Season 2:
+  alias: 'Batman: The Enemy Within - The Telltale Series'
 Telltale Texas Hold 'Em:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_8330.bin:
@@ -1282193,9 +1282342,18 @@ Tube2K:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/Chronik Spartan/Tube2K/*.txt:
+      when:
+      - store: steam
   id:
     steamExtra:
     - 4907870
+  installDir:
+    Tube2K: {}
+  launch:
+    <base>/Tube2K.exe:
+    - when:
+      - store: steam
   steam:
     id: 756510
 TubeLife:
@@ -1332955,6 +1333113,18 @@ War Thunder:
         store: steam
   steam:
     id: 236390
+'War Times: European Frontline':
+  files:
+    <base>/Datos/configuracion.txt:
+      tags:
+      - config
+      when:
+      - os: windows
+    <base>/Save:
+      tags:
+      - save
+      when:
+      - os: windows
 War Trains:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1173340.bin:
@@ -1336203,6 +1336373,8 @@ Warhalla:
       - store: steam
   gog:
     id: 1591170775
+  id:
+    lutris: warhammer-40000-dark-heresy
   steam:
     id: 3710600
 'Warhammer 40,000: Darktide':
@@ -1349826,6 +1349998,25 @@ What the Buck?!:
   id:
     steamExtra:
     - 5006340
+    - 5155800
+    - 5155820
+  installDir:
+    WhattheBuck: {}
+  launch:
+    <base>/What the Buck.app/Contents/MacOS/What the Buck:
+    - when:
+      - os: mac
+        store: steam
+    <base>/What the Buck.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+    <base>/What the Buck.x86_64:
+    - when:
+      - bit: 64
+        os: linux
+        store: steam
   steam:
     id: 4832970
 What the Car?:
@@ -1382011,6 +1382202,27 @@ You Don't Know Jack:
         store: steam
   steam:
     id: 252730
+You Don't Know Jack (2011):
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_99200.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_99200.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    You Don't Know Jack: {}
+  launch:
+    <base>/bin/win/JackGame.exe:
+    - when:
+      - store: steam
+      workingDir: <base>/bin/win
+  steam:
+    id: 99200
 You Don't Know Jack Movies:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_260000.bin:
@@ -1382133,6 +1382345,8 @@ You Don't Know Jack Sports:
       - save
       when:
       - store: steam
+  id:
+    lutris: you-dont-know-jack-vol-3
   installDir:
     YDKJ_VOL3: {}
   launch:
