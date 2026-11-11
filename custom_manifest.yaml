@@ -84049,6 +84049,8 @@ Ashes of the Singularity:
   steam:
     id: 228880
 Ashes of the Singularity II:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3499790.bin:
       tags:
@@ -84060,6 +84062,14 @@ Ashes of the Singularity II:
       - save
       when:
       - store: steam
+  installDir:
+    Ashes II: {}
+  launch:
+    <base>/bin/Ashes2.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 3499790
 'Ashes of the Singularity: Escalation':
@@ -158210,6 +158220,15 @@ BoosterWare:
       - save
       when:
       - store: steam
+    <base>/Save/<storeUserId>:
+      tags:
+      - save
+      when:
+      - store: steam
+  registry:
+    HKEY_CURRENT_USER/Software/Overhead Games/BoosterWare:
+      tags:
+      - config
   steam:
     id: 2268510
 'Boot : Game Dev Sim':
@@ -196964,6 +196983,42 @@ Casual Spider Solitaire:
         store: steam
   steam:
     id: 722810
+'Casualties: Unknown':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4576490.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4576490.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/Orsoniks/CasualtiesUnknown:
+      tags:
+      - save
+      when:
+      - os: windows
+    <home>/AppData/LocalLow/Orsoniks/CasualtiesUnknown/settings.json:
+      tags:
+      - config
+      when:
+      - os: windows
+  id:
+    lutris: casualties-unknown
+  installDir:
+    Casualties Unknown: {}
+  launch:
+    <base>/CasualtiesUnknown.exe:
+    - when:
+      - store: steam
+  registry:
+    HKEY_CURRENT_USER/Software/Orsoniks/CasualtiesUnknown:
+      tags:
+      - config
+  steam:
+    id: 4576490
 'Casus Belli: Battle of Annihilation':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_667000.bin:
@@ -552460,10 +552515,40 @@ Hillthorn:
       - save
       when:
       - store: steam
+    <home>/.var/app/com.valvesoftware.Steam/.config/unity3d/FOOL MOON/Hillthorn/**/*.json:
+      when:
+      - os: linux
+        store: steam
+    <home>/AppData/LocalLow/FOOL MOON/Hillthorn/**/*.json:
+      when:
+      - store: steam
+    <home>/Library/Application Support/FOOL MOON/Hillthorn/**/*.json:
+      when:
+      - os: mac
+        store: steam
+    <xdgConfig>/unity3d/FOOL MOON/Hillthorn/**/*.json:
+      when:
+      - os: linux
+        store: steam
   id:
     lutris: hillthorn
     steamExtra:
     - 3615330
+  installDir:
+    Hillthorn: {}
+  launch:
+    <base>/Hillthorn.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/Hillthorn.exe:
+    - when:
+      - os: windows
+        store: steam
+    <base>/Hillthorn.sh:
+    - when:
+      - os: linux
+        store: steam
   steam:
     id: 3504050
 Him and I:
@@ -577190,6 +577275,40 @@ IGT Slots Paradise Garden:
         store: steam
   steam:
     id: 320970
+'IGTAP: An Incremental Game That''s Also a Platformer':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4364730.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4364730.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/Pepper tango games/IGTAPfullGame:
+      when:
+      - store: steam
+    <xdgConfig>/unity3d/Pepper tango games/IGTAPfullGame:
+      when:
+      - os: linux
+        store: steam
+  installDir:
+    IGTAP an Incremental Game That's Also a Platformer: {}
+  launch:
+    <base>/IGTAP.x86_64:
+    - when:
+      - os: linux
+        store: steam
+    <base>/IGTAPfullGame.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 4364730
 IGrow Game:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_489020.bin:
@@ -579576,6 +579695,28 @@ Icy Tower (2026):
       - save
       when:
       - store: steam
+    <base>/lists/*.lst:
+      when:
+      - store: steam
+    <home>/Library/Application Support/icytower/lists/*.lst:
+      when:
+      - os: mac
+        store: steam
+    <winAppData>/icytower/lists/*.lst:
+      when:
+      - os: windows
+        store: steam
+  installDir:
+    icytower: {}
+  launch:
+    <base>/icytower.app/Contents/MacOS/love:
+    - when:
+      - os: mac
+        store: steam
+    <base>/icytower.exe:
+    - when:
+      - os: windows
+        store: steam
   steam:
     id: 3014860
 'Icycle: On Thin Ice':
@@ -803777,10 +803918,24 @@ Nocturnal 2:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/Sunnyside Games/Nocturnal 2/Steam/<storeUserId>:
+      when:
+      - store: steam
   id:
     lutris: nocturnal-2
     steamExtra:
     - 4325830
+  installDir:
+    Nocturnal 2: {}
+  launch:
+    <base>/Nocturnal 2.exe:
+    - when:
+      - os: windows
+        store: steam
+    - arguments: -force-vulkan
+      when:
+      - os: windows
+        store: steam
   steam:
     id: 2847780
 Nocturnal Hunt:
@@ -806013,6 +806168,28 @@ Northland:
         store: steam
   steam:
     id: 307010
+Northmen:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5481810.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5481810.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Northmen: {}
+  launch:
+    <base>/NORTHMEN.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+  steam:
+    id: 5481810
 Nortinium:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_805220.bin:
@@ -839826,6 +840003,8 @@ PGA Tour 2K25:
       - save
       when:
       - store: steam
+  id:
+    lutris: pga-tour-2k25
   installDir:
     PGA TOUR 2K25: {}
   launch:
@@ -851166,6 +851345,17 @@ Path Defenders:
       - save
       when:
       - store: steam
+  installDir:
+    Path Defenders: {}
+  launch:
+    <base>/3d-td:
+    - when:
+      - os: linux
+        store: steam
+    <base>/Path Defenders.exe:
+    - when:
+      - os: windows
+        store: steam
   steam:
     id: 4819620
 Path Of Aurora:
@@ -893832,7 +894022,7 @@ Probably Stolen:
       - save
       when:
       - store: steam
-    <winLocalAppData>/Questing Goose Studio/Probably Stolen:
+    <home>/AppData/LocalLow/Questing Goose Studio/Probably Stolen:
       tags:
       - save
       when:
@@ -1024925,6 +1025115,8 @@ Shredders:
   steam:
     id: 1874170
 Shrek 2 Remastered:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_2523740.bin:
       tags:
@@ -1024936,6 +1025128,15 @@ Shrek 2 Remastered:
       - save
       when:
       - store: steam
+  installDir:
+    Shrek2Remastered: {}
+  launch:
+    <base>/Shrek.exe:
+    - arguments: --process.steam=1
+      when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 2523740
 'Shrek 2: Team Action':
@@ -1129044,11 +1129245,6 @@ Supraworld:
       - os: windows
   installDir:
     Supraworld: {}
-  launch:
-    <base>/Supraworld.exe:
-    - when:
-      - bit: 64
-        store: steam
   steam:
     id: 1869290
 Supremacy 1914:
@@ -1145289,6 +1145485,40 @@ Takeout food:
       - store: steam
   steam:
     id: 887670
+Takeover 2:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4423270.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4423270.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/pelikan 13/Takeover2:
+      tags:
+      - save
+      when:
+      - os: windows
+  id:
+    steamExtra:
+    - 4425280
+  installDir:
+    Takeover 2: {}
+  launch:
+    <base>/Takeover2.exe:
+    - when:
+      - store: steam
+  registry:
+    HKEY_CURRENT_USER/Software/pelikan 13/Takeover2:
+      tags:
+      - config
+  steam:
+    id: 4423270
 Taking Valhalla VR:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_693400.bin:
@@ -1188220,6 +1188450,8 @@ The Golf Club 2:
       - save
       when:
       - store: steam
+  id:
+    lutris: the-golf-club-2tm
   installDir:
     TheGolfClub2: {}
   launch:
@@ -1188266,6 +1188498,8 @@ The Golf Club VR:
       - save
       when:
       - store: steam
+  id:
+    lutris: the-golf-club-vr
   installDir:
     The Golf Club VR: {}
   steam:
@@ -1311358,6 +1311592,8 @@ Vampire's Fall 2:
   steam:
     id: 1290270
 'Vampire: The Masquerade - Oaths & Ashes':
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_4191110.bin:
       tags:
@@ -1311369,12 +1311605,42 @@ Vampire's Fall 2:
       - save
       when:
       - store: steam
+    <home>/.config/unity3d/Revive The Spark/Vampire the Masquerade Oaths _ Ashes/**/metadata.json:
+      when:
+      - os: linux
+        store: steam
+    <home>/.config/unity3d/Revive The Spark/Vampire the Masquerade Oaths _ Ashes/**/save.json:
+      when:
+      - os: linux
+        store: steam
+    <home>/AppData/LocalLow/Revive The Spark/Vampire the Masquerade Oaths _ Ashes/**/metadata.json:
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/Revive The Spark/Vampire the Masquerade Oaths _ Ashes/**/save.json:
+      when:
+      - store: steam
   gog:
     id: 1980751921
   id:
+    gogExtra:
+    - 1269970804
+    - 1437141527
     lutris: vampire-the-masquerade-oaths-and-ashes
     steamExtra:
     - 4746430
+    - 5440640
+  installDir:
+    Vampire The Masquerade - Oaths and Ashes: {}
+  launch:
+    <base>/Vampire the Masquerade Oaths & Ashes.exe:
+    - when:
+      - os: windows
+        store: steam
+    <base>/Vampire the Masquerade Oaths & Ashes.x86_64:
+    - when:
+      - bit: 64
+        os: linux
+        store: steam
   steam:
     id: 4191110
 'Vampire: The Masquerade - Out for Blood':
@@ -1337965,6 +1338231,14 @@ Warhammer Survivors:
       - save
       when:
       - store: steam
+  installDir:
+    Warhammer Survivors: {}
+  launch:
+    <base>/WarhammerSurvivors.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 3669620
 'Warhammer Underworlds: Online':
