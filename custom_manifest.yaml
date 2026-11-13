@@ -111328,6 +111328,18 @@ Barbie Rewind:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/Atari/Barbie Rewind/campaign/default.brf:
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/Atari/Barbie Rewind/classic:
+      when:
+      - store: steam
+  installDir:
+    Barbie Rewind: {}
+  launch:
+    <base>/Barbie Rewind.exe:
+    - when:
+      - store: steam
   steam:
     id: 4082030
 Barbie Sparkling Ice Show:
@@ -190724,17 +190736,22 @@ CarX Street:
   installDir:
     CarX Street: {}
   launch:
-    <base>/CarX Street Launcher.exe:
+    <base>/CarX Street Launcher.app:
     - when:
+      - os: mac
+        store: steam
+    <base>/CarX Street Launcher.exe:
+    - arguments: -force-d3d11
+      when:
+      - os: windows
+        store: steam
+    - arguments: -force-d3d12
+      when:
       - os: windows
         store: steam
     <base>/eac_launcher:
     - when:
       - os: linux
-        store: steam
-    <base>/eac_launcher.app:
-    - when:
-      - os: mac
         store: steam
   registry:
     HKEY_CURRENT_USER/Software/CarX Technologies/CarX Street:
@@ -323501,6 +323518,20 @@ Dirt Bike Insanity:
         store: steam
   steam:
     id: 851940
+Dirt Town:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5275590.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5275590.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5275590
 Dirty Bomb:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_333930.bin:
@@ -439308,6 +439339,24 @@ Flea Madness:
       - save
       when:
       - store: steam
+  id:
+    lutris: flea-madness
+  installDir:
+    Flea Madness: {}
+  launch:
+    <base>/FleaMadnessClient-Mac-Shipping.app/Contents/MacOS/FleaMadnessClient-Mac-Shipping:
+    - when:
+      - os: mac
+        store: steam
+    <base>/FleaMadnessClient.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+    <base>/FleaMadnessClient.sh:
+    - when:
+      - os: linux
+        store: steam
   steam:
     id: 1025560
 Fleazer:
@@ -467522,6 +467571,15 @@ GRASS.EXE:
       tags:
       - save
       when:
+      - store: steam
+  id:
+    steamExtra:
+    - 5570420
+  installDir:
+    GRASS.EXE: {}
+  launch:
+    <base>/GRASS.exe:
+    - when:
       - store: steam
   steam:
     id: 5459380
@@ -912560,9 +912618,16 @@ Queen's Domain:
       - save
       when:
       - store: steam
-    <winLocalAppData>/QueensDomain/Saved/SaveGames/<storeUserId>/**/*.sav:
+    <winLocalAppData>/QueensDomain/Saved/Config/WindowsNoEditor:
+      tags:
+      - config
       when:
-      - store: steam
+      - os: windows
+    <winLocalAppData>/QueensDomain/Saved/SaveGames:
+      tags:
+      - save
+      when:
+      - os: windows
   id:
     steamExtra:
     - 4081520
@@ -1058294,8 +1058359,28 @@ Sonic Pico Park:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/PICO PARK Inc_/SONIC PICO PARK/Steam/<storeUserId>/*.sav:
+      when:
+      - store: steam
+    <home>/Library/Application Support/PICO PARK Inc_/SONIC PICO PARK/Steam/<storeUserId>/*.sav:
+      when:
+      - os: mac
+        store: steam
   id:
     lutris: sonic-pico-park
+  installDir:
+    sonic_pico_park: {}
+  launch:
+    <base>/sonic_pico_park.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/sonic_pico_park.exe:
+    - when:
+      - os: windows
+        store: steam
+      - os: linux
+        store: steam
   steam:
     id: 4304060
 Sonic Project Hero:
@@ -1083256,6 +1083341,44 @@ Squeakers:
         store: steam
   steam:
     id: 798650
+'Squeakross: Home Squeak Home':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2871440.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2871440.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/.config/unity3d/Alblune/Squeakross/<storeUserId>/*.dat:
+      when:
+      - os: linux
+        store: steam
+    <home>/AppData/LocalLow/Alblune/Squeakross/<storeUserId>/*.dat:
+      when:
+      - store: steam
+    <home>/Library/Application Support/Alblune/Squeakross/<storeUserId>/*.dat:
+      when:
+      - os: mac
+        store: steam
+  installDir:
+    Squeakross Home Squeak Home: {}
+  launch:
+    <base>/Squeakross.app/Contents/MacOS/Squeakross:
+    - when:
+      - os: mac
+        store: steam
+    <base>/Squeakross.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 2871440
 Squeezone:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_513630.bin:
@@ -1242742,6 +1242865,12 @@ Thronefall:
       - save
       when:
       - store: steam
+    <home>/AppData/Local/Packages/Mythwright.Thronefall_9b483820r0x2c/SystemAppData/wgs:
+      tags:
+      - save
+      when:
+      - os: windows
+        store: microsoft
     <home>/AppData/LocalLow/Grizzly Games/Thronefall/ThroneSave.sav:
       tags:
       - save
@@ -1338692,6 +1338821,7 @@ Warhammer Quest:
     id: 910450
 Warhammer Survivors:
   cloud:
+    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3669620.bin:
@@ -1338704,6 +1338834,13 @@ Warhammer Survivors:
       - save
       when:
       - store: steam
+    <root>/userdata/<storeUserId>/3669620/remote:
+      tags:
+      - save
+      when:
+      - store: steam
+  gog:
+    id: 2068449424
   installDir:
     Warhammer Survivors: {}
   launch:
@@ -1338712,6 +1338849,10 @@ Warhammer Survivors:
       - bit: 64
         os: windows
         store: steam
+  registry:
+    HKEY_CURRENT_USER/Software/Auroch Digital/Warhammer Survivors:
+      tags:
+      - config
   steam:
     id: 3669620
 'Warhammer Underworlds: Online':
