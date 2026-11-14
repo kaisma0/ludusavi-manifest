@@ -55467,26 +55467,33 @@ Altorius:
     id: 1081420
 AltspaceVR:
   files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_407060.bin:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5289710.bin:
       tags:
       - save
       when:
       - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_407060.bin:
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5289710.bin:
       tags:
       - save
       when:
       - store: steam
+  id:
+    steamExtra:
+    - 407060
   installDir:
     AltspaceVR: {}
   launch:
     <base>/AltspaceVR.exe:
-    - when:
-      - bit: 64
-        os: windows
+    - arguments: -novr
+      when:
+      - os: windows
+        store: steam
+    - arguments: -mcp -novr
+      when:
+      - os: windows
         store: steam
   steam:
-    id: 407060
+    id: 5289710
 Alucinod:
   cloud:
     steam: true
@@ -133516,6 +133523,10 @@ Bills Must Be Paid:
     - when:
       - os: windows
         store: steam
+  registry:
+    HKEY_CURRENT_USER/Software/Rike Games/Bills Must Be Paid:
+      tags:
+      - config
   steam:
     id: 4421010
 Billy:
@@ -154074,6 +154085,8 @@ Body of Evidence:
   steam:
     id: 656830
 Bodycam:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_2406770.bin:
       tags:
@@ -154085,10 +154098,11 @@ Bodycam:
       - save
       when:
       - store: steam
-    <base>/Bodycam/Saved/SaveGames/*.sav:
+    <winLocalAppData>/Bodycam/Saved/Config/Windows:
+      tags:
+      - config
       when:
       - os: windows
-        store: steam
   installDir:
     Bodycam: {}
   launch:
@@ -197166,7 +197180,7 @@ Casual Spider Solitaire:
       - save
       when:
       - store: steam
-    <home>/AppData/LocalLow/Orsoniks/CasualtiesUnknown:
+    <home>/AppData/LocalLow/Orsoniks/CasualtiesUnknown/save.sv:
       tags:
       - save
       when:
@@ -238741,6 +238755,7 @@ Company of Heroes 3:
     - 4095900
     - 4523380
     - 4836540
+    - 5210790
   installDir:
     Company of Heroes 3: {}
   launch:
@@ -257262,11 +257277,11 @@ Crimson Moon:
       - save
       when:
       - store: steam
-    <home>/CrimsonMoonNG/Saved/SaveGames/*.*:
+    <home>/CrimsonMoonNG/Saved/SaveGames/*.sav:
       when:
       - os: linux
         store: steam
-    <winLocalAppData>/CrimsonMoonNG/Saved/SaveGames/*.*:
+    <winLocalAppData>/CrimsonMoonNG/Saved/SaveGames/*.sav:
       when:
       - store: steam
   id:
@@ -311113,6 +311128,12 @@ Derelikt:
     lutris: derelikt
     steamExtra:
     - 5242870
+  installDir:
+    DERELIKT: {}
+  launch:
+    <base>/DERELIKT.exe:
+    - when:
+      - store: steam
   registry:
     HKEY_CURRENT_USER/Software/Visuwyg/DERELIKT:
       tags:
@@ -318997,6 +319018,13 @@ Dice Hoarder:
       - save
       when:
       - store: steam
+  installDir:
+    Dice Hoarder: {}
+  launch:
+    <base>/DiceHoarder.exe:
+    - when:
+      - os: windows
+        store: steam
   steam:
     id: 3687090
 Dice Keeper:
@@ -381368,6 +381396,26 @@ Emoji TD:
         store: steam
   steam:
     id: 1058220
+Emotional Labor Laboratory:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4678050.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4678050.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Emotional Labor Laboratory: {}
+  launch:
+    <base>/Emotional Labor Laboratory.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 4678050
 'Empathy: Path of Whispers':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_291690.bin:
@@ -560371,6 +560419,28 @@ Hope in Hell:
         store: steam
   steam:
     id: 410040
+Hope in the City:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3610790.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3610790.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Hope in the City: {}
+  launch:
+    <base>/HITC.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 3610790
 Hope is in 23:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_724950.bin:
@@ -566487,6 +566557,10 @@ How to Fish:
     - when:
       - os: windows
         store: steam
+  registry:
+    HKEY_CURRENT_USER/Software/Dazed Games/How to Fish:
+      tags:
+      - config
   steam:
     id: 4001890
 How to Fool a Liar King:
@@ -580158,13 +580232,13 @@ Icy Tower (2026):
   installDir:
     icytower: {}
   launch:
-    <base>/icytower.app/Contents/MacOS/love:
-    - when:
-      - os: mac
-        store: steam
     <base>/icytower.exe:
     - when:
       - os: windows
+        store: steam
+    <base>/steam_launcher.sh:
+    - when:
+      - os: mac
         store: steam
   steam:
     id: 3014860
@@ -598062,7 +598136,7 @@ Into the Core:
   installDir:
     Into the Dead Our Darkest Days: {}
   launch:
-    <base>/IntoTheDeadOurDarkestDays.app/Contents/MacOS/IntoTheDeadOurDarkestDays:
+    <base>/IntoTheDeadOurDarkestDays.app:
     - when:
       - os: mac
         store: steam
@@ -666255,6 +666329,7 @@ Lie In My Heart:
     id: 1116490
 Lies of P:
   cloud:
+    epic: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1627720.bin:
@@ -688967,6 +689042,22 @@ Luckslinger:
         store: steam
   steam:
     id: 358810
+'Lucky Luke: The Lonesome Cowboy Collection':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4934830.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4934830.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 4934830
 'Lucky Luke: Western Fever':
   files:
     <base>/DATA/BOARD/BUTTONS.DAT:
@@ -787750,6 +787841,10 @@ Neo Junk City:
     <home>/AppData/LocalLow/StarBlade Games/Neo Junk City/CloudSaves/<storeUserId>/Data/storage.state:
       when:
       - store: steam
+  id:
+    steamExtra:
+    - 2474130
+    - 3414440
   installDir:
     Neo Junk City: {}
   launch:
@@ -879538,6 +879633,20 @@ Pokris:
         store: steam
   steam:
     id: 1036780
+"Pok\xE9Park 2: Wonders Beyond":
+  files:
+    <base>/S2LE01/nand/title/00010000/53324c45/data:
+      tags:
+      - save
+      when:
+      - os: windows
+    <base>/settings.ini:
+      tags:
+      - config
+      when:
+      - os: windows
+  id:
+    lutris: pokepark-2-wonders-beyond
 "Pok\xE9Park Wii: Pikachu's Adventure":
   files:
     <base>/R8AE01/nand/title/00010000/52384145/data:
@@ -1140084,9 +1140193,10 @@ TANKNAROK:
       when:
       - store: steam
     <home>/AppData/LocalLow/Denkiworks/TANUKI_ Pon's Summer/SaveData:
+      tags:
+      - save
       when:
       - os: windows
-        store: steam
   installDir:
     TANUKI Pon's Summer: {}
   launch:
@@ -1174395,6 +1174505,23 @@ The Climate Trail:
         store: steam
   steam:
     id: 1162400
+The Climb:
+  files:
+    <base>/crytek-the-climb/crytek_climb_wip/user/options/default:
+      tags:
+      - config
+      when:
+      - os: windows
+    <base>/crytek-the-climb/crytek_climb_wip/user/profiles:
+      tags:
+      - save
+      when:
+      - os: windows
+    <base>/crytek-the-climb/crytek_climb_wip/user/savegames:
+      tags:
+      - save
+      when:
+      - os: windows
 The Climber:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_678500.bin:
@@ -1311276,6 +1311403,12 @@ Valor Mortis:
       - save
       when:
       - store: steam
+    <winLocalAppData>/Packages/LyricalGamesLLC.ValorMortis_72fag5ekhk96y/SystemAppData/wgs:
+      tags:
+      - save
+      when:
+      - os: windows
+        store: microsoft
     <winLocalAppData>/ValorMortis/Saved/Config/Windows:
       tags:
       - config
@@ -1311286,6 +1311419,12 @@ Valor Mortis:
       - save
       when:
       - os: windows
+    <winLocalAppData>/ValorMortisMSG/Saved/Config/Windows:
+      tags:
+      - save
+      when:
+      - os: windows
+        store: microsoft
   id:
     lutris: valor-mortis
     steamExtra:
@@ -1361248,6 +1361387,20 @@ Winx Club:
       - config
       when:
       - os: windows
+'Winx Club: Moonlight Quest':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5189950.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5189950.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5189950
 Wipe Out VR:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_553630.bin:
