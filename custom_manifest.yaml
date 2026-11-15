@@ -372758,6 +372758,17 @@ Edge of Memories:
   steam:
     id: 2738170
 Edge of Nowhere:
+  files:
+    <home>/.insomniac/InsomniacEngine:
+      tags:
+      - save
+      when:
+      - os: windows
+    <home>/.insomniac/InsomniacEngine/EdgeOfNowhere_userprefs.save:
+      tags:
+      - config
+      when:
+      - os: windows
   id:
     lutris: edge-of-nowhere
 Edge of Reality Visual Novel:
@@ -413339,6 +413350,30 @@ Fake/SuperSonia:
       - store: steam
   steam:
     id: 1070390
+Fakin' It XL:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5054700.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5054700.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/Jackbox Games/Fakin It XL:
+      tags:
+      - save
+      when:
+      - os: windows
+  id:
+    steamExtra:
+    - 5309490
+  steam:
+    id: 5054700
 Falcon:
   cloud:
     gog: true
@@ -555999,11 +556034,6 @@ Hogwarts Legacy:
       - save
       when:
       - store: steam
-    <winLocalAppData>/Hogwarts Legacy/Saved/Config/WindowsNoEditor:
-      tags:
-      - config
-      when:
-      - os: windows
     <winLocalAppData>/Hogwarts Legacy/Saved/SaveGames/<storeUserId>:
       tags:
       - save
@@ -556017,6 +556047,11 @@ Hogwarts Legacy:
     <winLocalAppData>/Hogwarts/Saved/SaveGames/<storeUserId>:
       tags:
       - save
+      when:
+      - os: windows
+    <winLocalAppData>/HogwartsLegacy/Saved/Config/WindowsNoEditor:
+      tags:
+      - config
       when:
       - os: windows
     <winLocalAppData>/HogwartsLegacy/Saved/SaveGames/<storeUserId>:
@@ -568308,6 +568343,10 @@ HumanitZ:
       when:
       - store: steam
     <winLocalAppData>/HumanitZ/Saved/Minimap/*.exr:
+      when:
+      - os: windows
+        store: steam
+    <winLocalAppData>/HumanitZ/Saved/SaveGames/**/*.exr:
       when:
       - os: windows
         store: steam
@@ -695648,6 +695687,37 @@ MONOBOT:
       - store: steam
   steam:
     id: 1212850
+MONOMOON:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3285880.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3285880.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/.local/share/MONOMOON/SavedGames/save*.cfg:
+      when:
+      - os: linux
+        store: steam
+    <home>/Library/Application Support/MONOMOON/SavedGames/save*.cfg:
+      when:
+      - os: mac
+        store: steam
+    <winAppData>/MONOMOON/SavedGames/save*.cfg:
+      when:
+      - store: steam
+  installDir:
+    MONOMOON: {}
+  launch:
+    <base>/MONOMOON.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 3285880
 MONSTERS:SURVIVAL:
   alias: 'Monsters: Survival'
 MOP Operation Cleanup:
@@ -756910,6 +756980,18 @@ Morphe:
         store: steam
   steam:
     id: 931830
+Morpheus:
+  files:
+    <base>/Partidas grabadas:
+      tags:
+      - save
+      when:
+      - os: windows
+    <base>/Settings.dat:
+      tags:
+      - config
+      when:
+      - os: windows
 Morphies Law:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_948960.bin:
@@ -901576,6 +901658,8 @@ Psi Project 2:
       - save
       when:
       - os: windows
+  id:
+    lutris: psi-ops-the-mindgate-conspiracy
 'PsiSyn: The Game':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_941150.bin:
@@ -1117421,7 +1117505,7 @@ Sunkenland:
       - save
       when:
       - store: steam
-    <home>/AppData/LocalLow/Vector3 Studio/Sunkenland:
+    <home>/AppData/LocalLow/Vector3 Studio/Sunkenland/SteamCloudData/<storeUserId>:
       when:
       - os: windows
         store: steam
@@ -1145609,6 +1145693,22 @@ Tainted Grail:
       - config
   steam:
     id: 1466060
+Tairum:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5043840.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5043840.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5043840
 Taisei Project:
   files:
     <home>/.var/app/org.taisei_project.Taisei/data/taisei:
@@ -1195906,6 +1196006,25 @@ The Itch:
         store: steam
   steam:
     id: 1095520
+The Jackbox Naughty Pack:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2652000.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2652000.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    steamExtra:
+    - 3233700
+  steam:
+    id: 2652000
 The Jackbox Party Pack:
   cloud:
     steam: true
@@ -1230558,7 +1230677,7 @@ The Twins:
     id: 246580
 The Typing of the Dead:
   files:
-    The 'pol' directory where you installed the game.:
+    <base>/pol:
       tags:
       - save
       when:
@@ -1291325,6 +1291444,26 @@ Ultima Online:
       - save
       when:
       - os: dos
+    <base>/UNDEROM1/SAVE1:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/UNDEROM1/SAVE2:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/UNDEROM1/SAVE3:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/UNDEROM1/SAVE4:
+      tags:
+      - save
+      when:
+      - store: steam
     ? <home>/Library/Application Support/Boxer/Gamebox States/com.gog.ultima-underworld-1+2/Current.boxerstate/C
       Ultima Underworld 1 and 2.harddisk/UNDEROM1
     : tags:
@@ -1339482,6 +1339621,9 @@ Warhead Destined:
         store: steam
   steam:
     id: 1097400
+Wario World:
+  id:
+    lutris: wario-world
 Warium:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_713010.bin:
@@ -1383368,6 +1383510,8 @@ You Don't Know Jack Sports:
       - save
       when:
       - store: steam
+  id:
+    lutris: you-dont-know-jack-sports
   installDir:
     YDKJ_SPORTS: {}
   launch:
