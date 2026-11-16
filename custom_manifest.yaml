@@ -128952,6 +128952,16 @@ Better Than Dead:
       - save
       when:
       - store: steam
+    <winLocalAppData>/BTD/Saved/SaveGames/*.sav:
+      tags:
+      - save
+      when:
+      - os: windows
+    <winLocalAppData>/BTD/Saved/SaveGames/Settings/MyOptions.sav:
+      tags:
+      - config
+      when:
+      - os: windows
   id:
     lutris: better-than-dead
   installDir:
@@ -406844,6 +406854,9 @@ F-22 Lightning 3:
         store: steam
   steam:
     id: 3146140
+F-Zero X (G-Diffuser):
+  id:
+    lutris: f-zero-x
 'F.D.N.Y. Firefighter: American Hero':
   files:
     <base>/FDNYFireFighter.cfg:
@@ -413372,6 +413385,25 @@ Fakin' It XL:
   id:
     steamExtra:
     - 5309490
+  installDir:
+    Fakin It XL: {}
+  launch:
+    <base>/Launcher.sh:
+    - when:
+      - bit: 64
+        os: linux
+        store: steam
+    <base>/launch_megapicker:
+    - arguments: product/fakin-it-xl
+      when:
+      - os: mac
+        store: steam
+    <base>/launch_megapicker.exe:
+    - arguments: product/fakin-it-xl
+      when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 5054700
 Falcon:
@@ -578591,6 +578623,7 @@ INFRA:
       when:
       - os: windows
   id:
+    lutris: infra
     steamExtra:
     - 432450
   installDir:
@@ -697107,7 +697140,7 @@ Machinarium:
       - save
       when:
       - os: linux
-    <root>/userdata/<root>/40700/remote:
+    <root>/userdata/<storeUserId>/40700/remote:
       tags:
       - save
       when:
@@ -944621,6 +944654,8 @@ Resident Evil 2:
       - store: steam
   gog:
     id: 1534123252
+  id:
+    lutris: resident-evil-2
   installDir:
     4249110_Biohazard2: {}
   launch:
@@ -1123698,6 +1123733,20 @@ Super Meat Boy 3D:
     Super Meat Boy 3D: {}
   steam:
     id: 3288210
+Super Meat Boy Again+:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4269060.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4269060.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 4269060
 Super Meat Boy Forever:
   cloud:
     epic: true
@@ -1196023,6 +1196072,23 @@ The Jackbox Naughty Pack:
   id:
     steamExtra:
     - 3233700
+  installDir:
+    The Jackbox Naughty Pack: {}
+  launch:
+    <base>/Launcher.sh:
+    - when:
+      - bit: 64
+        os: linux
+        store: steam
+    <base>/The Jackbox Naughty Pack.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/The Jackbox Naughty Pack.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 2652000
 The Jackbox Party Pack:
@@ -1310957,6 +1311023,8 @@ Valiant:
       - save
       when:
       - store: uplay
+  id:
+    lutris: valiant-hearts-coming-home
   installDir:
     Valiant Hearts Coming Home: {}
   launch:
@@ -1339119,6 +1339187,8 @@ Warhammer Survivors:
       - store: steam
   gog:
     id: 2068449424
+  id:
+    lutris: warhammer-survivors
   installDir:
     Warhammer Survivors: {}
   launch:
@@ -1350505,6 +1350575,26 @@ Wet Warfare:
         store: steam
   steam:
     id: 914350
+Wet Wealth:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4293850.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4293850.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Wet Wealth: {}
+  launch:
+    <base>/Wet Wealth.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 4293850
 Wetlands:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1367160.bin:
