@@ -1859,7 +1859,8 @@ $1 Ride:
         store: steam
     <base>/1000xRESIST.exe:
     - when:
-      - store: steam
+      - os: windows
+        store: steam
   registry:
     "HKEY_CURRENT_USER/Software/sunset visitor \u659C\u967D\u904E\u5BA2/1000xRESIST":
       tags:
@@ -20440,6 +20441,8 @@ A.D. 2044:
       - os: windows
   gog:
     id: 2075976504
+  id:
+    lutris: ad-2044
 A.I. Invasion:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_386540.bin:
@@ -118987,7 +118990,7 @@ Battlefleet Engineer:
   installDir:
     Battlefleet Gothic Armada II: {}
   launch:
-    <base>/BattlefleetGothic2.exe:
+    <base>/BattlefleetGothic2-Win64-Shipping.exe:
     - when:
       - bit: 64
         os: windows
@@ -150211,6 +150214,10 @@ Bloodshed:
       - os: windows
   gog:
     id: 1525025499
+  id:
+    lutris: bloodshed
+    steamExtra:
+    - 3240090
   installDir:
     Bloodshed: {}
   launch:
@@ -274838,6 +274845,22 @@ DOWN MEANS UP:
         store: steam
   steam:
     id: 1980920
+'DPS: Desktop Pension Squad':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5135440.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5135440.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5135440
 DR LIVESEY ROM AND DEATH EDITION:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_2181930.bin:
@@ -317221,9 +317244,16 @@ DevilConnection:
       - save
       when:
       - store: steam
-    <base>/_storage/**/*.sav:
+    <base>/_storage/DevilConnection_sf.sav:
+      tags:
+      - config
       when:
-      - store: steam
+      - os: windows
+    <base>/_storage/DevilConnection_tyrano_data.sav:
+      tags:
+      - save
+      when:
+      - os: windows
   installDir:
     "\u3067\u3073\u308B\u30B3\u30CD\u30AF\u30B7\u30E7\u3093": {}
   launch:
@@ -334817,6 +334847,9 @@ Donkey Kong 64:
       - save
       when:
       - os: linux
+Donkey Kong Bananza (DKB Recomp):
+  id:
+    lutris: donkey-kong-bananza
 Donkey Xote:
   files:
     <base>/SaveGame.sav:
@@ -363413,7 +363446,7 @@ Dynasty Feud:
       - config
       when:
       - os: windows
-    <winDocuments>/KOEI/Dynasty Warriors 4 Hyper/Savedata/*.dat:
+    <winDocuments>/KOEI/Dynasty Warriors 4 Hyper/Savedata/save.dat:
       tags:
       - save
       when:
@@ -476692,6 +476725,7 @@ Gates of Nowhere:
     id: 614260
 Gates of Skeldal:
   cloud:
+    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3533830.bin:
@@ -476710,6 +476744,8 @@ Gates of Skeldal:
       when:
       - os: dos
       - os: windows
+  gog:
+    id: 1399674434
   id:
     lutris: brany-skeldalu
   installDir:
@@ -594334,6 +594370,8 @@ Insane (2016):
   steam:
     id: 452930
 Insane 2:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_35320.bin:
       tags:
@@ -801569,6 +801607,20 @@ Nivalis Nights:
       - store: steam
   steam:
     id: 1488490
+No Asteroids:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5527800.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5527800.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5527800
 No Body Home:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_794420.bin:
@@ -812667,6 +812719,9 @@ Obey Me:
       - save
       when:
       - store: steam
+  id:
+    steamExtra:
+    - 5282320
   steam:
     id: 4444800
 Object "Cleaning":
@@ -895281,6 +895336,8 @@ Professor Fizzwizzle and the Molten Mystery:
   steam:
     id: 50910
 Professor Layton and the New World of Steam:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3384600.bin:
       tags:
@@ -930770,6 +930827,8 @@ Reagan Gorbachev:
       - os: windows
   gog:
     id: 1911151506
+  id:
+    lutris: reah-face-the-unknown
 Reaktron:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1029640.bin:
@@ -1006530,6 +1006589,9 @@ Selkie's Salvage&Co.:
       - save
       when:
       - os: windows
+  id:
+    steamExtra:
+    - 5132160
   installDir:
     SelkieSalvage&Co: {}
   launch:
@@ -1031933,6 +1031995,13 @@ SimSafari:
     <winDir>/smsafari.ini:
       tags:
       - config
+      when:
+      - os: windows
+SimTractor:
+  files:
+    <base>/SAV:
+      tags:
+      - save
       when:
       - os: windows
 SimTunes:
@@ -1078318,6 +1078387,8 @@ Spirit Crossing:
       - save
       when:
       - store: steam
+  installDir:
+    Spirit Crossing: {}
   steam:
     id: 2321960
 Spirit Fighters:
@@ -1140311,35 +1140382,6 @@ TANKNAROK:
         store: steam
   steam:
     id: 1029760
-'TANUKI: Pon''s Summer':
-  cloud:
-    steam: true
-  files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_3218570.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3218570.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <home>/AppData/LocalLow/Denkiworks/TANUKI_ Pon's Summer/SaveData:
-      tags:
-      - save
-      when:
-      - os: windows
-  installDir:
-    TANUKI Pon's Summer: {}
-  launch:
-    <base>/TANUKI Pon's Summer.exe:
-    - when:
-      - bit: 64
-        os: windows
-        store: steam
-  steam:
-    id: 3218570
 TAOTH - The Adventures of the Herkulez:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_749470.bin:
@@ -1151747,6 +1151789,39 @@ Tano's Fate:
       - store: steam
   steam:
     id: 888910
+'Tanuki: Pon''s Summer':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3218570.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3218570.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/Denkiworks/TANUKI_ Pon's Summer/SaveData:
+      tags:
+      - save
+      when:
+      - os: windows
+  installDir:
+    TANUKI Pon's Summer: {}
+  launch:
+    <base>/TANUKI Pon's Summer.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+  registry:
+    'HKEY_CURRENT_USER/SOFTWARE/Denkiworks/TANUKI: Pon''s Summer':
+      tags:
+      - config
+  steam:
+    id: 3218570
 Tanzia:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_369700.bin:
@@ -1275201,6 +1275276,8 @@ Trees Hate You:
     lutris: trees-hate-you
     steamExtra:
     - 4307190
+    - 5364210
+    - 5378320
   steam:
     id: 4171850
 Treis Zoes:
@@ -1359912,7 +1359989,18 @@ Wing Commander:
   cloud:
     gog: true
     origin: true
+    steam: true
   files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1996640.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1996640.bin:
+      tags:
+      - save
+      when:
+      - store: steam
     <base>/GAMEDAT/SAVEGAME.WLD:
       tags:
       - save
@@ -1359920,16 +1360008,33 @@ Wing Commander:
       - os: dos
       - os: windows
   gog:
-    id: 1207662643
+    id: 1869711514
   id:
     gogExtra:
     - 1207658960
+    - 1207662643
+    - 1455015764
     lutris: wing-commander
+  installDir:
+    Wing Commander: {}
+  steam:
+    id: 1996640
 'Wing Commander II: Vengeance of the Kilrathi':
   cloud:
     gog: true
     origin: true
+    steam: true
   files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2008730.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2008730.bin:
+      tags:
+      - save
+      when:
+      - store: steam
     <base>/GAMEDAT/SAVEGAME.WC2:
       tags:
       - save
@@ -1359937,11 +1360042,17 @@ Wing Commander:
       - os: dos
       - os: windows
   gog:
-    id: 1207662653
+    id: 2101061506
   id:
     gogExtra:
     - 1207658960
+    - 1207662653
+    - 1953987828
     lutris: wing-commander-ii-deluxe-edition
+  installDir:
+    Wing Commander II: {}
+  steam:
+    id: 2008730
 'Wing Commander III: Heart of the Tiger':
   cloud:
     gog: true
@@ -1361014,7 +1361125,7 @@ Winter Burrow:
   installDir:
     Winter Burrow: {}
   launch:
-    <base>/Winter Burrow.app/Contents/MacOS/Winter Burrow:
+    <base>/Winter Burrow.app:
     - when:
       - os: mac
         store: steam
