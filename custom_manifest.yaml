@@ -85210,6 +85210,8 @@ Assassin's Creed III Remastered:
       - config
       when:
       - os: windows
+  id:
+    lutris: assassins-creed-iii-remastered
   installDir:
     Assassin's Creed III Remastered: {}
   steam:
@@ -85519,6 +85521,7 @@ Assassin's Creed Shadows:
       when:
       - os: windows
   id:
+    lutris: assassins-creed-shadows
     steamExtra:
     - 3362550
     - 3362570
@@ -85623,6 +85626,8 @@ Assassin's Creed Unity:
       - config
       when:
       - os: windows
+  id:
+    lutris: assassins-creed-unity
   installDir:
     Assassin's Creed Unity: {}
   launch:
@@ -220021,6 +220026,8 @@ City Gangs San Andreas:
   steam:
     id: 1150610
 City Hunter:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3984650.bin:
       tags:
@@ -220032,6 +220039,13 @@ City Hunter:
       - save
       when:
       - store: steam
+    <root>/userdata/<storeUserId>/3984650/remote:
+      tags:
+      - config
+      - save
+      when:
+      - os: windows
+        store: steam
   installDir:
     City Hunter: {}
   launch:
@@ -274859,6 +274873,25 @@ DOWN MEANS UP:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/DetailGames/DPS/saves/<storeUserId>/**/*.sav:
+      when:
+      - os: windows
+        store: steam
+    <home>/AppData/LocalLow/DetailGames/DPS/saves/<storeUserId>/**/*.sav.bak:
+      when:
+      - os: windows
+        store: steam
+    <home>/AppData/LocalLow/DetailGames/DPS/saves/<storeUserId>/archive/**/*.json:
+      when:
+      - os: windows
+        store: steam
+  installDir:
+    DPS Desktop Pension Squad: {}
+  launch:
+    <base>/DPS.exe:
+    - when:
+      - os: windows
+        store: steam
   steam:
     id: 5135440
 DR LIVESEY ROM AND DEATH EDITION:
@@ -454011,6 +454044,29 @@ Fox Hime Zero:
         store: steam
   steam:
     id: 844930
+'Fox Spirit Sweethearts: Complete Edition':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5261050.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5261050.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/FoxSpiritSweethearts/saves/*.json:
+      when:
+      - store: steam
+  installDir:
+    Fox Spirit Sweethearts: {}
+  launch:
+    <base>/fox-spirit-sweethearts.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 5261050
 Fox and Bunny:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1075790.bin:
@@ -574213,6 +574269,8 @@ I Am Alive:
       - os: windows
   gog:
     id: 1632475257
+  id:
+    lutris: i-am-alive
   installDir:
     I am Alive: {}
   steam:
@@ -620103,6 +620161,36 @@ Just Volleyball:
       - save
       when:
       - store: steam
+    <winAppData>/Godot/app_userdata/volleyball/data/character.json:
+      when:
+      - os: windows
+        store: steam
+    <winAppData>/Godot/app_userdata/volleyball/data/character_slots.json:
+      when:
+      - os: windows
+        store: steam
+    <winAppData>/Godot/app_userdata/volleyball/data/profiles.json:
+      when:
+      - os: windows
+        store: steam
+  installDir:
+    just volleyball: {}
+  launch:
+    <base>/volleyball.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+    - arguments: ' --rendering-driver vulkan'
+      when:
+      - bit: 64
+        os: windows
+        store: steam
+    - arguments: --rendering-driver opengl3
+      when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 5037200
 Just a Cleric:
@@ -788804,7 +788892,7 @@ Neon Drive:
       - save
       when:
       - os: windows
-    <home>/Library/Application Support/unity.Fraoula.Neon Drive:
+    <home>/Library/Application Support/Fraoula/Neon Drive/NeonDrive.sav:
       tags:
       - save
       when:
@@ -811592,6 +811680,7 @@ OMORI:
       - os: windows
         store: steam
   id:
+    lutris: omsi-2
     steamExtra:
     - 271390
     - 299350
@@ -811621,6 +811710,9 @@ OMORI:
         store: steam
   steam:
     id: 252530
+'OMSI: The Bus Simulator':
+  id:
+    lutris: omsi-the-bus-simulator
 ONE:
   cloud:
     steam: true
@@ -812719,9 +812811,18 @@ Obey Me:
       - save
       when:
       - store: steam
+    <base>/savedata:
+      when:
+      - store: steam
   id:
     steamExtra:
     - 5282320
+  installDir:
+    Obey Me! Sinner's Choice Lucifer: {}
+  launch:
+    <base>/SCLucifer.exe:
+    - when:
+      - store: steam
   steam:
     id: 4444800
 Object "Cleaning":
@@ -865683,6 +865784,14 @@ Pimp Tight:
   id:
     steamExtra:
     - 4941930
+  installDir:
+    Pinata Smash Incremental Circus: {}
+  launch:
+    <base>/Pinata Smash Incremental Circus.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 4918810
 Pinball:
@@ -1051639,6 +1051748,32 @@ Soccer Kid:
         store: steam
   steam:
     id: 1104480
+Soccer Kid Collection:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4447890.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4447890.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/QUByte Interactive/SoccerKidCollection/<storeUserId>/*.json:
+      when:
+      - store: steam
+  installDir:
+    Soccer Kid Collection (QUByte Classics): {}
+  launch:
+    <base>/SoccerKid.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 4447890
 Soccer Legends:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_340530.bin:
@@ -1177633,8 +1177768,15 @@ The Dark Eye (1995):
       when:
       - store: steam
     <base>/Saves:
+      tags:
+      - save
       when:
-      - store: steam
+      - os: windows
+    <base>/scummvm.ini:
+      tags:
+      - config
+      when:
+      - os: windows
   installDir:
     Edgar Allan Poe's Interactive Horror 1995 Edition: {}
   launch:
@@ -1275278,6 +1275420,17 @@ Trees Hate You:
     - 4307190
     - 5364210
     - 5378320
+  installDir:
+    Trees Hate You: {}
+  launch:
+    <base>/Trees Hate You.exe:
+    - when:
+      - os: windows
+        store: steam
+    <base>/TreesHateYou.x86_64:
+    - when:
+      - os: linux
+        store: steam
   steam:
     id: 4171850
 Treis Zoes:
@@ -1309888,6 +1310041,20 @@ VTree Beach Volleyball:
         store: steam
   steam:
     id: 855160
+'VVVVK: Road of Eternal Night':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5582480.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5582480.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5582480
 VVVVV:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1153250.bin:
@@ -1340396,10 +1340563,14 @@ Warm Snow:
       - save
       when:
       - store: steam
-    <home>/AppData/LocalLow/BadMudStudio/WarmSnow:
+    <home>/AppData/LocalLow/BadMudStudio/WarmSnow/Save:
+      tags:
+      - save
+      when:
+      - os: windows
+    <home>/AppData/LocalLow/BadMudStudio/WarmSnow/Save/_SettingMenuData:
       tags:
       - config
-      - save
       when:
       - os: windows
   id:
