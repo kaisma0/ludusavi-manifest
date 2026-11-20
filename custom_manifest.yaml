@@ -97851,6 +97851,11 @@ Awaria:
       - save
       when:
       - store: steam
+    <xdgConfig>/unity3d/vanripper/Awaria/prefs:
+      tags:
+      - config
+      when:
+      - os: linux
   id:
     steamExtra:
     - 3394230
@@ -102442,40 +102447,7 @@ BR Logic Pack:
   steam:
     id: 35800
 'BRAZILIAN DRUG DEALER 3: I OPENED A PORTAL TO HELL IN THE FAVELA TRYING TO REVIVE MIT AIA I NEED TO CLOSE IT':
-  files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_3191050.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3191050.bin:
-      tags:
-      - save
-      when:
-      - store: steam
-    <home>/Saved Games/Aviao:
-      tags:
-      - save
-      when:
-      - os: windows
-    <winAppData>/Aviao/config.cfg:
-      tags:
-      - config
-      when:
-      - os: windows
-  id:
-    lutris: brazilian-drug-dealer-3-i-opened-a-portal-to-hell-
-    steamExtra:
-    - 3476440
-  installDir:
-    AVIAOZIN3: {}
-  launch:
-    <base>/AVIAO3.exe:
-    - when:
-      - os: windows
-        store: steam
-  steam:
-    id: 3191050
+  alias: Brazilian Drug Dealer 3
 ? 'BRAZILIAN DRUG DEALER BEFORE 4: DEMONS FROM THE PORTAL TO HELL I OPENED ARE STILL
   IN THE FAVELA AND NOW I HAVE TO SAVE MAMADAS FROM RONALDO'
 : files:
@@ -155412,7 +155384,7 @@ Bomber Crew:
       - save
       when:
       - os: linux
-    <xdgConfig>/unity3d/Runner Duck/Bomber Crew/perfs:
+    <xdgConfig>/unity3d/Runner Duck/Bomber Crew/prefs:
       tags:
       - config
       when:
@@ -165184,6 +165156,46 @@ Brazilian Adventure:
         store: steam
   steam:
     id: 764880
+Brazilian Drug Dealer 3:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3191050.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3191050.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/Saved Games/Aviao:
+      tags:
+      - save
+      when:
+      - os: windows
+    <winAppData>/Aviao/config.cfg:
+      tags:
+      - config
+      when:
+      - os: windows
+  gog:
+    id: 1298669607
+  id:
+    gogExtra:
+    - 1391632422
+    - 2011757279
+    lutris: brazilian-drug-dealer-3-i-opened-a-portal-to-hell-
+    steamExtra:
+    - 3476440
+  installDir:
+    AVIAOZIN3: {}
+  launch:
+    <base>/AVIAO3.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 3191050
 Brazilian Root:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_809500.bin:
@@ -313464,7 +313476,7 @@ Despotism 3k:
       - save
       when:
       - os: linux
-    <xdgConfig>/unity3d/Konfa Games/Despotism3k/perfs:
+    <xdgConfig>/unity3d/Konfa Games/Despotism3k/prefs:
       tags:
       - config
       when:
@@ -324515,6 +324527,12 @@ Disco Ball Simulator 2000:
   id:
     steamExtra:
     - 5089460
+  installDir:
+    Disco Ball Simulator 2000: {}
+  launch:
+    <base>/Disco Ball Simulator 2000.exe:
+    - when:
+      - store: steam
   steam:
     id: 5089020
 Disco Bullets:
@@ -418426,6 +418444,20 @@ Fantom Feast:
       - store: steam
   steam:
     id: 962280
+"Fant\xF4me Rapport -Intermezzo-":
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3622860.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3622860.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 3622860
 Fap Queen:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_942140.bin:
@@ -439956,6 +439988,13 @@ Flick:
     lutris: flick
     steamExtra:
     - 5267890
+  installDir:
+    Flick: {}
+  launch:
+    <base>/Flick.exe:
+    - when:
+      - os: windows
+        store: steam
   steam:
     id: 4450660
 FlickSync - Mad Hatter VR:
@@ -453222,7 +453261,7 @@ Fotonica:
       - save
       when:
       - store: steam
-    <xdgConfig>/unity3d/Santa Ragione/FOTONICA/perfs:
+    <xdgConfig>/unity3d/Santa Ragione/FOTONICA/prefs:
       tags:
       - config
       - save
@@ -549740,17 +549779,21 @@ Hidden Folks:
       - save
       when:
       - store: steam
-    <home>/.config/unity3d/Adriaan de Jongh/Hidden Folks:
-      tags:
-      - config
-      - save
-      when:
-      - os: linux
-    <home>/AppData/LocalLow/Adriaan de Jongh/Hidden Folks:
+    <home>/AppData/LocalLow/Adriaan de Jongh/Hidden Folks/*.data:
       tags:
       - save
       when:
       - os: windows
+    <xdgConfig>/unity3d/Adriaan de Jongh/Hidden Folks/*.data:
+      tags:
+      - save
+      when:
+      - os: linux
+    <xdgConfig>/unity3d/Adriaan de Jongh/Hidden Folks/perfs:
+      tags:
+      - config
+      when:
+      - os: linux
   installDir:
     HiddenFolks: {}
   launch:
@@ -549766,6 +549809,10 @@ Hidden Folks:
     - when:
       - os: linux
         store: steam
+  registry:
+    HKEY_CURRENT_USER/Software/Adriaan de Jongh/Hidden Folks:
+      tags:
+      - config
   steam:
     id: 435400
 Hidden Life:
@@ -642109,6 +642156,8 @@ Korwin The Game:
       - save
       when:
       - store: steam
+  gog:
+    id: 1429035916
   id:
     lutris: koshmar-the-last-reverie
   steam:
@@ -642987,6 +643036,7 @@ KrissX:
 Kristala:
   cloud:
     epic: true
+    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1206410.bin:
@@ -643003,10 +643053,21 @@ Kristala:
       when:
       - os: windows
         store: steam
+  gog:
+    id: 2052069523
   id:
+    gogExtra:
+    - 1389773565
+    - 1541632216
+    - 1730693353
+    - 1731891413
+    - 1830954867
+    - 1981264863
+    - 2048031151
     lutris: kristala
     steamExtra:
     - 2493530
+    - 4602480
     - 4602520
     - 4602530
     - 4602540
@@ -711556,6 +711617,7 @@ Mark After Dark:
     id: 713980
 Mark of the Deep:
   cloud:
+    epic: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1933370.bin:
@@ -711574,6 +711636,16 @@ Mark of the Deep:
     <winLocalAppData>/MarkOfTheDeep/Saved/SaveGames/*.sav:
       when:
       - store: steam
+  gog:
+    id: 1749756718
+  id:
+    gogExtra:
+    - 1268617634
+    - 1594619696
+    lutris: mark-of-the-deep
+    steamExtra:
+    - 3480440
+    - 4374400
   installDir:
     Mark of the Deep: {}
   launch:
@@ -722508,7 +722580,7 @@ Mega Coin Squad:
       - save
       when:
       - store: steam
-    <xdgConfig>/unity3d/Big Pixel Studios/Mega Coin Squad/perfs:
+    <xdgConfig>/unity3d/Big Pixel Studios/Mega Coin Squad/prefs:
       tags:
       - config
       - save
@@ -771240,6 +771312,11 @@ My Sweet Floating in the Void:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/Oculus Digital/My Sweet Floating In The Void/mysweetsave.game:
+      tags:
+      - save
+      when:
+      - os: windows
   installDir:
     My Sweet Floating In The Void: {}
   launch:
@@ -771251,6 +771328,10 @@ My Sweet Floating in the Void:
     - when:
       - os: windows
         store: steam
+  registry:
+    HKEY_CURRENT_USER/Software/Oculus Digital/My Sweet Floating In The Void:
+      tags:
+      - config
   steam:
     id: 2738740
 My Sweet Waifu:
@@ -788888,9 +788969,14 @@ Neon Drive:
       - save
       when:
       - os: mac
-    <xdgData>/unity3d/Fraoula/Neon Drive/prefs:
+    <xdgConfig>/unity3d/Fraoula/Neon Drive/NeonDrive.sav:
       tags:
       - save
+      when:
+      - os: linux
+    <xdgConfig>/unity3d/Fraoula/Neon Drive/prefs:
+      tags:
+      - config
       when:
       - os: linux
   id:
@@ -791799,6 +791885,8 @@ Never Alone 2:
       - save
       when:
       - store: steam
+  id:
+    lutris: never-alone-2
   steam:
     id: 2154420
 Never Breakup:
@@ -865761,6 +865849,8 @@ Pimp Tight:
   steam:
     id: 555100
 'Pinata Smash: Incremental Circus':
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_4918810.bin:
       tags:
@@ -865768,6 +865858,16 @@ Pimp Tight:
       when:
       - store: steam
     <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4918810.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    "<home>/AppData/LocalLow/punkfuncgames/Pi\xF1ata Smash_ Incremental Circus/save.dat":
+      tags:
+      - save
+      when:
+      - os: windows
+    <root>/userdata/<storeUserId>/4918810/remote/save.dat:
       tags:
       - save
       when:
@@ -870059,7 +870159,7 @@ Pixel Piracy:
       when:
       - os: windows
       - os: linux
-    <xdgConfig>/unity3d/VitaliKirpuProductions/Pixel Piracy/perfs:
+    <xdgConfig>/unity3d/VitaliKirpuProductions/Pixel Piracy/prefs:
       tags:
       - config
       when:
@@ -883228,10 +883328,22 @@ Pool of Madness:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/BitGolem/PoolOfMadness/PoolOfMadness_SaveFile*.es3:
+      when:
+      - store: steam
   id:
     lutris: pool-of-madness
     steamExtra:
     - 2887480
+    - 5597880
+  installDir:
+    Pool of Madness: {}
+  launch:
+    <base>/PoolOfMadness.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
   steam:
     id: 2873750
 Pool of Radiance:
@@ -919949,18 +920061,23 @@ Race the Sun:
       - save
       when:
       - store: steam
-    <home>/.config/unity3d/Flippfly/RaceTheSun:
-      tags:
-      - config
-      - save
-      when:
-      - os: linux
     <home>/Library/Preferences/unity.Flippfly.RaceTheSun.plist:
       tags:
       - config
       - save
       when:
       - os: mac
+    <root>/userdata/<storeUserId>/253030/remote:
+      tags:
+      - save
+      when:
+      - store: steam
+    <xdgConfig>/unity3d/Flippfly/RaceTheSun/prefs:
+      tags:
+      - config
+      - save
+      when:
+      - os: linux
   gog:
     id: 1207660134
   id:
@@ -1034552,7 +1034669,7 @@ Sir, You Are Being Hunted:
       - save
       when:
       - os: windows
-    <xdgConfig>/unity3d/Big Robot/SirYouAreBeingHunted/perfs:
+    <xdgConfig>/unity3d/Big Robot/SirYouAreBeingHunted/prefs:
       tags:
       - config
       when:
@@ -1060653,6 +1060770,20 @@ Soul Axiom:
       - config
   steam:
     id: 279900
+Soul Blade:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2658410.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2658410.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 2658410
 Soul Devourer:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_2530620.bin:
@@ -1166763,6 +1166894,8 @@ The Apartment:
   steam:
     id: 752020
 The Apartment (2026):
+  alias: The Apartment (2027)
+The Apartment (2027):
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_4333430.bin:
       tags:
@@ -1174703,6 +1174836,8 @@ The Citadel Project:
       - save
       when:
       - store: steam
+  gog:
+    id: 1622151550
   id:
     steamExtra:
     - 5111940
@@ -1327448,6 +1327583,15 @@ Volvox:
       - save
       when:
       - store: steam
+    <winLocalAppData>/Volvys_Adventure_6/default/*.onion:
+      when:
+      - store: steam
+  installDir:
+    "Volvy\u2019s Adventure": {}
+  launch:
+    <base>/Volvys_Adventure_6.exe:
+    - when:
+      - store: steam
   steam:
     id: 4523120
 Vomitoreum:
@@ -1390647,7 +1390791,7 @@ Zenzizenzic:
       - save
       when:
       - store: steam
-    <xdgConfig>/unity3d/Ruud Koorevaar/Zenzizenzic/perfs:
+    <xdgConfig>/unity3d/Ruud Koorevaar/Zenzizenzic/prefs:
       tags:
       - config
       - save
