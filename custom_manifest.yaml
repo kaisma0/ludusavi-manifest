@@ -153604,6 +153604,13 @@ Boardfall:
     id: 4026170
 Boardfall Zero:
   alias: Boardfall
+Boards and Blades 2:
+  files:
+    <base>/System/BB2.ini:
+      tags:
+      - config
+      when:
+      - os: windows
 Boardwalk Carnival Game:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1140950.bin:
@@ -405851,6 +405858,13 @@ Extreme Assault:
       - config
       when:
       - os: dos
+Extreme Boards & Blades:
+  files:
+    <base>/xboards.ini:
+      tags:
+      - config
+      when:
+      - os: windows
 Extreme Burger Defense:
   files:
     <winLocalAppData>/ExtremeBurgerDefense:
@@ -422040,6 +422054,8 @@ Fast Food Tycoon 2:
       - os: windows
   gog:
     id: 1175067557
+  id:
+    lutris: pizza-connection-2
   installDir:
     Pizza Connection 2: {}
   launch:
@@ -501261,6 +501277,8 @@ Grand Theft Auto V Enhanced:
       - config
       when:
       - os: windows
+  id:
+    lutris: grand-theft-auto-v-enhanced
   installDir:
     Grand Theft Auto V Enhanced: {}
   launch:
@@ -526501,6 +526519,76 @@ HardCube:
       - store: steam
   steam:
     id: 493730
+Hardcoded:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2693710.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2693710.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/.godot/app_userdata/HARDCODED:
+      tags:
+      - config
+      - save
+      when:
+      - os: mac
+    <home>/.local/share/godot/app_userdata/HARDCODED/gamesettings.json:
+      tags:
+      - config
+      when:
+      - os: linux
+    <home>/.local/share/godot/app_userdata/HARDCODED/savefile0.json:
+      tags:
+      - save
+      when:
+      - os: linux
+    <home>/.local/share/godot/app_userdata/HARDCODED/savefile1.json:
+      tags:
+      - save
+      when:
+      - os: linux
+    <home>/.local/share/godot/app_userdata/HARDCODED/savefile2.json:
+      tags:
+      - save
+      when:
+      - os: linux
+    <home>/.local/share/godot/app_userdata/HARDCODED/savefile3.json:
+      tags:
+      - save
+      when:
+      - os: linux
+    <winAppData>/Godot/app_userdata/HARDCODED:
+      tags:
+      - config
+      - save
+      when:
+      - os: windows
+  installDir:
+    HARDCODED: {}
+  launch:
+    <base>/hardcoded:
+    - when:
+      - os: linux
+        store: steam
+    <base>/hardcoded.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/hardcoded.exe:
+    - when:
+      - os: windows
+        store: steam
+    - arguments: --rendering-driver opengl3 opengl3_es
+      when:
+      - os: windows
+        store: steam
+  steam:
+    id: 2693710
 Hardcore Bunny Jumper:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1076320.bin:
@@ -872287,6 +872375,7 @@ Pizza Connection 3:
     gogExtra:
     - 1377044054
     - 1838508915
+    lutris: pizza-connection-3
     steamExtra:
     - 682710
   installDir:
@@ -1055047,6 +1055136,9 @@ Soldiers Lost Forever (1914-1918):
   steam:
     id: 508630
 Soldiers at War:
+  cloud:
+    gog: true
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_4834810.bin:
       tags:
@@ -1055058,8 +1055150,19 @@ Soldiers at War:
       - save
       when:
       - store: steam
+    <base>/Save_g:
+      tags:
+      - save
+      when:
+      - os: windows
   gog:
     id: 1731348684
+  installDir:
+    Soldiers at War: {}
+  launch:
+    <base>/SAW_Game.exe:
+    - when:
+      - store: steam
   steam:
     id: 4834810
 Soldiers of Freedom:
@@ -1143937,7 +1144040,7 @@ Tabletop Simulator:
     - when:
       - os: mac
         store: steam
-    - arguments: -force-metal
+    - arguments: -force-glcore
       when:
       - os: mac
         store: steam
@@ -1238754,6 +1238857,9 @@ TheoTown:
   steam:
     id: 1084020
 Theocracy:
+  cloud:
+    gog: true
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_4834790.bin:
       tags:
@@ -1238780,8 +1238886,20 @@ Theocracy:
       - save
       when:
       - os: windows
+    <home>/Saved Games/Theocracy/save/*.tsg:
+      tags:
+      - save
+      when:
+      - os: windows
+        store: steam
   gog:
     id: 1355762673
+  installDir:
+    Theocracy: {}
+  launch:
+    <base>/theocracy-0.6.85.exe:
+    - when:
+      - store: steam
   steam:
     id: 4834790
 Theocracy (2022):
@@ -1284304,6 +1284422,11 @@ Tungulus:
     id: 636470
 'Tunguska: Legend of Faith':
   files:
+    <base>/TUNGUS.INI:
+      tags:
+      - config
+      when:
+      - os: windows
     <base>/TUNGUSKA.S*:
       tags:
       - save
@@ -1340627,6 +1340750,9 @@ Warlords III:
   steam:
     id: 2916220
 'Warlords IV: Heroes of Etheria':
+  cloud:
+    gog: true
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_4834780.bin:
       tags:
@@ -1340650,6 +1340776,12 @@ Warlords III:
       - os: windows
   gog:
     id: 1462962180
+  installDir:
+    Warlords IV Heroes of Etheria: {}
+  launch:
+    <base>/Warlords4.exe:
+    - when:
+      - store: steam
   registry:
     HKEY_CURRENT_USER/Software/Ubi Soft/Warlords IV/Options:
       tags:
