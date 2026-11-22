@@ -570,6 +570,8 @@ $1 Ride:
   steam:
     id: 759000
 '.T.E.S.T: Expected Behaviour':
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_771710.bin:
       tags:
@@ -596,6 +598,8 @@ $1 Ride:
       - config
       when:
       - os: linux
+  id:
+    lutris: dot-t-e-dot-s-t-expected-behaviour
   installDir:
     Test Expected Behaviour: {}
   launch:
@@ -71366,6 +71370,8 @@ Apocalyptica:
       - save
       when:
       - os: windows
+  id:
+    lutris: apocalyptica
   registry:
     HKEY_CURRENT_USER/Software/ExtremeFX/Apocalyptica:
       tags:
@@ -171008,6 +171014,20 @@ Broken of Darkness:
         store: steam
   steam:
     id: 3014520
+'BrokenLore: Miki-chan':
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3975870.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3975870.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 3975870
 'BrokenLore: Unfollow':
   cloud:
     steam: true
@@ -729374,6 +729394,8 @@ Metal Gear Solid - Master Collection Version:
       - os: windows
   gog:
     id: 2069117974
+  id:
+    lutris: metal-gear-solid-2-substance
 'Metal Gear Solid 3: Snake Eater - Master Collection Version':
   cloud:
     steam: true
@@ -763879,6 +763901,10 @@ Mukti:
       - save
       when:
       - store: steam
+  gog:
+    id: 1127682353
+  id:
+    lutris: mukti
   steam:
     id: 760250
 'Mula: The Cycle of Shadow':
@@ -965158,6 +965184,8 @@ Rocket Jockey:
       - save
       when:
       - store: steam
+  id:
+    lutris: rocket-jockey
   installDir:
     Rocket Jockey: {}
   launch:
@@ -1010357,6 +1010385,8 @@ Servant of the Lake:
       - config
       when:
       - os: mac
+  gog:
+    id: 2142293863
   id:
     lutris: servant-of-the-lake
     steamExtra:
@@ -1210407,7 +1210437,11 @@ The Mr. Rabbit Magic Show:
       - save
       when:
       - os: windows
+  gog:
+    id: 1834699820
   id:
+    gogExtra:
+    - 2137155569
     steamExtra:
     - 3701380
   installDir:
