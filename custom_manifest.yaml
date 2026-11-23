@@ -58294,6 +58294,13 @@ American Fugitive:
 American Hero:
   cloud:
     gog: true
+  files:
+    <winAppData>/Ziggurat/American Hero/USR-DATA:
+      tags:
+      - config
+      - save
+      when:
+      - os: windows
   gog:
     id: 1718511445
   id:
@@ -120735,7 +120742,7 @@ Beach Head 2000:
   installDir:
     Beachhead 2000: {}
   launch:
-    <base>/Launcher/BHLauncher.exe:
+    <base>/Beachhead 2000.exe:
     - when:
       - os: windows
         store: steam
@@ -135891,6 +135898,9 @@ Birdtual Reality:
     Birdtual Reality: {}
   steam:
     id: 513240
+Birth of America:
+  id:
+    lutris: birth-of-america
 Birth of Shadows:
   cloud:
     steam: true
@@ -177581,6 +177591,41 @@ Burning Out:
         store: steam
   steam:
     id: 2016510
+Burning Sword Death Sun:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2561460.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2561460.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <winLocalAppData>/BurningSwordDeathSun/Saved/Config/Windows:
+      tags:
+      - config
+      when:
+      - os: windows
+    <winLocalAppData>/BurningSwordDeathSun/Saved/SaveGames:
+      tags:
+      - save
+      when:
+      - os: windows
+  id:
+    lutris: burning-sword-death-sun
+    steamExtra:
+    - 2824590
+  installDir:
+    Burning Sword Death Sun: {}
+  launch:
+    <base>/BurningSwordDeathSun.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 2561460
 BurningBridges VR:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_818430.bin:
@@ -244395,6 +244440,8 @@ Cop Academy:
   steam:
     id: 982710
 Cop Bastard:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1742440.bin:
       tags:
@@ -244406,6 +244453,20 @@ Cop Bastard:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/targim_/COP BASTARD game/Saves/Steam/<storeUserId>:
+      when:
+      - store: steam
+  gog:
+    id: 1286862415
+  id:
+    gogExtra:
+    - 1256467534
+    - 1682691070
+    - 1688981549
+    lutris: cop-bastard
+    steamExtra:
+    - 2174740
+    - 5484030
   installDir:
     COP BASTARD: {}
   launch:
@@ -258540,6 +258601,13 @@ Croc 2:
     gogExtra:
     - 1339998951
     lutris: croc-2
+  installDir:
+    Croc 2 Classic: {}
+  launch:
+    <base>/Croc2.exe:
+    - when:
+      - os: windows
+        store: steam
   registry:
     HKEY_LOCAL_MACHINE/SOFTWARE/Argonaut Software/Croc2/1.00:
       tags:
@@ -258622,6 +258690,13 @@ Croc's World Construction Kit:
     gogExtra:
     - 2036105119
     lutris: croc-legend-of-the-gobbos
+  installDir:
+    Croc Classic: {}
+  launch:
+    <base>/croc.exe:
+    - when:
+      - os: windows
+        store: steam
   registry:
     HKEY_LOCAL_MACHINE/SOFTWARE/WOW6432Node/Argonaut Software/Croc:
       tags:
@@ -324540,6 +324615,8 @@ Dischord:
   steam:
     id: 281450
 Disco Ball Simulator 2000:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_5089020.bin:
       tags:
@@ -324549,6 +324626,26 @@ Disco Ball Simulator 2000:
     <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5089020.bin:
       tags:
       - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/Timi Ocean/Disco Ball Simulator 2000/save.json:
+      tags:
+      - save
+      when:
+      - os: windows
+    <home>/AppData/LocalLow/Timi Ocean/Disco Ball Simulator 2000/settings.json:
+      tags:
+      - config
+      when:
+      - os: windows
+    <root>/userdata/<storeUserId>/5089020/remote/save.json:
+      tags:
+      - save
+      when:
+      - store: steam
+    <root>/userdata/<storeUserId>/5089020/remote/settings.json:
+      tags:
+      - config
       when:
       - store: steam
   id:
@@ -343698,6 +343795,8 @@ Dragon Stone - Legendary Archer:
       - save
       when:
       - os: windows
+  id:
+    lutris: dragon-throne-battle-of-red-cliffs
   installDir:
     Dragon Throne - Battle of Red Cliffs: {}
   launch:
@@ -388017,6 +388116,24 @@ Eon Fleet:
       - store: steam
   steam:
     id: 838980
+Eona:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3779800.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3779800.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    lutris: eona
+    steamExtra:
+    - 4362000
+  steam:
+    id: 3779800
 Eonia:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_826180.bin:
@@ -478267,6 +478384,12 @@ Gears of War 4:
       - save
       when:
       - os: windows
+    <winLocalAppData>/Packages/Microsoft.Pender_8wekyb3d8bbwe/SystemAppData:
+      tags:
+      - config
+      when:
+      - os: windows
+        store: microsoft
   id:
     lutris: gears-of-war-reloaded
   installDir:
@@ -600002,6 +600125,16 @@ Invicta Beam:
       - save
       when:
       - store: steam
+    <base>/DAGamePrefs.ini:
+      tags:
+      - config
+      when:
+      - os: windows
+    <base>/savegames:
+      tags:
+      - save
+      when:
+      - os: windows
   gog:
     id: 1207658655
   installDir:
@@ -618781,6 +618914,8 @@ Jurassic Park Classic Games Collection:
   steam:
     id: 201830
 'Jurassic Park: Trespasser':
+  id:
+    lutris: trespasser
   registry:
     HKEY_CURRENT_USER/Software/DreamWorks Interactive/Trespasser:
       tags:
@@ -643484,6 +643619,10 @@ Krush Kill 'N Destroy:
     lutris: kknd2-krossfire
   installDir:
     KKND 2 Krossfire: {}
+  launch:
+    <base>/kknd2.exe:
+    - when:
+      - store: steam
   steam:
     id: 1292180
 Krush Kill 'N Destroy Xtreme:
@@ -643516,6 +643655,10 @@ Krush Kill 'N Destroy Xtreme:
     lutris: kknd-krush-kill-n-destroy-xtreme
   installDir:
     KKND Xtreme: {}
+  launch:
+    <base>/kknd.exe:
+    - when:
+      - store: steam
   steam:
     id: 1292170
 KryptCrawler:
@@ -676905,6 +677048,16 @@ Loco Motive:
       - save
       when:
       - os: windows
+    <home>/.config/unity3d/Robust Games/Loco Motive/Saves/<storeUserId>/*.sav:
+      tags:
+      - save
+      when:
+      - os: linux
+    <home>/Library/Application Support/unity.Robust Games.Loco Motive/Saves/<storeUserId>/*.sav:
+      tags:
+      - save
+      when:
+      - os: mac
   gog:
     id: 1690056578
   id:
@@ -676918,10 +677071,6 @@ Loco Motive:
   installDir:
     Loco Motive: {}
   launch:
-    <base>/Loco Motive:
-    - when:
-      - os: linux
-        store: steam
     <base>/Loco Motive.app:
     - when:
       - os: mac
@@ -676929,6 +677078,10 @@ Loco Motive:
     <base>/Loco Motive.exe:
     - when:
       - os: windows
+        store: steam
+    <base>/Loco Motive.x86_64:
+    - when:
+      - os: linux
         store: steam
   steam:
     id: 1709880
@@ -820446,6 +820599,8 @@ Omensight:
   steam:
     id: 455820
 Omerta - City of Gangsters:
+  alias: 'Omerta: City of Gangsters'
+'Omerta: City of Gangsters':
   cloud:
     steam: true
   files:
@@ -891597,6 +891752,8 @@ Prince of Qin:
       - store: steam
   gog:
     id: 1273860392
+  id:
+    lutris: prince-of-qin
   installDir:
     Prince of Qin: {}
   launch:
@@ -992697,6 +992854,8 @@ Sandstorm:
   steam:
     id: 548710
 Sandustry:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_2764460.bin:
       tags:
@@ -992708,6 +992867,16 @@ Sandustry:
       - save
       when:
       - store: steam
+    <home>/.config/sandustry/meta:
+      tags:
+      - config
+      when:
+      - os: linux
+    <home>/.config/sandustry/saves:
+      tags:
+      - save
+      when:
+      - os: linux
   id:
     steamExtra:
     - 3490390
@@ -1009619,7 +1009788,7 @@ Serious Sam Double D:
       - store: steam
   steam:
     id: 111600
-Serious Sam Fusion 2017:
+Serious Sam Fusion:
   cloud:
     steam: true
   files:
@@ -1009655,6 +1009824,8 @@ Serious Sam Fusion 2017:
     Serious Sam Fusion 2017: {}
   steam:
     id: 564310
+Serious Sam Fusion 2017:
+  alias: Serious Sam Fusion
 'Serious Sam HD: The First Encounter':
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_41000.bin:
@@ -1075943,6 +1076114,25 @@ Spellbreak:
         store: steam
   steam:
     id: 1399780
+Spellbroken Dream Festival:
+  files:
+    <base>/config.dat:
+      tags:
+      - config
+      when:
+      - os: windows
+    <base>/data:
+      tags:
+      - save
+      when:
+      - os: windows
+    <base>/replay:
+      tags:
+      - save
+      when:
+      - os: windows
+  id:
+    lutris: touhou-danmuki-spellbroken-dream-festival
 Spellcaster University:
   cloud:
     gog: true
@@ -1095718,9 +1095908,19 @@ Startopia:
   installDir:
     Startopia: {}
   launch:
+    <base>/Startopia:
+    - when:
+      - bit: 64
+        os: linux
+        store: steam
+    <base>/Startopia.app:
+    - when:
+      - os: mac
+        store: steam
     <base>/Startopia.exe:
     - when:
-      - store: steam
+      - os: windows
+        store: steam
   steam:
     id: 243040
 Startup Company:
@@ -1112977,6 +1113177,8 @@ Submarine Titans:
       - os: windows
   gog:
     id: 1476453752
+  id:
+    lutris: submarine-titans
   installDir:
     Submarine Titans: {}
   launch:
@@ -1199199,6 +1199401,8 @@ The Language of Love:
   steam:
     id: 1027620
 The Lantern of the Laughless Saint:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3849000.bin:
       tags:
@@ -1199210,7 +1199414,7 @@ The Lantern of the Laughless Saint:
       - save
       when:
       - store: steam
-    <winLocalAppData>/The_Holy_Fool/Saved:
+    <winLocalAppData>/The_Holy_Fool/Saved/SaveGames:
       when:
       - os: windows
         store: steam
@@ -1213785,6 +1213989,8 @@ The Outforce:
       - config
       when:
       - os: windows
+  id:
+    lutris: the-outforce
   installDir:
     The Outforce: {}
   launch:
@@ -1247346,6 +1247552,34 @@ Time Commando:
       - save
       when:
       - store: steam
+    <home>/AppData/LocalLow/2 POINT 21/Time Commando/Saves/*.tcs:
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/2 POINT 21/Time Commando/Saves/progress.cfg:
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/2 POINT 21/Time Commando/Saves/tcsaves.idx:
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/2 POINT 21/Time Commando/Saves/timeco.def:
+      when:
+      - store: steam
+    <home>/Library/Application Support/2 POINT 21/Time Commando/Saves/*.tcs:
+      when:
+      - os: mac
+        store: steam
+    <home>/Library/Application Support/2 POINT 21/Time Commando/Saves/progress.cfg:
+      when:
+      - os: mac
+        store: steam
+    <home>/Library/Application Support/2 POINT 21/Time Commando/Saves/tcsaves.idx:
+      when:
+      - os: mac
+        store: steam
+    <home>/Library/Application Support/2 POINT 21/Time Commando/Saves/timeco.def:
+      when:
+      - os: mac
+        store: steam
   gog:
     id: 1207658987
   id:
@@ -1344475,6 +1344709,8 @@ Waterloo:
       - store: steam
   gog:
     id: 1356354968
+  id:
+    lutris: waterloo
   installDir:
     waterloo: {}
   launch:
@@ -1347027,6 +1347263,14 @@ We Were Here Together:
       - save
       when:
       - os: windows
+  id:
+    lutris: we-were-here-together
+    steamExtra:
+    - 1163640
+    - 1170850
+    - 1170860
+    - 1246990
+    - 1614610
   installDir:
     We Were Here Together: {}
   launch:
@@ -1351859,6 +1352103,8 @@ What if George Washington was a Girl?:
   steam:
     id: 2098470
 What the Buck?!:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_4832970.bin:
       tags:
@@ -1351870,6 +1352116,16 @@ What the Buck?!:
       - save
       when:
       - store: steam
+    <winAppData>/Godot/app_userdata/What the Buck/savegame_full.save:
+      tags:
+      - save
+      when:
+      - os: windows
+    <winAppData>/Godot/app_userdata/What the Buck/settings.cfg:
+      tags:
+      - config
+      when:
+      - os: windows
   id:
     steamExtra:
     - 5006340
