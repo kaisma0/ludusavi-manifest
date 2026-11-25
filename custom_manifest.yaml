@@ -305852,6 +305852,38 @@ Delete:
       - save
   steam:
     id: 773670
+'Deleted Wiki: Clean Up the Lost Files':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5204830.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5204830.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    lutris: deleted-wiki-clean-up-the-lost-files
+    steamExtra:
+    - 5488320
+  installDir:
+    Deleted Wiki Clean Up the Lost Files: {}
+  launch:
+    <base>/Deleted Wiki.app:
+    - when:
+      - os: mac
+        store: steam
+    <base>/Deleted Wiki.exe:
+    - when:
+      - bit: 64
+        os: windows
+        store: steam
+  steam:
+    id: 5204830
 Deleveled:
   cloud:
     steam: true
@@ -311333,6 +311365,8 @@ Dereliction:
   steam:
     id: 969420
 Derelikt:
+  cloud:
+    steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_3810510.bin:
       tags:
@@ -342107,32 +342141,28 @@ Dragon Battle:
     id: 859310
 Dragon Blaze:
   files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_1279420.bin:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4123700.bin:
       tags:
       - save
       when:
       - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1279420.bin:
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4123700.bin:
       tags:
       - save
       when:
       - store: steam
   id:
     steamExtra:
-    - 4123700
+    - 1279420
   installDir:
-    Dragon Blaze: {}
+    PSIKYO Dragon Blaze: {}
   launch:
     <base>/dragonblaze.exe:
     - when:
       - os: windows
         store: steam
-    <base>/setting.exe:
-    - when:
-      - os: windows
-        store: steam
   steam:
-    id: 1279420
+    id: 4123700
 Dragon Blood:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_562840.bin:
@@ -423330,6 +423360,13 @@ Fate of Kai:
         store: steam
   steam:
     id: 1426480
+Fate of the Dragon:
+  files:
+    <base>/Save:
+      tags:
+      - save
+      when:
+      - os: windows
 Fate of the Pharaoh:
   cloud:
     steam: true
@@ -498212,6 +498249,26 @@ Goodbye My King:
       - store: steam
   steam:
     id: 647410
+Goodbye Seoul:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2551550.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2551550.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  id:
+    lutris: goodbye-seoul
+    steamExtra:
+    - 2711590
+  steam:
+    id: 2551550
 Goodbye Volcano High:
   cloud:
     steam: true
@@ -514187,37 +514244,36 @@ Gunball:
     id: 632240
 Gunbarich:
   files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_1342240.bin:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4123560.bin:
       tags:
       - save
       when:
       - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1342240.bin:
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4123560.bin:
       tags:
       - save
       when:
       - store: steam
+  id:
+    steamExtra:
+    - 1342240
   installDir:
-    GUNBARICH: {}
+    PSIKYO Gunbarich: {}
   launch:
     <base>/Gunbarich.exe:
     - when:
       - os: windows
         store: steam
-    <base>/setting.exe:
-    - when:
-      - os: windows
-        store: steam
   steam:
-    id: 1342240
+    id: 4123560
 Gunbird:
   files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_1261970.bin:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4123540.bin:
       tags:
       - save
       when:
       - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1261970.bin:
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4123540.bin:
       tags:
       - save
       when:
@@ -514232,44 +514288,42 @@ Gunbird:
       - config
       when:
       - os: windows
+  id:
+    steamExtra:
+    - 1261970
   installDir:
-    GUNBIRD: {}
+    PSIKYO GUNBIRD: {}
   launch:
     <base>/gunbird.exe:
     - when:
       - os: windows
         store: steam
-    <base>/setting.exe:
-    - when:
-      - os: windows
-        store: steam
   steam:
-    id: 1261970
+    id: 4123540
 Gunbird 2:
   files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_1279410.bin:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4123550.bin:
       tags:
       - save
       when:
       - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1279410.bin:
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4123550.bin:
       tags:
       - save
       when:
       - store: steam
+  id:
+    steamExtra:
+    - 1279410
   installDir:
-    GUNBIRD2: {}
+    PSIKYO GUNBIRD 2: {}
   launch:
     <base>/gunbird2.exe:
     - when:
       - os: windows
         store: steam
-    <base>/setting.exe:
-    - when:
-      - os: windows
-        store: steam
   steam:
-    id: 1279410
+    id: 4123550
 Gunboat:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1357490.bin:
@@ -523513,8 +523567,27 @@ Hammer Heads:
 Hammer of the Gods:
   cloud:
     gog: true
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4622690.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4622690.bin:
+      tags:
+      - save
+      when:
+      - store: steam
   gog:
     id: 2088011259
+  id:
+    gogExtra:
+    - 1688438535
+    steamExtra:
+    - 5391870
+  steam:
+    id: 4622690
 HammerHelm:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_664000.bin:
@@ -563838,7 +563911,7 @@ Hot Wheels World's Best Driver:
     lutris: hot-wheels-stunt-track-challenge
 'Hot Wheels: Stunt Track Driver 2: Get''n Dirty':
   id:
-    lutris: hot-wheels-sunt-track-driver-2-getn-dirty/
+    lutris: hot-wheels-sunt-track-driver-2-getn-dirty
 'Hot Wheels: Williams F1 - Team Racer':
   files:
     <base>/config.ini:
@@ -683806,6 +683879,28 @@ Lost Orbit:
         store: steam
   steam:
     id: 372320
+Lost Patrol:
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_1392750.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1392750.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  installDir:
+    Lost Patrol: {}
+  launch:
+    <base>/DOSBox.exe:
+    - arguments: -conf lostp.conf -noconsole
+      when:
+      - os: windows
+        store: steam
+  steam:
+    id: 1392750
 Lost Planet 2:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_45750.bin:
@@ -733198,6 +733293,13 @@ Michael Owen's World League Soccer 99:
     HKEY_CURRENT_USER/SOFTWARE/Digital Illusions/Rally Masters/Configurations/Default:
       tags:
       - config
+Michelle Kwan Figure Skating:
+  files:
+    <base>/data/config:
+      tags:
+      - config
+      when:
+      - os: windows
 Mickey's Typing Adventure:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_348850.bin:
@@ -900704,6 +900806,16 @@ Pronoun Palace:
       - save
       when:
       - store: steam
+    <winAppData>/Pronoun Palace:
+      tags:
+      - config
+      when:
+      - os: windows
+    <winAppData>/Pronoun Palace/saves:
+      tags:
+      - save
+      when:
+      - os: windows
     <xdgData>/Pronoun Palace/saves:
       tags:
       - save
@@ -991321,37 +991433,36 @@ Samudra:
     id: 1116260
 Samurai Aces:
   files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_1261980.bin:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4123500.bin:
       tags:
       - save
       when:
       - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1261980.bin:
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4123500.bin:
       tags:
       - save
       when:
       - store: steam
+  id:
+    steamExtra:
+    - 1261980
   installDir:
-    Samurai Aces: {}
+    PSIKYO SAMURAI ACES: {}
   launch:
     <base>/saces.exe:
     - when:
       - os: windows
         store: steam
-    <base>/setting.exe:
-    - when:
-      - os: windows
-        store: steam
   steam:
-    id: 1261980
+    id: 4123500
 'Samurai Aces III: Sengoku Cannon':
   files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_1279390.bin:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4123530.bin:
       tags:
       - save
       when:
       - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1279390.bin:
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4123530.bin:
       tags:
       - save
       when:
@@ -991366,19 +991477,18 @@ Samurai Aces:
       - config
       when:
       - os: windows
+  id:
+    steamExtra:
+    - 1279390
   installDir:
-    SENGOKU CANNON: {}
+    PSIKYO SAMURAI ACES III: {}
   launch:
     <base>/scannon.exe:
     - when:
       - os: windows
         store: steam
-    <base>/setting.exe:
-    - when:
-      - os: windows
-        store: steam
   steam:
-    id: 1279390
+    id: 4123530
 Samurai Forge:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_617350.bin:
@@ -1053896,29 +1054006,28 @@ Sol Divide:
     id: 379350
 'Sol Divide: Sword of Darkness':
   files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_1279450.bin:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4123670.bin:
       tags:
       - save
       when:
       - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1279450.bin:
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4123670.bin:
       tags:
       - save
       when:
       - store: steam
+  id:
+    steamExtra:
+    - 1279450
   installDir:
-    SOL DIVIDE -SWORD OF DARKNESS-: {}
+    PSIKYO SOL DIVIDE -SWORD OF DARKNESS-: {}
   launch:
-    <base>/setting.exe:
-    - when:
-      - os: windows
-        store: steam
     <base>/soldivide.exe:
     - when:
       - os: windows
         store: steam
   steam:
-    id: 1279450
+    id: 4123670
 Sol Galaxy Defender:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_769160.bin:
@@ -1057736,6 +1057845,22 @@ Song of Horror:
         store: steam
   steam:
     id: 1096570
+'Song of Horror: Enhanced Edition':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_5528520.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_5528520.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+  steam:
+    id: 5528520
 Song of Iron:
   files:
     $USER/AppData/Local/SONG_of_IRON/Saved/Config:
@@ -1110672,79 +1110797,76 @@ Strikers:
     id: 588480
 Strikers 1945:
   files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_1261960.bin:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4123570.bin:
       tags:
       - save
       when:
       - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1261960.bin:
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4123570.bin:
       tags:
       - save
       when:
       - store: steam
+  id:
+    steamExtra:
+    - 1261960
   installDir:
-    STRIKERS1945: {}
+    PSIKYO STRIKERS 1945: {}
   launch:
     <base>/s1945.exe:
     - when:
       - os: windows
         store: steam
-    <base>/setting.exe:
-    - when:
-      - os: windows
-        store: steam
   steam:
-    id: 1261960
+    id: 4123570
 Strikers 1945 II:
   files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_1279380.bin:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4123580.bin:
       tags:
       - save
       when:
       - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1279380.bin:
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4123580.bin:
       tags:
       - save
       when:
       - store: steam
+  id:
+    steamExtra:
+    - 1279380
   installDir:
-    "STRIKERS1945 \u2161": {}
+    "PSIKYO STRIKERS 1945 \u2161": {}
   launch:
     <base>/s1945ii.exe:
     - when:
       - os: windows
         store: steam
-    <base>/setting.exe:
-    - when:
-      - os: windows
-        store: steam
   steam:
-    id: 1279380
+    id: 4123580
 Strikers 1945 III:
   files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_1279400.bin:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4123630.bin:
       tags:
       - save
       when:
       - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1279400.bin:
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4123630.bin:
       tags:
       - save
       when:
       - store: steam
+  id:
+    steamExtra:
+    - 1279400
   installDir:
-    STRIKERS1945 III: {}
+    PSIKYO STRIKERS 1945 III: {}
   launch:
     <base>/s1945iii.exe:
     - when:
       - os: windows
         store: steam
-    <base>/setting.exe:
-    - when:
-      - os: windows
-        store: steam
   steam:
-    id: 1279400
+    id: 4123630
 Strikers Edge:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_520670.bin:
@@ -1139113,6 +1139235,7 @@ Symphony of Stars:
     - 1977690
     - 1999620
     - 2432430
+    - 5395630
   installDir:
     SoW1 Project: {}
   launch:
@@ -1158199,29 +1158322,28 @@ Tenebrous Dungeon:
     id: 1016420
 Tengai:
   files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_1279370.bin:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4027800.bin:
       tags:
       - save
       when:
       - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1279370.bin:
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4027800.bin:
       tags:
       - save
       when:
       - store: steam
+  id:
+    steamExtra:
+    - 1279370
   installDir:
-    TENGAI: {}
+    PSIKYO TENGAI: {}
   launch:
     <base>/sblade.exe:
     - when:
       - os: windows
         store: steam
-    <base>/setting.exe:
-    - when:
-      - os: windows
-        store: steam
   steam:
-    id: 1279370
+    id: 4027800
 Tengami:
   cloud:
     steam: true
@@ -1300777,6 +1300899,34 @@ UniTower:
         store: steam
   steam:
     id: 1139670
+'Unicorn Academy: Island of Magic':
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4380910.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4380910.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/Corn/Saved/SaveGames/*.sav:
+      when:
+      - store: steam
+    <winLocalAppData>/Corn/Saved/SaveGames/*.sav:
+      when:
+      - store: steam
+  installDir:
+    Unicorn Academy Island of Magic: {}
+  launch:
+    <base>/Corn.exe:
+    - when:
+      - store: steam
+  steam:
+    id: 4380910
 Unicorn Dungeon:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_813250.bin:
@@ -1391786,29 +1391936,28 @@ Zero Gravity Pool:
     id: 778600
 Zero Gunner 2-:
   files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_1342250.bin:
+    <base>/../../../appcache/stats/UserGameStatsSchema_4123660.bin:
       tags:
       - save
       when:
       - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_1342250.bin:
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_4123660.bin:
       tags:
       - save
       when:
       - store: steam
+  id:
+    steamExtra:
+    - 1342250
   installDir:
-    ZERO GUNNER 2-: {}
+    PSIKYO Zero Gunner 2: {}
   launch:
-    <base>/ZERO GUNNER 2-.exe:
-    - when:
-      - os: windows
-        store: steam
-    <base>/setting.exe:
+    <base>/Zero Gunner 2.exe:
     - when:
       - os: windows
         store: steam
   steam:
-    id: 1342250
+    id: 4123660
 Zero Hour:
   cloud:
     epic: true
