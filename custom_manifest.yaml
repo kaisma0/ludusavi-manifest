@@ -166050,6 +166050,12 @@ Break the Empire:
   id:
     steamExtra:
     - 5211050
+  installDir:
+    "Break the Pi\xF1atas": {}
+  launch:
+    "<base>/Break the Pi\xF1atas.exe":
+    - when:
+      - store: steam
   steam:
     id: 5210430
 Break the Targets:
@@ -336147,7 +336153,7 @@ Doom + Doom II:
       - save
       when:
       - os: windows
-    <root>/userdata/<root>/2280:
+    <root>/userdata/<storeUserId>/2280:
       tags:
       - save
       when:
@@ -651253,6 +651259,7 @@ Lapya:
     id: 1071080
 Lara Croft GO:
   cloud:
+    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_540840.bin:
@@ -651288,6 +651295,8 @@ Lara Croft GO:
       when:
       - os: windows
         store: microsoft
+  gog:
+    id: 2060118552
   id:
     lutris: lara-croft-go
   installDir:
@@ -651347,8 +651356,16 @@ Lara Croft and the Guardian of Light:
       when:
       - os: windows
         store: microsoft
+  gog:
+    id: 1963606710
   id:
     lutris: lara-croft-and-the-guardian-of-light
+    steamExtra:
+    - 35134
+    - 35135
+    - 35136
+    - 35137
+    - 35138
   installDir:
     Lara Croft and the Guardian of Light: {}
   launch:
@@ -651366,6 +651383,7 @@ Lara Croft and the Guardian of Light:
     id: 35130
 Lara Croft and the Temple of Osiris:
   cloud:
+    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_289690.bin:
@@ -651383,7 +651401,14 @@ Lara Croft and the Temple of Osiris:
       - save
       when:
       - store: steam
+  gog:
+    id: 1680301192
   id:
+    gogExtra:
+    - 1295189036
+    - 1456009243
+    - 1633698135
+    - 2108998066
     lutris: lara-croft-and-the-temple-of-osiris
     steamExtra:
     - 318870
@@ -664777,6 +664802,8 @@ Let's Ride! Silver Buckle Stables:
       - os: windows
   gog:
     id: 2067932503
+  id:
+    lutris: lets-ride-silver-buckle-stables
   installDir:
     Let's Ride! Silver Buckle Stables: {}
   launch:
@@ -744661,6 +744688,8 @@ Miss Popularity:
       - save
       when:
       - store: steam
+  id:
+    lutris: miss-popularity
   installDir:
     Miss Popularity: {}
   launch:
@@ -801699,6 +801728,10 @@ Nioh 3:
       - os: windows
   id:
     lutris: nioh-3
+    steamExtra:
+    - 4003930
+    - 4003950
+    - 4198760
   installDir:
     Nioh3: {}
   steam:
@@ -837956,26 +837989,32 @@ Over the Hill:
       - save
       when:
       - store: steam
-    <home>/My Games/over the hill/Saves:
+    <home>/AppData/LocalLow/Funselektor/over the hill:
       tags:
       - save
       when:
-      - os: linux
+      - os: windows
+    <home>/AppData/LocalLow/Funselektor/over the hill/Steam:
+      tags:
+      - save
+      when:
+      - os: windows
+        store: steam
     <home>/My Games/over the hill/Settings:
       tags:
       - config
       when:
       - os: linux
-    <winDocuments>/My Games/over the hill/Saves:
-      tags:
-      - save
-      when:
-      - os: windows
     <winDocuments>/My Games/over the hill/Settings:
       tags:
       - config
       when:
       - os: windows
+    <xdgConfig>/unity3d/Funselektor/over the hill:
+      tags:
+      - save
+      when:
+      - os: linux
   gog:
     id: 1442763024
   id:
@@ -893809,6 +893848,8 @@ Prison of Husks:
       - save
       when:
       - store: steam
+  gog:
+    id: 1939928458
   id:
     lutris: prison-of-husks
     steamExtra:
@@ -1225836,6 +1225877,8 @@ The Smurfs - Mission Vileaf:
       - save
       when:
       - store: steam
+  id:
+    lutris: the-smurfs-village-party
   installDir:
     The Smurfs - Village Party: {}
   launch:
@@ -1337034,6 +1337077,13 @@ Warchasm:
     Warchasm: {}
   steam:
     id: 1184260
+'Warcraft Adventures: Lord of the Clans':
+  files:
+    <base>/BOOK.INI:
+      tags:
+      - config
+      when:
+      - os: windows
 Warcraft I Remastered:
   files:
     <home>/Saved Games/WarcraftRemastered/*.sav:
