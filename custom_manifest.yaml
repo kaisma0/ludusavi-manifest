@@ -24583,6 +24583,10 @@ ATLYSS:
     - when:
       - os: windows
         store: steam
+    <base>/ATLYSS_LINUX_E.x86_64:
+    - when:
+      - os: linux
+        store: steam
   steam:
     id: 2768430
 ATOM RPG:
@@ -37205,6 +37209,7 @@ After The Suns:
     id: 1101200
 After Us:
   cloud:
+    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1406810.bin:
@@ -37227,6 +37232,8 @@ After Us:
       - save
       when:
       - os: windows
+  gog:
+    id: 1122215059
   installDir:
     After Us: {}
   launch:
@@ -56016,6 +56023,13 @@ Am I Nima:
     lutris: am-i-nima
     steamExtra:
     - 3317110
+  installDir:
+    Am I Nima: {}
+  launch:
+    <base>/Am I Nima.exe:
+    - when:
+      - os: windows
+        store: steam
   registry:
     HKEY_CURRENT_USER/Software/HO! Games/Am I Nima:
       tags:
@@ -163270,6 +163284,9 @@ Braid:
       - os: windows
   gog:
     id: 1461061433
+  id:
+    steamExtra:
+    - 26810
   installDir:
     Braid: {}
   launch:
@@ -165661,7 +165678,6 @@ Breacher Story:
     id: 988110
 Bread & Fred:
   cloud:
-    gog: true
     steam: true
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1607680.bin:
@@ -165687,6 +165703,9 @@ Bread & Fred:
     lutris: bread-and-fred
     steamExtra:
     - 1763200
+    - 2448120
+    - 2448160
+    - 2610670
   installDir:
     Bread & Fred: {}
   launch:
@@ -276822,6 +276841,41 @@ Dairy Princess:
       - store: steam
   steam:
     id: 1168430
+Daisenryaku SSB 2:
+  cloud:
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_3941780.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_3941780.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    "<home>/AppData/LocalLow/systemsoftbeta/\u5927\u6226\u7565SSB2/.systemsave":
+      when:
+      - os: windows
+        store: steam
+    "<home>/AppData/LocalLow/systemsoftbeta/\u5927\u6226\u7565SSB2/roster.*":
+      when:
+      - os: windows
+        store: steam
+    "<home>/AppData/LocalLow/systemsoftbeta/\u5927\u6226\u7565SSB2/save.*":
+      when:
+      - os: windows
+        store: steam
+  installDir:
+    "\u5927\u6226\u7565SSB2": {}
+  launch:
+    <base>/daisenryaku-ssb-2.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 3941780
 Daka Dara:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1040480.bin:
@@ -428869,26 +428923,23 @@ Fiery catacombs:
     id: 1138150
 Fiesta Online:
   files:
-    <base>/../../../appcache/stats/UserGameStatsSchema_280620.bin:
+    <base>/../../../appcache/stats/UserGameStatsSchema_300970.bin:
       tags:
       - save
       when:
       - store: steam
-    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_280620.bin:
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_300970.bin:
       tags:
       - save
       when:
       - store: steam
+  id:
+    steamExtra:
+    - 280620
   installDir:
-    Fiesta Online: {}
-  launch:
-    <base>/Fiesta.exe:
-    - arguments: -i feul.gamigo.com -p 9010 -steam_login
-      when:
-      - os: windows
-        store: steam
+    Fiesta Online NA: {}
   steam:
-    id: 280620
+    id: 300970
 Fifo's Night:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_1191550.bin:
@@ -725708,6 +725759,8 @@ Memento Mori 2:
       - save
       when:
       - os: windows
+  id:
+    lutris: memento-mori-2
   installDir:
     MementoMori2: {}
   launch:
@@ -995190,6 +995243,8 @@ Saturn. Legacy:
       - save
       when:
       - store: steam
+  id:
+    lutris: saturn-legacy
   steam:
     id: 4540480
 Saturnalia:
@@ -1002940,6 +1002995,18 @@ Seals of the Bygone:
       - os: windows
   id:
     lutris: search-and-rescue-vietnam-med-evac
+Search and Rescue 3:
+  files:
+    <base>/dat:
+      tags:
+      - config
+      when:
+      - os: windows
+    <base>/saves:
+      tags:
+      - save
+      when:
+      - os: windows
 'Search and Rescue: Coastal Heroes':
   files:
     <base>/Config.dat:
@@ -1079786,6 +1079853,20 @@ SpiritSphere:
         store: steam
   steam:
     id: 458170
+Spirited Drive:
+  files:
+    <home>/Library/Application Support/Spirited Drive:
+      tags:
+      - config
+      - save
+      when:
+      - os: mac
+    <winAppData>/Spirited Drive:
+      tags:
+      - config
+      - save
+      when:
+      - os: windows
 Spirited Heart Deluxe:
   cloud:
     steam: true
@@ -1106817,6 +1106898,49 @@ Stranded Sails - Explorers of the Cursed Islands:
         store: steam
   steam:
     id: 1324130
+Strange Antiquities:
+  cloud:
+    gog: true
+    steam: true
+  files:
+    <base>/../../../appcache/stats/UserGameStatsSchema_2885870.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <base>/../../../appcache/stats/UserGameStats_<storeUserId>_2885870.bin:
+      tags:
+      - save
+      when:
+      - store: steam
+    <home>/AppData/LocalLow/BadVikingLtd/Strange Antiquities/*.gd:
+      when:
+      - store: steam
+    <home>/Library/Application Support/com.BadVikingLtd.StrangeAntiquities/*.gd:
+      when:
+      - os: mac
+        store: steam
+  gog:
+    id: 1247156727
+  id:
+    lutris: strange-antiquities
+    steamExtra:
+    - 3629010
+    - 3833030
+  installDir:
+    StrangeAntiquities: {}
+  launch:
+    <base>/Strange Antiquities.app:
+    - when:
+      - os: mac
+        store: steam
+      workingDir: <base>/Strange Antiquities.app/Contents/MacOS
+    <base>/Strange Antiquities.exe:
+    - when:
+      - os: windows
+        store: steam
+  steam:
+    id: 2885870
 Strange Brigade:
   cloud:
     steam: true
@@ -1359229,6 +1359353,8 @@ Will of Steel:
       - config
       when:
       - os: windows
+  id:
+    lutris: will-of-steel
 Will of the Gods:
   files:
     <base>/../../../appcache/stats/UserGameStatsSchema_503960.bin:
